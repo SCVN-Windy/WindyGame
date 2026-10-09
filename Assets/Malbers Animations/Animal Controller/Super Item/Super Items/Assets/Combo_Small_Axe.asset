@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a9804e9ad9c75e44bceb770dcc1e2d4, type: 3}
+  m_Name: Combo_Small_Axe
+  m_EditorClassIdentifier: 
+  Mode: {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+  combos:
+  - active: 1
+    Mode: {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+    Name: Combo Ax Ground
+    CachedMode:
+      SelectedAbilityIndexEditor: 0
+      ActiveAbilityConditions: []
+      active: 0
+      TemporalActivation: 0
+      ignoreLowerModes: 0
+      forceIgnorePriority: 0
+      hasCoolDown: 0
+      Input: 
+      ID: {fileID: 0}
+      modifier: {fileID: 0}
+      CoolDown:
+        UseConstant: 0
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      Abilities: []
+      m_AbilityIndex:
+        UseConstant: 0
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      DefaultIndex:
+        UseConstant: 0
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      OnAbilityIndex:
+        m_PersistentCalls:
+          m_Calls: []
+      ResetToDefault: 0
+      allowRotation: 0
+      allowMovement: 0
+      OnEnterMode:
+        m_PersistentCalls:
+          m_Calls: []
+      OnExitMode:
+        m_PersistentCalls:
+          m_Calls: []
+      OnModeEnabled:
+        m_PersistentCalls:
+          m_Calls: []
+      OnModeDisabled:
+        m_PersistentCalls:
+          m_Calls: []
+      OnEnterReaction:
+        reactions: []
+      OnExitReaction:
+        reactions: []
+      OnEnabledReaction:
+        reactions: []
+      OnDisabledReaction:
+        reactions: []
+      EnterConditions:
+        conditions: []
+        active: 0
+      InterruptConditions:
+        conditions: []
+        active: 0
+      ExitConditions:
+        conditions: []
+        active: 0
+      m_Source: {fileID: 0}
+      ActivationTime: 0
+    CoolDown:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    states: []
+    States:
+      IDs:
+      - {fileID: 11400000, guid: 7370df9c769c2764381ad7c76eb3d949, type: 2}
+      - {fileID: 11400000, guid: 3787b6d94d5454740bf36d57436185b0, type: 2}
+      include: 1
+    DisableOnFinish:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    DisableOnInterrupt:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    finishTime: 0
+    Sequence:
+    - Activation:
+        minValue: 0
+        maxValue: 0
+      ActivationTime: 0.5
+      PreviewsAbility: 0
+      previewAbilityName: Combo Starter
+      Ability: 2
+      nextAbilityName: Right Swing
+      Branch: 0
+      Finisher: 0
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.4
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: 2
+      previewAbilityName: Right Swing
+      Ability: 1
+      nextAbilityName: Left Swing
+      Branch: 0
+      Finisher: 1
+      Restarter: 1
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    OnComboFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    OnComboInterrupted:
+      m_PersistentCalls:
+        m_Calls: []
+  references:
+    version: 2
+    RefIds: []

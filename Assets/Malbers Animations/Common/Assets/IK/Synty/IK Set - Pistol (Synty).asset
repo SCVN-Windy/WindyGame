@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355bd68b91f0fbe46932df6cb5bc95ef, type: 3}
+  m_Name: IK Set - Pistol (Synty)
+  m_EditorClassIdentifier: 
+  set:
+    name:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 
+      Variable: {fileID: 0}
+    active: 1
+    EnableTime: 0
+    DisableTime: 0.25
+    weight: 1
+    Targets: []
+    ClearTargetsOnDisable: 0
+    aimer: {fileID: 0}
+    IKProcesors:
+    - rid: 3587584460796985351
+    - rid: 3587584460796985353
+    - rid: 454648617840411461
+    weightProcessors: []
+    SelectedIKProcessor: 2
+    LerpWeight: 5
+    OnWeightChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    OnSetEnable:
+      m_PersistentCalls:
+        m_Calls: []
+    OnSetDisable:
+      m_PersistentCalls:
+        m_Calls: []
+    EnterLerp:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ExitLerp:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  EditorTabs: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 454648617840411461
+      type: {class: IKGenericLookAt, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: IKGenericLookAt
+        Active: 1
+        Weight: 1
+        TargetIndex: 0
+        AnimParameter: 
+        AnimParameters:
+        - IKAim
+        AnimParameterHashes: e538b029
+        drawConditions: 0
+        CheckIf:
+          conditions:
+          - rid: 454648617840411476
+          active: 1
+        Tag: {fileID: 11400000, guid: 479ab2a49f8fb494180e59f57fca8dba, type: 2}
+        showIndex: 0
+        Offset: {x: 63.35, y: -6.7, z: 66.813095}
+        upVector: 0
+        LocalUp: {x: 0, y: 1, z: 0}
+        WorldUp: {fileID: 0}
+        rotationBlend: 1
+        RawAim: 1
+        Gizmos: 1
+    - rid: 454648617840411476
+      type: {class: C2_SI_ActionPlaying, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 1
+        OrAnd: 0
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        item: {fileID: 11400000, guid: 3327ed0e492e4e148aabeb5f144242df, type: 2}
+        action: {fileID: 11400000, guid: 42ed51dbcd7b4294b8adc544b3731b1e, type: 2}
+    - rid: 3587584460796985351
+      type: {class: IKFollowRotation, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: IKFollowRoot
+        Active: 1
+        Weight: 1
+        TargetIndex: 0
+        AnimParameter: 
+        AnimParameters:
+        - IKAim
+        AnimParameterHashes: e538b029
+        drawConditions: 0
+        CheckIf:
+          conditions: []
+          active: 0
+        Tag: {fileID: 11400000, guid: 11618f413e1e3224b8aed21070a5d8a9, type: 2}
+        showIndex: 0
+        FollowRoot: 1
+        Master: {fileID: 0}
+        Offset:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: {x: 0, y: 90, z: -90}
+          Variable: {fileID: 0}
+        Gizmos: 1
+    - rid: 3587584460796985353
+      type: {class: IKRotateAroundAimHorizontal, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: IKRotate Around Axis
+        Active: 1
+        Weight: 1
+        TargetIndex: 0
+        AnimParameter: 
+        AnimParameters:
+        - IKAim
+        AnimParameterHashes: e538b029
+        drawConditions: 0
+        CheckIf:
+          conditions: []
+          active: 0
+        Tag: {fileID: 11400000, guid: 6a078c0dab3118a45a0395711cdbe3e8, type: 2}
+        showIndex: 0
+        RotateAround: 0
+        multiplier: 1
+        Offset:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: {x: -16.02, y: -5.64, z: 3.5}
+          Variable: {fileID: 0}
+        RawAim: 1
+        KeepChildRot: 0
+        Gizmos: 1

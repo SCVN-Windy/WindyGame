@@ -1,0 +1,238 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2110610123928671045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 381858689530071874}
+  - component: {fileID: -3288441475743782107}
+  - component: {fileID: 7210907056095574594}
+  - component: {fileID: 1132072596574644821}
+  - component: {fileID: 8720836880801200197}
+  m_Layer: 23
+  m_Name: Lock On Target Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &381858689530071874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110610123928671045}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 1.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3288441475743782107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110610123928671045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e0b5b9d4af0f31439aabd6b5de7b49e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Add this to your Enemies so the Lock On Target can track properly what to
+    track
+  reference: {fileID: 0}
+  ShowDescription: 0
+--- !u!114 &7210907056095574594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110610123928671045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e77eb7d06c33944491558655d9ff7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  parent: 10
+  LocalPos:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  LocalRot:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  PosOffset:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: {x: 0, y: 0, z: 0}
+    Variable: {fileID: 0}
+  RotOffset:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: {x: 0, y: 0, z: 0}
+    Variable: {fileID: 0}
+--- !u!114 &1132072596574644821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110610123928671045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20201266b5fdc6c4ca0fa6ce10d048c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - {fileID: 11400000, guid: 6d1f17f4e5ea02440806b4b6afafa7d0, type: 2}
+--- !u!114 &8720836880801200197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110610123928671045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48eb1597eeb4c9847816a2ddc1ccafff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animal: {fileID: 0}
+  Tracker: {fileID: 0}
+  NoParent: 1
+  FixedUpdate: 0
+  Trackers:
+  - name: ' [Death]'
+    Active: 1
+    track: 1
+    States:
+      IDs:
+      - {fileID: 11400000, guid: adfa24f62d6db4d40a1d837f4ec1a6e9, type: 2}
+      include: 1
+    Stances:
+      IDs:
+      - {fileID: 11400000, guid: 87ae38bfe93fc3f449ecd25863e2a6fe, type: 2}
+      include: 1
+    Modes:
+      IDs: []
+      include: 1
+    Abilities:
+      Indexes: 
+      include: 1
+    ModeAction: 0
+    State: {fileID: 0}
+    Stance: {fileID: 0}
+    Mode: {fileID: 0}
+    Ability: -1
+    reaction:
+      reactions:
+      - rid: 7038165552852107399
+      - rid: 7038165620217610360
+    RepositionTracker: 0
+    Lerp: 2
+    Position: {x: 0, y: 0, z: 0.25}
+    Rotation: {x: 0, y: 0, z: 0}
+    RelativeTo: {fileID: 0}
+    DebugColor: {r: 0, g: 1, b: 0, a: 1}
+  DebugSize: 0.05
+  debug: 0
+  selectedIndex: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 7038165552852107399
+      type: {class: GameObjectReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        action: 1
+        Value:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: {fileID: 2110610123928671045}
+          Variable: {fileID: 0}
+    - rid: 7038165620217610360
+      type: {class: UnityEventReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        Invoke:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 11400000, guid: 1a69e13d366af4b49bc1d9e96ca49bbc,
+                type: 2}
+              m_TargetAssemblyTypeName: MalbersAnimations.Scriptables.RuntimeGameObjects,
+                MalbersAnimations
+              m_MethodName: Item_Remove
+              m_Mode: 2
+              m_Arguments:
+                m_ObjectArgument: {fileID: 2110610123928671045}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2

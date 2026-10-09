@@ -1,0 +1,5543 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &38078792490488397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3561419147740082702}
+  - component: {fileID: 2917462586172648896}
+  - component: {fileID: 7138348252685045381}
+  - component: {fileID: 5206830638037762993}
+  m_Layer: 30
+  m_Name: Attack Collider Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3561419147740082702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38078792490488397}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.287, y: 0, z: 0.724}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5703983990798670611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2917462586172648896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38078792490488397}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b20103f05ec694e9515e126d8eb956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitLayer:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    Variable: {fileID: 0}
+  triggerInteraction: 0
+  tags:
+    tags: []
+  OnTrigger_Enter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTrigger_Exit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTrigger_Stay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGameObjectEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGameObjectExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGameObjectStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEmpty:
+    m_PersistentCalls:
+      m_Calls: []
+  ID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 100
+    Variable: {fileID: 0}
+  TriggerEnterReaction:
+    reactions: []
+  TriggerExitReaction:
+    reactions: []
+  TriggerStayReaction:
+    reactions: []
+  GameObjectEnterReaction:
+    reactions: []
+  GameObjectExitReaction:
+    reactions: []
+  GameObjectStayReaction:
+    reactions: []
+  m_debug: 0
+  useOnTriggerStay:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  sweepInterval: 0.25
+  OneTimeUse:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  ignoreStatic:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  Conditions:
+    conditions:
+    - rid: 7038165643870077037
+    active: 1
+  ownCollider: {fileID: 5206830638037762993}
+  Editor_Tabs1: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7038165643870077037
+      type: {class: C2_AnimalMode, ns: MalbersAnimations.Conditions, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 1
+        OrAnd: 0
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        Condition: 1
+        Value: {fileID: 0}
+        AbilityName:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 
+          Variable: {fileID: 0}
+        AbilityIndex:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+        modes:
+          items:
+          - {fileID: 11400000, guid: 7888596ce3530b145bc15622fac8a6c4, type: 2}
+--- !u!114 &7138348252685045381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38078792490488397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseColliders: 1
+  gizmoType: 0
+  debugSize: 0.03
+  height: 2
+  DebugColor: {r: 0.6679245, g: 0.24070488, b: 0.267126, a: 0.49411765}
+  DrawAxis: 0
+  AxisSize: 0.65
+  _colliders:
+  - {fileID: 5206830638037762993}
+  HasColliders: 1
+  DrawLineTo: 0
+  ConnectTo: {fileID: 0}
+  Rect: {x: 1, y: 1, z: 1}
+  Center: {x: 0, y: 0, z: 0}
+  FirstSearch: 1
+  CapsuleMesh: {fileID: 0}
+--- !u!136 &5206830638037762993
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38078792490488397}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.35388237
+  m_Height: 0.7705268
+  m_Direction: 2
+  m_Center: {x: -0.04915279, y: 0, z: 0}
+--- !u!1 &263264026620743333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2568907786773072978}
+  - component: {fileID: 7152698131619174315}
+  - component: {fileID: 7012604051500766458}
+  - component: {fileID: 1521198664920005531}
+  m_Layer: 30
+  m_Name: Attack Collider Heavy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2568907786773072978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263264026620743333}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.283, y: 0, z: 0.721}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 5703983990798670611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7152698131619174315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263264026620743333}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b20103f05ec694e9515e126d8eb956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitLayer:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    Variable: {fileID: 0}
+  triggerInteraction: 0
+  tags:
+    tags: []
+  OnTrigger_Enter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTrigger_Exit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTrigger_Stay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGameObjectEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGameObjectExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGameObjectStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEmpty:
+    m_PersistentCalls:
+      m_Calls: []
+  ID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 102
+    Variable: {fileID: 0}
+  TriggerEnterReaction:
+    reactions: []
+  TriggerExitReaction:
+    reactions: []
+  TriggerStayReaction:
+    reactions: []
+  GameObjectEnterReaction:
+    reactions: []
+  GameObjectExitReaction:
+    reactions: []
+  GameObjectStayReaction:
+    reactions: []
+  m_debug: 0
+  useOnTriggerStay:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  sweepInterval: 0.25
+  OneTimeUse:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  ignoreStatic:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  Conditions:
+    conditions:
+    - rid: 7038165552852107379
+    active: 1
+  ownCollider: {fileID: 1521198664920005531}
+  Editor_Tabs1: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7038165552852107379
+      type: {class: C2_AnimalMode, ns: MalbersAnimations.Conditions, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 1
+        OrAnd: 0
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        Condition: 1
+        Value: {fileID: 0}
+        AbilityName:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 
+          Variable: {fileID: 0}
+        AbilityIndex:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+        modes:
+          items:
+          - {fileID: 11400000, guid: 7888596ce3530b145bc15622fac8a6c4, type: 2}
+--- !u!114 &7012604051500766458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263264026620743333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseColliders: 1
+  gizmoType: 0
+  debugSize: 0.03
+  height: 2
+  DebugColor: {r: 1, g: 0.096226394, b: 0.15426712, a: 0.49411765}
+  DrawAxis: 0
+  AxisSize: 0.65
+  _colliders:
+  - {fileID: 1521198664920005531}
+  HasColliders: 1
+  DrawLineTo: 0
+  ConnectTo: {fileID: 0}
+  Rect: {x: 1, y: 1, z: 1}
+  Center: {x: 0, y: 0, z: 0}
+  FirstSearch: 1
+  CapsuleMesh: {fileID: 0}
+--- !u!136 &1521198664920005531
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263264026620743333}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.35762787
+  m_Height: 0.86
+  m_Direction: 2
+  m_Center: {x: -0.052898318, y: 0, z: 0}
+--- !u!1 &721185315921624937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5703983990798670611}
+  - component: {fileID: 7194911393570687471}
+  - component: {fileID: 5146460407402357956}
+  - component: {fileID: 1804588928975580334}
+  - component: {fileID: 5003852538723823473}
+  - component: {fileID: 1682892958650256419}
+  - component: {fileID: 7240192713875638909}
+  - component: {fileID: 255321019988450337}
+  - component: {fileID: 8230922877075034639}
+  - component: {fileID: 4469878695373085882}
+  - component: {fileID: 3232680088630853958}
+  - component: {fileID: 1683139745555192441}
+  m_Layer: 30
+  m_Name: Axe (SI)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5703983990798670611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721185315921624937}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1546684733375119563}
+  - {fileID: 5357033652579764713}
+  - {fileID: 3561419147740082702}
+  - {fileID: 2568907786773072978}
+  - {fileID: 4864877631405610587}
+  - {fileID: 8348106109694611208}
+  - {fileID: 873018186081746478}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &7194911393570687471
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721185315921624937}
+  serializedVersion: 4
+  m_Mass: 5
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &5146460407402357956
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721185315921624937}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.16, y: 0.06355554, z: 1.2780616}
+  m_Center: {x: 0.016322233, y: 7.3667895e-16, z: 0.3018391}
+--- !u!65 &1804588928975580334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721185315921624937}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.37438452, y: 0.044330485, z: 0.43506706}
+  m_Center: {x: -0.12224829, y: 0, z: 0.7233364}
+--- !u!114 &5003852538723823473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721185315921624937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseColliders: 1
+  gizmoType: 1
+  debugSize: 0.03
+  height: 2
+  DebugColor: {r: 0.27305093, g: 0.52060443, b: 0.9811321, a: 0.6039216}
+  DrawAxis: 0
+  AxisSize: 0.65
+  _colliders:
+  - {fileID: 5146460407402357956}
+  - {fileID: 1804588928975580334}
+  HasColliders: 1
+  DrawLineTo: 0
+  ConnectTo: {fileID: 0}
+  Rect: {x: 1, y: 1, z: 1}
+  Center: {x: 0, y: 0, z: 0}
+  FirstSearch: 1
+  CapsuleMesh: {fileID: 0}
+--- !u!114 &1682892958650256419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721185315921624937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d3327f56e8bf54f87d9bb8ec1d5449, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPick:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  m_autoEquip:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  mirror:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  m_target: {fileID: 0}
+  holster: {fileID: 11400000, guid: 8be06e7fc27c57c4e82d4a5cafd76296, type: 2}
+  Stance: {fileID: 11400000, guid: 5338df2a5c63c6b4a8049349b3eb0171, type: 2}
+  strafe:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  UpdateTargetFromAimer: 1
+  TargetFromInteractor:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  InteractableID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: -1
+    Variable: {fileID: 0}
+  ClearTargetOnUnfocus:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  RuntimeIK: 1
+  ItemType: {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+  CanBeEquippedWith:
+    IDs:
+    - {fileID: 11400000, guid: f7750fb0de4b4984c992a104f83c8374, type: 2}
+    - {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+    - {fileID: 11400000, guid: 3041d759c03ef75429f141e4339fd7bf, type: 2}
+    include: 1
+  EquipPoint: {fileID: 11400000, guid: e07cb5dac4dfc86448f03d27ed3722fe, type: 2}
+  SecondaryEquipPoint: {fileID: 11400000, guid: 392d39d0030fdd746a854d997fb7d3c9,
+    type: 2}
+  SecondaryHolster: {fileID: 11400000, guid: d255c533616b51e45a47b4cd57f1ac7a, type: 2}
+  HolsterColor: {r: 1, g: 0.92, b: 0.16, a: 0.5}
+  EquipColor: {r: 0, g: 1, b: 0, a: 0.5}
+  m_hitLayer:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    Variable: {fileID: 0}
+  triggerInteraction: 1
+  UserOverrideLayer:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  equipDuration:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.3
+    Variable: {fileID: 0}
+  PickDuration:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.3
+    Variable: {fileID: 0}
+  EquipMode: {fileID: 11400000, guid: 25a9ab75d9646144eaa77342296c549c, type: 2}
+  UnequipMode: {fileID: 11400000, guid: 908d4f1fe671c064cbb3045eeb113742, type: 2}
+  PickMode:
+    ID: {fileID: 11400000, guid: c0d938e24e7fe1f4a8f00633ce81a5b1, type: 2}
+    Value: 1
+  DropMode:
+    ID: {fileID: 11400000, guid: c0d938e24e7fe1f4a8f00633ce81a5b1, type: 2}
+    Value: 2
+  m_UI:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: {fileID: 21300000, guid: 9f3c9d573ac18b04fa1d6158294f285c, type: 3}
+    Variable: {fileID: 0}
+  description:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 
+    Variable: {fileID: 0}
+  rb: {fileID: 7194911393570687471}
+  DestroyRbOnPick:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  DisableCollidersOnEquip:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  DisableCollidersOnHolster:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  m_colliders:
+  - {fileID: 1804588928975580334}
+  - {fileID: 5146460407402357956}
+  m_Triggers:
+  - {fileID: 2917462586172648896}
+  - {fileID: 7152698131619174315}
+  actionSets:
+  - name:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: Attack And Block
+      Variable: {fileID: 0}
+    active: 1
+    m_Default: 1
+    m_Ignore: 0
+    AutoActivation: 0
+    AutoActivationOn:
+      conditions: []
+      active: 0
+    AutoActivationOff:
+      conditions: []
+      active: 0
+    actions:
+    - name:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: Block
+        Variable: {fileID: 0}
+      active:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      rate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      updateRate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      interrupSelf:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      restartOnConditions:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      primaryHandOnly:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      fastEquip:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      validOnFastWeapons:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      FreeHands: 0
+      duration:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      priority: 1
+      activation: 0
+      ActionID: {fileID: 11400000, guid: 52a08d8eee4af054a94befa511062f4e, type: 2}
+      ConditionsOnOwner:
+        conditions:
+        - rid: 7038165462196158596
+        active: 1
+      ConditionsOnTarget:
+        conditions: []
+        active: 0
+      processors:
+      - rid: 7347017188935729494
+      - rid: 7347017654502948961
+      - rid: 7038165462196158588
+      masterIndex: 0
+      Trigger: {fileID: 0}
+      OnActionPressed:
+        reactions: []
+      OnActionReleased:
+        reactions: []
+      OnActionStart:
+        reactions: []
+      OnActionExit:
+        reactions: []
+      OnActionFailedOnOwner:
+        reactions: []
+      OnActionFailedOnTarget:
+        reactions: []
+      debug: 0
+    - name:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: Parry
+        Variable: {fileID: 0}
+      active:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      rate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      updateRate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      interrupSelf:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      restartOnConditions:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      primaryHandOnly:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      fastEquip:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      validOnFastWeapons:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      FreeHands: 0
+      duration:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      priority: 1
+      activation: 0
+      ActionID: {fileID: 11400000, guid: 41e90f32dda10b44bb268a7b5ccdf829, type: 2}
+      ConditionsOnOwner:
+        conditions: []
+        active: 0
+      ConditionsOnTarget:
+        conditions: []
+        active: 0
+      processors:
+      - rid: 6642750136373477519
+      - rid: 6642750136373477521
+      - rid: 7038165462196158590
+      masterIndex: 1
+      Trigger: {fileID: 2917462586172648896}
+      OnActionPressed:
+        reactions: []
+      OnActionReleased:
+        reactions: []
+      OnActionStart:
+        reactions: []
+      OnActionExit:
+        reactions: []
+      OnActionFailedOnOwner:
+        reactions: []
+      OnActionFailedOnTarget:
+        reactions: []
+      debug: 0
+    - name:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: Attack
+        Variable: {fileID: 0}
+      active:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      rate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      updateRate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      interrupSelf:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      restartOnConditions:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      primaryHandOnly:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      fastEquip:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 2
+        Variable: {fileID: 0}
+      validOnFastWeapons:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      FreeHands: 0
+      duration:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      priority: 0
+      activation: 0
+      ActionID: {fileID: 11400000, guid: 51c5e06e1e6d85740a0f219cb95f68a3, type: 2}
+      ConditionsOnOwner:
+        conditions: []
+        active: 0
+      ConditionsOnTarget:
+        conditions: []
+        active: 0
+      processors:
+      - rid: 5016934500168630353
+      - rid: 6642750118188023912
+      - rid: 6642750118188023911
+      - rid: 7038165462196158574
+      - rid: 7038165462196158594
+      masterIndex: 0
+      Trigger: {fileID: 2917462586172648896}
+      OnActionPressed:
+        reactions: []
+      OnActionReleased:
+        reactions: []
+      OnActionStart:
+        reactions: []
+      OnActionExit:
+        reactions: []
+      OnActionFailedOnOwner:
+        reactions: []
+      OnActionFailedOnTarget:
+        reactions: []
+      debug: 0
+    - name:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: Execute
+        Variable: {fileID: 0}
+      active:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      rate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0.7
+        Variable: {fileID: 0}
+      updateRate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      interrupSelf:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      restartOnConditions:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      primaryHandOnly:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      fastEquip:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      validOnFastWeapons:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      FreeHands: 0
+      duration:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      priority: 0
+      activation: 0
+      ActionID: {fileID: 11400000, guid: 15c214ed1408c994c8c026cb6f3e6416, type: 2}
+      ConditionsOnOwner:
+        conditions:
+        - rid: 454648139861197133
+        active: 1
+      ConditionsOnTarget:
+        conditions: []
+        active: 1
+      processors:
+      - rid: 454648139861197074
+      - rid: 454648139861197075
+      - rid: 454648139861197077
+      masterIndex: 0
+      Trigger: {fileID: 2917462586172648896}
+      OnActionPressed:
+        reactions: []
+      OnActionReleased:
+        reactions: []
+      OnActionStart:
+        reactions: []
+      OnActionExit:
+        reactions: []
+      OnActionFailedOnOwner:
+        reactions: []
+      OnActionFailedOnTarget:
+        reactions: []
+      debug: 0
+    - name:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: Charge Attack
+        Variable: {fileID: 0}
+      active:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      rate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      updateRate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      interrupSelf:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      restartOnConditions:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      primaryHandOnly:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      fastEquip:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      validOnFastWeapons:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      FreeHands: 0
+      duration:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      priority: 0
+      activation: 0
+      ActionID: {fileID: 11400000, guid: 5bc8c78a9e21d1349ab15be0ca92a3e2, type: 2}
+      ConditionsOnOwner:
+        conditions: []
+        active: 0
+      ConditionsOnTarget:
+        conditions: []
+        active: 0
+      processors:
+      - rid: 454648139861197217
+      - rid: 454648139861197216
+      - rid: 454648139861197218
+      - rid: 7038165462196158592
+      - rid: 7038165575728103551
+      masterIndex: 0
+      Trigger: {fileID: 7152698131619174315}
+      OnActionPressed:
+        reactions: []
+      OnActionReleased:
+        reactions: []
+      OnActionStart:
+        reactions: []
+      OnActionExit:
+        reactions: []
+      OnActionFailedOnOwner:
+        reactions: []
+      OnActionFailedOnTarget:
+        reactions: []
+      debug: 0
+    OnEnterSetReaction:
+      reactions: []
+    OnExitSetReaction:
+      reactions: []
+    OnUnequipReaction:
+      reactions: []
+    OnEquipReaction:
+      reactions: []
+    OnInterruptReaction:
+      reactions: []
+    InterruptStates:
+      IDs: []
+      include: 1
+    InterruptModes:
+      IDs: []
+      include: 1
+    InterruptStances:
+      IDs: []
+      include: 1
+    SetConditions:
+      conditions:
+      - rid: 7038165552852107380
+      active: 1
+    SelectedAction: 0
+    EditorTab1: 0
+    IKProfile: {fileID: 0}
+    IKTargets: []
+  - name:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: Dual Weilding
+      Variable: {fileID: 0}
+    active: 0
+    m_Default: 0
+    m_Ignore: 0
+    AutoActivation: 96
+    AutoActivationOn:
+      conditions:
+      - rid: 4986561632673726599
+      active: 1
+    AutoActivationOff:
+      conditions:
+      - rid: 454648163132244102
+      active: 1
+    actions:
+    - name:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: Dual Attack
+        Variable: {fileID: 0}
+      active:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      rate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      updateRate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      interrupSelf:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      restartOnConditions:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      primaryHandOnly:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      fastEquip:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      validOnFastWeapons:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      FreeHands: 0
+      duration:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      priority: 1
+      activation: 0
+      ActionID: {fileID: 11400000, guid: 51c5e06e1e6d85740a0f219cb95f68a3, type: 2}
+      ConditionsOnOwner:
+        conditions: []
+        active: 1
+      ConditionsOnTarget:
+        conditions: []
+        active: 1
+      processors:
+      - rid: 4986561632673726600
+      - rid: 4986561632673726601
+      - rid: 4986561632673726603
+      - rid: 7038165552852107377
+      masterIndex: 0
+      Trigger: {fileID: 2917462586172648896}
+      OnActionPressed:
+        reactions: []
+      OnActionReleased:
+        reactions: []
+      OnActionStart:
+        reactions: []
+      OnActionExit:
+        reactions: []
+      OnActionFailedOnOwner:
+        reactions: []
+      OnActionFailedOnTarget:
+        reactions: []
+      debug: 0
+    - name:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: Charge Attack
+        Variable: {fileID: 0}
+      active:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      rate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      updateRate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      interrupSelf:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      restartOnConditions:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      primaryHandOnly:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      fastEquip:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 2
+        Variable: {fileID: 0}
+      validOnFastWeapons:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      FreeHands: 0
+      duration:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      priority: 1
+      activation: 0
+      ActionID: {fileID: 11400000, guid: 5bc8c78a9e21d1349ab15be0ca92a3e2, type: 2}
+      ConditionsOnOwner:
+        conditions: []
+        active: 0
+      ConditionsOnTarget:
+        conditions: []
+        active: 0
+      processors:
+      - rid: 454648174342570111
+      - rid: 454648174342570112
+      - rid: 454648174342570113
+      - rid: 7038165552852107375
+      masterIndex: 0
+      Trigger: {fileID: 7152698131619174315}
+      OnActionPressed:
+        reactions: []
+      OnActionReleased:
+        reactions: []
+      OnActionStart:
+        reactions: []
+      OnActionExit:
+        reactions: []
+      OnActionFailedOnOwner:
+        reactions: []
+      OnActionFailedOnTarget:
+        reactions: []
+      debug: 0
+    OnEnterSetReaction:
+      reactions: []
+    OnExitSetReaction:
+      reactions: []
+    OnUnequipReaction:
+      reactions: []
+    OnEquipReaction:
+      reactions: []
+    OnInterruptReaction:
+      reactions: []
+    InterruptStates:
+      IDs: []
+      include: 1
+    InterruptModes:
+      IDs: []
+      include: 1
+    InterruptStances:
+      IDs: []
+      include: 1
+    SetConditions:
+      conditions: []
+      active: 0
+    SelectedAction: 1
+    EditorTab1: 0
+    IKProfile: {fileID: 0}
+    IKTargets: []
+  - name:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: Riding
+      Variable: {fileID: 0}
+    active: 0
+    m_Default: 0
+    m_Ignore: 0
+    AutoActivation: 512
+    AutoActivationOn:
+      conditions:
+      - rid: 454648502449602851
+      active: 1
+    AutoActivationOff:
+      conditions:
+      - rid: 454648502449602852
+      active: 1
+    actions:
+    - name:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: Attack Riding
+        Variable: {fileID: 0}
+      active:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      rate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0.5
+        Variable: {fileID: 0}
+      updateRate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      interrupSelf:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      restartOnConditions:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      primaryHandOnly:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      fastEquip:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      validOnFastWeapons:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      FreeHands: 0
+      duration:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      priority: 1
+      activation: 0
+      ActionID: {fileID: 11400000, guid: 51c5e06e1e6d85740a0f219cb95f68a3, type: 2}
+      ConditionsOnOwner:
+        conditions: []
+        active: 1
+      ConditionsOnTarget:
+        conditions: []
+        active: 1
+      processors:
+      - rid: 454648502449602853
+      - rid: 454648502449602854
+      - rid: 454648502449602855
+      - rid: 454648502449602856
+      - rid: 454648502449602857
+      masterIndex: 0
+      Trigger: {fileID: 2917462586172648896}
+      OnActionPressed:
+        reactions: []
+      OnActionReleased:
+        reactions: []
+      OnActionStart:
+        reactions: []
+      OnActionExit:
+        reactions: []
+      OnActionFailedOnOwner:
+        reactions: []
+      OnActionFailedOnTarget:
+        reactions: []
+      debug: 0
+    OnEnterSetReaction:
+      reactions: []
+    OnExitSetReaction:
+      reactions: []
+    OnUnequipReaction:
+      reactions: []
+    OnEquipReaction:
+      reactions: []
+    OnInterruptReaction:
+      reactions: []
+    InterruptStates:
+      IDs: []
+      include: 1
+    InterruptModes:
+      IDs: []
+      include: 1
+    InterruptStances:
+      IDs: []
+      include: 1
+    SetConditions:
+      conditions: []
+      active: 0
+    SelectedAction: 0
+    EditorTab1: 0
+    IKProfile: {fileID: 0}
+    IKTargets: []
+  - name:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: Choop Wood
+      Variable: {fileID: 0}
+    active: 0
+    m_Default: 0
+    m_Ignore: 0
+    AutoActivation: 8
+    AutoActivationOn:
+      conditions:
+      - rid: 4986561905570611347
+      active: 1
+    AutoActivationOff:
+      conditions:
+      - rid: 4986561905570611348
+      active: 1
+    actions:
+    - name:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: Chop Wood
+        Variable: {fileID: 0}
+      active:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      rate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0.5
+        Variable: {fileID: 0}
+      updateRate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      interrupSelf:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      restartOnConditions:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      primaryHandOnly:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      fastEquip:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      validOnFastWeapons:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      FreeHands: 0
+      duration:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      priority: 1
+      activation: 0
+      ActionID: {fileID: 11400000, guid: 42ed51dbcd7b4294b8adc544b3731b1e, type: 2}
+      ConditionsOnOwner:
+        conditions: []
+        active: 1
+      ConditionsOnTarget:
+        conditions: []
+        active: 1
+      processors:
+      - rid: 4986561905570611349
+      - rid: 4986561905570611350
+      - rid: 4986561905570611351
+      - rid: 7038165482931749099
+      masterIndex: 0
+      Trigger: {fileID: 2917462586172648896}
+      OnActionPressed:
+        reactions: []
+      OnActionReleased:
+        reactions: []
+      OnActionStart:
+        reactions: []
+      OnActionExit:
+        reactions: []
+      OnActionFailedOnOwner:
+        reactions: []
+      OnActionFailedOnTarget:
+        reactions: []
+      debug: 0
+    OnEnterSetReaction:
+      reactions: []
+    OnExitSetReaction:
+      reactions: []
+    OnUnequipReaction:
+      reactions: []
+    OnEquipReaction:
+      reactions: []
+    OnInterruptReaction:
+      reactions: []
+    InterruptStates:
+      IDs: []
+      include: 1
+    InterruptModes:
+      IDs: []
+      include: 1
+    InterruptStances:
+      IDs: []
+      include: 1
+    SetConditions:
+      conditions: []
+      active: 0
+    SelectedAction: 0
+    EditorTab1: 0
+    IKProfile: {fileID: 0}
+    IKTargets: []
+  SelectedActionSetIndex: 0
+  EquipReaction:
+    reactions: []
+  UnequipReaction:
+    reactions: []
+  FocusTags:
+    tags:
+    - {fileID: 11400000, guid: f45a3d7e9fbf2074496de5b9b0ab09b0, type: 2}
+  FocusedByReaction:
+    reactions: []
+  UnFocusedByReaction:
+    reactions: []
+  HolsteredReaction:
+    reactions: []
+  UnHolsteredReaction:
+    reactions: []
+  DisplayMesh: {fileID: -8287839383430266118, guid: 3db10fee0a1262c468001d30230d8577,
+    type: 3}
+  DisplayTransform: {fileID: 1546684733375119563}
+  DisplayScale: {x: 0.8, y: 0.8, z: 0.8}
+  OnEquip:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 255321019988450337}
+        m_TargetAssemblyTypeName: MalbersAnimations.Utilities.MWeaponTrail, MalbersAnimations
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnUnequip:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 255321019988450337}
+        m_TargetAssemblyTypeName: MalbersAnimations.Utilities.MWeaponTrail, MalbersAnimations
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnFocused:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 9b85b9985b117db4e861fc7539d2e225, type: 2}
+        m_TargetAssemblyTypeName: MalbersAnimations.Events.MEvent, MalbersAnimations
+        m_MethodName: SetSender
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4579067080688506551}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnUnfocused:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4579067080688506551}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 9b85b9985b117db4e861fc7539d2e225, type: 2}
+        m_TargetAssemblyTypeName: MalbersAnimations.Events.MEvent, MalbersAnimations
+        m_MethodName: ClearSender
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnHolstered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUnHolstered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAddedToManager:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRemoveFromManager:
+    m_PersistentCalls:
+      m_Calls: []
+  debug: 0
+  DebugColor: {r: 1, g: 0, b: 0, a: 1}
+  Editor_Tabs1: 3
+  Editor_Tabs2: 1
+  Editor_ActionTabs: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 454648139861197074
+      type: {class: ItemProcessorMode, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0
+        mode: {fileID: 11400000, guid: 90fcf4a9c1ead90438962090e2832e42, type: 2}
+        AbilityIndex:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        AbilityStatus: 0
+        Duration:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0.5
+          Variable: {fileID: 0}
+        Charge:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+        Forced: 0
+    - rid: 454648139861197075
+      type: {class: ItemProcessorReaction, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0.5
+        UseTarget: 1
+        reaction:
+          reactions:
+          - rid: 454648139861197076
+    - rid: 454648139861197076
+      type: {class: StateReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        type: 0
+        ID: {fileID: 11400000, guid: adfa24f62d6db4d40a1d837f4ec1a6e9, type: 2}
+        EnterStatus: 14001
+        ExitStatus: 0
+        replace: {fileID: 0}
+        PersistentValue: 0
+    - rid: 454648139861197077
+      type: {class: ItemProcessorAlign, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0
+        Distance: 0
+        AlignTime: 0.15
+        CharacterOffset: 0
+        AlignCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        AlignTarget: 1
+        TargetOffset: 180
+    - rid: 454648139861197133
+      type: {class: C2_AnimalInZone, ns: MalbersAnimations.Conditions, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 0
+        OrAnd: 0
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        ZoneID:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 14001
+          Variable: {fileID: 0}
+    - rid: 454648139861197216
+      type: {class: ItemProcessorCharge, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 2
+        Active: 1
+        executeDelay: 0
+        ChargeTime:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        ChargeAnimParam:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: Charge
+          Variable: {fileID: 0}
+        ChargeStat: {fileID: 11400000, guid: 1a287677e29b1424a824f91093a2a4ab, type: 2}
+        ResetOn: 0
+        ResetOnFailed: 1
+        ShowEvents: 0
+        OnChargeStart:
+          m_PersistentCalls:
+            m_Calls: []
+        OnChargeCompleted:
+          m_PersistentCalls:
+            m_Calls: []
+        OnChargeInterrupted:
+          m_PersistentCalls:
+            m_Calls: []
+        OnChargeReleased:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 454648139861197217
+      type: {class: ItemProcessorMode, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0
+        mode: {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+        AbilityIndex:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 11
+          Variable: {fileID: 0}
+        AbilityStatus: 1
+        Duration:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0.5
+          Variable: {fileID: 0}
+        Charge:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+        Forced: 0
+    - rid: 454648139861197218
+      type: {class: ItemProcessorDamagerStat, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: -1
+          Variable: {fileID: 0}
+        damage:
+          ID: {fileID: 11400000, guid: d6b3e636d59a6c547a2cad40b69f4432, type: 2}
+          modify: 3
+          from: 1
+          MinValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 10
+            Variable: {fileID: 0}
+          MaxValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 10
+            Variable: {fileID: 0}
+          enable:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 1
+            Variable: {fileID: 0}
+          Base: {fileID: 0}
+          part: 0
+          SourceStats: {fileID: 7240192713875638909}
+          sources:
+          - op: 0
+            from: 1
+            Stat: {fileID: 11400000, guid: 5ed6bad8cf6f1e54bb1af25b3a3608cc, type: 2}
+            part: 0
+            MinValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 0
+              Variable: {fileID: 0}
+            MaxValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 0
+              Variable: {fileID: 0}
+          - op: 0
+            from: 0
+            Stat: {fileID: 11400000, guid: 1a287677e29b1424a824f91093a2a4ab, type: 2}
+            part: 0
+            MinValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 30
+              Variable: {fileID: 0}
+            MaxValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 30
+              Variable: {fileID: 0}
+          - op: 2
+            from: 1
+            Stat: {fileID: 11400000, guid: 1a287677e29b1424a824f91093a2a4ab, type: 2}
+            part: 0
+            MinValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 0
+              Variable: {fileID: 0}
+            MaxValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 0
+              Variable: {fileID: 0}
+    - rid: 454648163132244102
+      type: {class: C2_SI_DualWielding, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 1
+        OrAnd: 0
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        firstHand:
+          items: []
+        secondHand:
+          items: []
+    - rid: 454648174342570111
+      type: {class: ItemProcessorMode, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0
+        mode: {fileID: 11400000, guid: 4a4bf32a6153f854083da7ae33ce4db5, type: 2}
+        AbilityIndex:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 4
+          Variable: {fileID: 0}
+        AbilityStatus: 1
+        Duration:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        Charge:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        Forced: 0
+    - rid: 454648174342570112
+      type: {class: ItemProcessorCharge, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 2
+        Active: 1
+        executeDelay: 0
+        ChargeTime:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        ChargeAnimParam:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: Charge
+          Variable: {fileID: 0}
+        ChargeStat: {fileID: 11400000, guid: 1a287677e29b1424a824f91093a2a4ab, type: 2}
+        ResetOn: 0
+        ResetOnFailed: 1
+        ShowEvents: 0
+        OnChargeStart:
+          m_PersistentCalls:
+            m_Calls: []
+        OnChargeCompleted:
+          m_PersistentCalls:
+            m_Calls: []
+        OnChargeInterrupted:
+          m_PersistentCalls:
+            m_Calls: []
+        OnChargeReleased:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 454648174342570113
+      type: {class: ItemProcessorDamagerStat, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: -1
+          Variable: {fileID: 0}
+        damage:
+          ID: {fileID: 11400000, guid: d6b3e636d59a6c547a2cad40b69f4432, type: 2}
+          modify: 3
+          from: 1
+          MinValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 10
+            Variable: {fileID: 0}
+          MaxValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 10
+            Variable: {fileID: 0}
+          enable:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 1
+            Variable: {fileID: 0}
+          Base: {fileID: 0}
+          part: 0
+          SourceStats: {fileID: 7240192713875638909}
+          sources:
+          - op: 0
+            from: 1
+            Stat: {fileID: 11400000, guid: 5ed6bad8cf6f1e54bb1af25b3a3608cc, type: 2}
+            part: 0
+            MinValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 0
+              Variable: {fileID: 0}
+            MaxValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 0
+              Variable: {fileID: 0}
+          - op: 0
+            from: 0
+            Stat: {fileID: 11400000, guid: 1a287677e29b1424a824f91093a2a4ab, type: 2}
+            part: 0
+            MinValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 30
+              Variable: {fileID: 0}
+            MaxValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 30
+              Variable: {fileID: 0}
+          - op: 2
+            from: 1
+            Stat: {fileID: 11400000, guid: 1a287677e29b1424a824f91093a2a4ab, type: 2}
+            part: 0
+            MinValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 0
+              Variable: {fileID: 0}
+            MaxValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 0
+              Variable: {fileID: 0}
+    - rid: 454648502449602851
+      type: {class: C2_Rider, ns: MalbersAnimations.Conditions, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 0
+        OrAnd: 0
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        state: 0
+    - rid: 454648502449602852
+      type: {class: C2_Rider, ns: MalbersAnimations.Conditions, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 1
+        OrAnd: 0
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        state: 0
+    - rid: 454648502449602853
+      type: {class: ItemProcessorMode, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0
+        mode: {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+        AbilityIndex:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 101
+          Variable: {fileID: 0}
+        AbilityStatus: 0
+        Duration:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0.5
+          Variable: {fileID: 0}
+        Charge:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+        Forced: 1
+    - rid: 454648502449602854
+      type: {class: ItemProcessorDamagerStat, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: -1
+          Variable: {fileID: 0}
+        damage:
+          ID: {fileID: 11400000, guid: d6b3e636d59a6c547a2cad40b69f4432, type: 2}
+          modify: 3
+          from: 1
+          MinValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 10
+            Variable: {fileID: 0}
+          MaxValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 10
+            Variable: {fileID: 0}
+          enable:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 1
+            Variable: {fileID: 0}
+          Base: {fileID: 0}
+          part: 0
+          SourceStats: {fileID: 7240192713875638909}
+          sources:
+          - op: 0
+            from: 1
+            Stat: {fileID: 11400000, guid: 5ed6bad8cf6f1e54bb1af25b3a3608cc, type: 2}
+            part: 0
+            MinValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 0
+              Variable: {fileID: 0}
+            MaxValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 0
+              Variable: {fileID: 0}
+    - rid: 454648502449602855
+      type: {class: ItemProcessorDamagerCritical, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        criticalChance:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        criticalMult:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 2
+          Variable: {fileID: 0}
+    - rid: 454648502449602856
+      type: {class: ItemProcessorSurfaceEffect, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        HitEffect: {fileID: 11400000, guid: 52be97e3602adfa449f7dc5cda82984b, type: 2}
+        duration: 0.5
+        OnHit:
+          reactions: []
+    - rid: 454648502449602857
+      type: {class: ItemProcessorSound, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 32
+        Active: 1
+        executeDelay: 0
+        audio: {fileID: 8230922877075034639}
+        resource: {fileID: 8300000, guid: 68c1c6ee9ddcd0341a672e9f7ecbbef0, type: 3}
+        volume:
+          minValue: 1
+          maxValue: 1
+        pitch:
+          minValue: 1
+          maxValue: 1
+        spatialBlend: 0
+        loop: 0
+    - rid: 4986561632673726599
+      type: {class: C2_SI_DualWielding, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 0
+        OrAnd: 0
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        firstHand:
+          items:
+          - {fileID: 11400000, guid: 3041d759c03ef75429f141e4339fd7bf, type: 2}
+          - {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+        secondHand:
+          items:
+          - {fileID: 11400000, guid: 3041d759c03ef75429f141e4339fd7bf, type: 2}
+          - {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+    - rid: 4986561632673726600
+      type: {class: ItemProcessorCombo, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0
+        comboType: 1
+        comboSet: {fileID: 11400000, guid: 502bc5d3439c628438f3158c57b82b8b, type: 2}
+        Mode: {fileID: 0}
+        Branch:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+    - rid: 4986561632673726601
+      type: {class: ItemProcessorDamagerStat, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+        damage:
+          ID: {fileID: 11400000, guid: d6b3e636d59a6c547a2cad40b69f4432, type: 2}
+          modify: 3
+          from: 1
+          MinValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 20
+            Variable: {fileID: 0}
+          MaxValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 20
+            Variable: {fileID: 0}
+          enable:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 1
+            Variable: {fileID: 0}
+          Base: {fileID: 0}
+          part: 0
+          SourceStats: {fileID: 7240192713875638909}
+          sources:
+          - op: 0
+            from: 1
+            Stat: {fileID: 11400000, guid: 5ed6bad8cf6f1e54bb1af25b3a3608cc, type: 2}
+            part: 3
+            MinValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 0
+              Variable: {fileID: 0}
+            MaxValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 0
+              Variable: {fileID: 0}
+    - rid: 4986561632673726603
+      type: {class: ItemProcessorDamagerCritical, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        criticalChance:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        criticalMult:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 2
+          Variable: {fileID: 0}
+    - rid: 4986561905570611347
+      type: {class: C2_FocusedInteractor, ns: MalbersAnimations.Conditions, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 0
+        OrAnd: 0
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        InteractableID:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 55
+          Variable: {fileID: 0}
+    - rid: 4986561905570611348
+      type: {class: C2_FocusedInteractor, ns: MalbersAnimations.Conditions, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 1
+        OrAnd: 0
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        InteractableID:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 55
+          Variable: {fileID: 0}
+    - rid: 4986561905570611349
+      type: {class: ItemProcessorMode, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0
+        mode: {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+        AbilityIndex:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 12
+          Variable: {fileID: 0}
+        AbilityStatus: 0
+        Duration:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0.5
+          Variable: {fileID: 0}
+        Charge:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+        Forced: 1
+    - rid: 4986561905570611350
+      type: {class: ItemProcessorInteractTrigger, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+    - rid: 4986561905570611351
+      type: {class: ItemProcessorInteractor, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0
+        StopOnInteract: 1
+    - rid: 5016934500168630353
+      type: {class: ItemProcessorCombo, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0
+        comboType: 1
+        comboSet: {fileID: 11400000, guid: 438ae3cad48151142908e9a37b6a150c, type: 2}
+        Mode: {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+        Branch:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+    - rid: 6642750118188023911
+      type: {class: ItemProcessorDamagerCritical, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        criticalChance:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        criticalMult:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 2
+          Variable: {fileID: 0}
+    - rid: 6642750118188023912
+      type: {class: ItemProcessorDamagerStat, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: -1
+          Variable: {fileID: 0}
+        damage:
+          ID: {fileID: 11400000, guid: d6b3e636d59a6c547a2cad40b69f4432, type: 2}
+          modify: 3
+          from: 1
+          MinValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 20
+            Variable: {fileID: 0}
+          MaxValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 20
+            Variable: {fileID: 0}
+          enable:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 1
+            Variable: {fileID: 0}
+          Base: {fileID: 0}
+          part: 0
+          SourceStats: {fileID: 7240192713875638909}
+          sources:
+          - op: 0
+            from: 1
+            Stat: {fileID: 11400000, guid: 5ed6bad8cf6f1e54bb1af25b3a3608cc, type: 2}
+            part: 3
+            MinValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 0
+              Variable: {fileID: 0}
+            MaxValue:
+              UseConstant: 1
+              UseMember: 0
+              Member:
+                target: {fileID: 0}
+                memberName: 
+                memberKind: 0
+                args: []
+                paramSignature: 
+                invert: 0
+              ConstantValue: 0
+              Variable: {fileID: 0}
+    - rid: 6642750136373477519
+      type: {class: ItemProcessorMode, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0
+        mode: {fileID: 11400000, guid: b56a34eb0c2a53742960f0fce2e661dd, type: 2}
+        AbilityIndex:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 2
+          Variable: {fileID: 0}
+        AbilityStatus: 0
+        Duration:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0.5
+          Variable: {fileID: 0}
+        Charge:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 3
+          Variable: {fileID: 0}
+        Forced: 1
+    - rid: 6642750136373477521
+      type: {class: ItemProcessorHitReaction, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        HitReaction:
+          reactions:
+          - rid: 6642750136373477522
+    - rid: 6642750136373477522
+      type: {class: ModeReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        type: 8
+        ID: {fileID: 11400000, guid: 4721f79850ae1be43aec2bccdea79fdc, type: 2}
+        abilityStatus: 0
+        Ability:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        HasCoolDown: 1
+        coolDown: 0
+        AbilityTime: 3
+        ModePower: 0
+    - rid: 7038165462196158574
+      type: {class: ItemProcessorSurfaceEffect, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        HitEffect: {fileID: 11400000, guid: 52be97e3602adfa449f7dc5cda82984b, type: 2}
+        duration: 0.5
+        OnHit:
+          reactions:
+          - rid: 7038165462196158575
+    - rid: 7038165462196158575
+      type: {class: MemberValuesSetReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 1
+        localTarget: {fileID: 3232680088630853958}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        Member:
+          targetType:
+            assemblyQualifiedName: Unity.Cinemachine.CinemachineImpulseSource, Unity.Cinemachine,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          memberName: GenerateImpulse
+          memberKind: 3
+          arguments: []
+    - rid: 7038165462196158588
+      type: {class: ItemProcessorSurfaceEffect, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        HitEffect: {fileID: 11400000, guid: 52be97e3602adfa449f7dc5cda82984b, type: 2}
+        duration: 0.5
+        OnHit:
+          reactions:
+          - rid: 7038165462196158589
+    - rid: 7038165462196158589
+      type: {class: MemberValuesSetReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 1
+        localTarget: {fileID: 3232680088630853958}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        Member:
+          targetType:
+            assemblyQualifiedName: Unity.Cinemachine.CinemachineImpulseSource, Unity.Cinemachine,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          memberName: GenerateImpulse
+          memberKind: 3
+          arguments: []
+    - rid: 7038165462196158590
+      type: {class: ItemProcessorSurfaceEffect, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        HitEffect: {fileID: 11400000, guid: 52be97e3602adfa449f7dc5cda82984b, type: 2}
+        duration: 0.5
+        OnHit:
+          reactions:
+          - rid: 7038165462196158591
+    - rid: 7038165462196158591
+      type: {class: MemberValuesSetReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 1
+        localTarget: {fileID: 3232680088630853958}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        Member:
+          targetType:
+            assemblyQualifiedName: Unity.Cinemachine.CinemachineImpulseSource, Unity.Cinemachine,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          memberName: GenerateImpulse
+          memberKind: 3
+          arguments: []
+    - rid: 7038165462196158592
+      type: {class: ItemProcessorSurfaceEffect, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        HitEffect: {fileID: 11400000, guid: 52be97e3602adfa449f7dc5cda82984b, type: 2}
+        duration: 0.5
+        OnHit:
+          reactions:
+          - rid: 7038165462196158593
+    - rid: 7038165462196158593
+      type: {class: MemberValuesSetReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 1
+        localTarget: {fileID: 3232680088630853958}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        Member:
+          targetType:
+            assemblyQualifiedName: Unity.Cinemachine.CinemachineImpulseSource, Unity.Cinemachine,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          memberName: GenerateImpulse
+          memberKind: 3
+          arguments: []
+    - rid: 7038165462196158594
+      type: {class: ItemProcessorDamagerPhysics, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: -1
+          Variable: {fileID: 0}
+        minForce:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1000
+          Variable: {fileID: 0}
+        maxForce:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1000
+          Variable: {fileID: 0}
+        forceMode: 0
+        attackDirection: 1
+        ignoreKinematic: 1
+    - rid: 7038165462196158596
+      type: {class: C2_SI_EquipUnequip, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 1
+        OrAnd: 0
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        items:
+          items:
+          - {fileID: 11400000, guid: f7750fb0de4b4984c992a104f83c8374, type: 2}
+        checkIf: 0
+    - rid: 7038165482931749099
+      type: {class: ItemProcessorSurfaceEffect, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        HitEffect: {fileID: 11400000, guid: 52be97e3602adfa449f7dc5cda82984b, type: 2}
+        duration: 0.5
+        OnHit:
+          reactions:
+          - rid: 7038165482931749100
+    - rid: 7038165482931749100
+      type: {class: MemberValuesSetReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 1
+        localTarget: {fileID: 3232680088630853958}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        Member:
+          targetType:
+            assemblyQualifiedName: Unity.Cinemachine.CinemachineImpulseSource, Unity.Cinemachine,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          memberName: GenerateImpulse
+          memberKind: 3
+          arguments: []
+    - rid: 7038165552852107375
+      type: {class: ItemProcessorSurfaceEffect, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        HitEffect: {fileID: 11400000, guid: 52be97e3602adfa449f7dc5cda82984b, type: 2}
+        duration: 0.5
+        OnHit:
+          reactions:
+          - rid: 7038165552852107376
+    - rid: 7038165552852107376
+      type: {class: MemberValuesSetReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 1
+        localTarget: {fileID: 3232680088630853958}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        Member:
+          targetType:
+            assemblyQualifiedName: Unity.Cinemachine.CinemachineImpulseSource, Unity.Cinemachine,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          memberName: GenerateImpulse
+          memberKind: 3
+          arguments: []
+    - rid: 7038165552852107377
+      type: {class: ItemProcessorSurfaceEffect, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        HitEffect: {fileID: 11400000, guid: 52be97e3602adfa449f7dc5cda82984b, type: 2}
+        duration: 0.5
+        OnHit:
+          reactions:
+          - rid: 7038165552852107378
+    - rid: 7038165552852107378
+      type: {class: MemberValuesSetReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 1
+        localTarget: {fileID: 3232680088630853958}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        Member:
+          targetType:
+            assemblyQualifiedName: Unity.Cinemachine.CinemachineImpulseSource, Unity.Cinemachine,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          memberName: GenerateImpulse
+          memberKind: 3
+          arguments: []
+    - rid: 7038165552852107380
+      type: {class: C2_AnimalMode, ns: MalbersAnimations.Conditions, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 1
+        OrAnd: 0
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        Condition: 1
+        Value: {fileID: 0}
+        AbilityName:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 
+          Variable: {fileID: 0}
+        AbilityIndex:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+        modes:
+          items:
+          - {fileID: 11400000, guid: 7888596ce3530b145bc15622fac8a6c4, type: 2}
+    - rid: 7038165575728103551
+      type: {class: ItemProcessorTargetDamageProfile, ns: MalbersAnimations.Items,
+        asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: -1
+          Variable: {fileID: 0}
+        source: 0
+        profileName:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: Guard Break
+          Variable: {fileID: 0}
+        localProfile:
+          name: Guard Break
+          surface: {fileID: 0}
+          multiplier:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 1
+            Variable: {fileID: 0}
+          AlignToDamage:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 1
+            Variable: {fileID: 0}
+          ignoreDamagerReaction:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 0
+            Variable: {fileID: 0}
+          damageReaction:
+            reactions: []
+          criticalReaction:
+            reactions: []
+          damagerReaction:
+            reactions: []
+          elements: []
+          canReceiveDamage:
+            conditions: []
+            active: 1
+          Events: 0
+          OnProfileEnter:
+            m_PersistentCalls:
+              m_Calls: []
+          OnProfileExit:
+            m_PersistentCalls:
+              m_Calls: []
+        ProfileVar: {fileID: 0}
+        scope: 0
+        onlyWhenNotDefault:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+    - rid: 7347017188935729494
+      type: {class: ItemProcessorMode, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0
+        mode: {fileID: 11400000, guid: 715e62083a9bb2e42bb80fef5712fd35, type: 2}
+        AbilityIndex:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 2
+          Variable: {fileID: 0}
+        AbilityStatus: 1
+        Duration:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0.5
+          Variable: {fileID: 0}
+        Charge:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+        Forced: 0
+    - rid: 7347017654502948961
+      type: {class: ItemProcessorDamageable, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0
+        useScriptable: 0
+        ProfileVar: {fileID: 0}
+        Profile:
+          name: Block with Axe
+          surface: {fileID: 11400000, guid: 086d5b5b568527d418eb79345bf9ac15, type: 2}
+          multiplier:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 0
+            Variable: {fileID: 0}
+          AlignToDamage:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 1
+            Variable: {fileID: 0}
+          ignoreDamagerReaction:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 0
+            Variable: {fileID: 0}
+          damageReaction:
+            reactions:
+            - rid: 7347017678823096420
+          criticalReaction:
+            reactions:
+            - rid: 7347017678823096421
+          damagerReaction:
+            reactions: []
+          elements: []
+          canReceiveDamage:
+            conditions: []
+            active: 0
+          Events: 0
+          OnProfileEnter:
+            m_PersistentCalls:
+              m_Calls: []
+          OnProfileExit:
+            m_PersistentCalls:
+              m_Calls: []
+        Restore: 1
+    - rid: 7347017678823096420
+      type: {class: ModeReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        type: 8
+        ID: {fileID: 11400000, guid: dc411047be38d924fbfc67128f6957f2, type: 2}
+        abilityStatus: 0
+        Ability:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 10
+          Variable: {fileID: 0}
+        HasCoolDown: 1
+        coolDown: 0
+        AbilityTime: 3
+        ModePower: 0
+    - rid: 7347017678823096421
+      type: {class: ModeReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        type: 0
+        ID: {fileID: 11400000, guid: 4721f79850ae1be43aec2bccdea79fdc, type: 2}
+        abilityStatus: 0
+        Ability:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        HasCoolDown: 1
+        coolDown: 0
+        AbilityTime: 3
+        ModePower: 0
+--- !u!114 &7240192713875638909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721185315921624937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6db78c48b0b6342937f21d4681fba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Selected_StatIndex: 0
+  stats:
+  - active: 1
+    ID: {fileID: 11400000, guid: 5ed6bad8cf6f1e54bb1af25b3a3608cc, type: 2}
+    value:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 20
+      Variable: {fileID: 0}
+    maxValue:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 25
+      Variable: {fileID: 0}
+    minValue:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 20
+      Variable: {fileID: 0}
+    DisableOnEmpty:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    Round:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: -1
+      Variable: {fileID: 0}
+    multiplier:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+    regenerate:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    degenerate:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    can_Regenerate:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    can_Degenerate:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    InvokeEventsOnEnable:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+    RegenRate:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    RegenWaitTime:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    DegenWaitTime:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    DegenRate:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    ImmuneTime:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    immune:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    resetOnEnable: 0
+    parentValue: 1
+    parentMax: 0
+    parentMultiplier: 0
+    isPercent: 1
+    debug: 0
+    OnStatFull:
+      m_PersistentCalls:
+        m_Calls: []
+    OnStatEmpty:
+      m_PersistentCalls:
+        m_Calls: []
+    OnStat:
+      m_PersistentCalls:
+        m_Calls: []
+    Below: 0
+    Above: 0
+    OnStatBelow:
+      m_PersistentCalls:
+        m_Calls: []
+    OnStatAbove:
+      m_PersistentCalls:
+        m_Calls: []
+    OnValueChangeNormalized:
+      m_PersistentCalls:
+        m_Calls: []
+    OnValueChange:
+      m_PersistentCalls:
+        m_Calls: []
+    OnMaxValueChange:
+      m_PersistentCalls:
+        m_Calls: []
+    OnMinValueChange:
+      m_PersistentCalls:
+        m_Calls: []
+    OnDegenerate:
+      m_PersistentCalls:
+        m_Calls: []
+    OnRegenerate:
+      m_PersistentCalls:
+        m_Calls: []
+    OnActive:
+      m_PersistentCalls:
+        m_Calls: []
+    EditorTabs: 0
+  - active: 1
+    ID: {fileID: 11400000, guid: 1a287677e29b1424a824f91093a2a4ab, type: 2}
+    value:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+    maxValue:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 2
+      Variable: {fileID: 0}
+    minValue:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+    DisableOnEmpty:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    Round:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: -1
+      Variable: {fileID: 0}
+    multiplier:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+    regenerate:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    degenerate:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    can_Regenerate:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    can_Degenerate:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    InvokeEventsOnEnable:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+    RegenRate:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    RegenWaitTime:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    DegenWaitTime:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    DegenRate:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    ImmuneTime:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    immune:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    resetOnEnable: 0
+    parentValue: 0
+    parentMax: 0
+    parentMultiplier: 0
+    isPercent: 1
+    debug: 0
+    OnStatFull:
+      m_PersistentCalls:
+        m_Calls: []
+    OnStatEmpty:
+      m_PersistentCalls:
+        m_Calls: []
+    OnStat:
+      m_PersistentCalls:
+        m_Calls: []
+    Below: 0
+    Above: 0
+    OnStatBelow:
+      m_PersistentCalls:
+        m_Calls: []
+    OnStatAbove:
+      m_PersistentCalls:
+        m_Calls: []
+    OnValueChangeNormalized:
+      m_PersistentCalls:
+        m_Calls: []
+    OnValueChange:
+      m_PersistentCalls:
+        m_Calls: []
+    OnMaxValueChange:
+      m_PersistentCalls:
+        m_Calls: []
+    OnMinValueChange:
+      m_PersistentCalls:
+        m_Calls: []
+    OnDegenerate:
+      m_PersistentCalls:
+        m_Calls: []
+    OnRegenerate:
+      m_PersistentCalls:
+        m_Calls: []
+    OnActive:
+      m_PersistentCalls:
+        m_Calls: []
+    EditorTabs: 1
+--- !u!114 &255321019988450337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721185315921624937}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8931647a38efe134ba2ede3f2c000f93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tip: {fileID: 8348106109694611208}
+  Base: {fileID: 873018186081746478}
+  Profiles:
+  - {fileID: 11400000, guid: 3325eff8cc7f9964da674c9162e0043c, type: 2}
+  - {fileID: 11400000, guid: 3325eff8cc7f9964da674c9162e0043c, type: 2}
+  legacyProfile: {fileID: 0}
+  Index: 1
+  OnTrailStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTrailEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  debug: 0
+  DebugColor: {r: 0.3, g: 0.8, b: 1, a: 0.75}
+--- !u!82 &8230922877075034639
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721185315921624937}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &4469878695373085882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721185315921624937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e781cdad4f49ae4e9156727711ebf8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Index:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 100
+    Variable: {fileID: 0}
+  m_EventSound:
+  - name: Swing
+    volume: 1
+    pitch: 1
+    active: 1
+    interval: 0
+    source: {fileID: 0}
+    Clips:
+    - {fileID: 6418180475301049370, guid: f056bd8f6f26ec14bb2539249b729a79, type: 2}
+  _audioSource: {fileID: 8230922877075034639}
+  debug: 0
+--- !u!114 &3232680088630853958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721185315921624937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpulseDefinition:
+    ImpulseChannel: 1
+    ImpulseShape: 2
+    CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ImpulseDuration: 0.2
+    ImpulseType: 0
+    DissipationRate: 0.25
+    RawSignal: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    RepeatMode: 0
+    Randomize: 1
+    TimeEnvelope:
+      AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      AttackTime: 0
+      SustainTime: 0.2
+      DecayTime: 0.7
+      ScaleWithImpact: 1
+      HoldForever: 0
+    ImpactRadius: 100
+    DirectionMode: 0
+    DissipationMode: 2
+    DissipationDistance: 100
+    PropagationSpeed: 343
+  DefaultVelocity: {x: 0, y: 0.1, z: 0}
+--- !u!114 &1683139745555192441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721185315921624937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20201266b5fdc6c4ca0fa6ce10d048c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - {fileID: 11400000, guid: 1d7dde8a7e5f26a41942f9435c1b7055, type: 2}
+--- !u!1 &895678313897134645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1546684733375119563}
+  - component: {fileID: 8971096826015288592}
+  - component: {fileID: 7709850262812293179}
+  m_Layer: 30
+  m_Name: Mesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1546684733375119563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895678313897134645}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 0.0069999695, y: 0, z: -0.02500001}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5703983990798670611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8971096826015288592
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895678313897134645}
+  m_Mesh: {fileID: -8287839383430266118, guid: 3db10fee0a1262c468001d30230d8577, type: 3}
+--- !u!23 &7709850262812293179
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895678313897134645}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 84146ccda7f89b24b8349e8d06e85451, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1272212828275963632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 873018186081746478}
+  m_Layer: 0
+  m_Name: Trail_Base
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &873018186081746478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272212828275963632}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.39590216}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5703983990798670611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3167885973973676513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5357033652579764713}
+  - component: {fileID: 8647272021175616846}
+  m_Layer: 30
+  m_Name: Second Hand IK
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5357033652579764713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3167885973973676513}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.011, y: 0.002, z: -0.11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5703983990798670611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8647272021175616846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3167885973973676513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseColliders: 0
+  gizmoType: 0
+  debugSize: 0.02
+  height: 2
+  DebugColor: {r: 0, g: 1, b: 0.06844115, a: 1}
+  DrawAxis: 0
+  AxisSize: 0.65
+  _colliders: []
+  HasColliders: 0
+  DrawLineTo: 0
+  ConnectTo: {fileID: 0}
+  Rect: {x: 1, y: 1, z: 1}
+  Center: {x: 0, y: 0, z: 0}
+  FirstSearch: 1
+  CapsuleMesh: {fileID: 0}
+--- !u!1 &6773445264366806434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8348106109694611208}
+  m_Layer: 0
+  m_Name: Trail_Tip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8348106109694611208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6773445264366806434}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.9301202}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5703983990798670611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &6039926885329599471
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5703983990798670611}
+    m_Modifications:
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808745598944374104, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_Name
+      value: OnFocused
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181817740155613070, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: onEnable.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: Axe
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2, type: 3}
+--- !u!1 &4579067080688506551 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7808745598944374104, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 6039926885329599471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4864877631405610587 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 6039926885329599471}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b3c7d94e2f4a08b56cd1e7f0392c4d, type: 3}
+  m_Name: 'Weapon IK Profiles [Default]'
+  m_EditorClassIdentifier: 
+  profiles:
+  - name: Bow
+    Weapon: {fileID: 11400000, guid: 011ef3104a8cb334ca00baaf88478ebd, type: 2}
+    Right: {fileID: 11400000, guid: d9e6144658a1ef14f93572e3e86b5247, type: 2}
+    Left: {fileID: 11400000, guid: 2fafa6d94671be94da5374cbdce5ac7d, type: 2}
+  - name: Rifle
+    Weapon: {fileID: 11400000, guid: e359152068b217a4faa2410144e91b19, type: 2}
+    Right: {fileID: 11400000, guid: 1632b53a2effe9c4abd7e61ee4532627, type: 2}
+    Left: {fileID: 11400000, guid: ca9afe6a826551547a47c9df69513498, type: 2}
+  - name: Pistol
+    Weapon: {fileID: 11400000, guid: 43666c8e1a066754ea91031d4303549a, type: 2}
+    Right: {fileID: 11400000, guid: be9ae408e509c7247a028a9a8020541b, type: 2}
+    Left: {fileID: 11400000, guid: 844093fc41a273a409092fca8a3d57aa, type: 2}
+  - name: Throwable
+    Weapon: {fileID: 11400000, guid: e9eaa24ae7382eb4f97d3484ea3e6e57, type: 2}
+    Right: {fileID: 11400000, guid: 4fd94c1920c197849b8938c181d53a5c, type: 2}
+    Left: {fileID: 11400000, guid: 0cfd94105fdfc3b4cb7f4da50daecb04, type: 2}

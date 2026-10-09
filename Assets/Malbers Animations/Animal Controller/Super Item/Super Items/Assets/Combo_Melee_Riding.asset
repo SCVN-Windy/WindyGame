@@ -1,0 +1,218 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a9804e9ad9c75e44bceb770dcc1e2d4, type: 3}
+  m_Name: Combo_Melee_Riding
+  m_EditorClassIdentifier: 
+  Mode: {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+  combos:
+  - active: 1
+    Mode: {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+    Name: Melee Riding
+    CachedMode:
+      SelectedAbilityIndexEditor: 0
+      ActiveAbilityConditions: []
+      active: 1
+      TemporalActivation: 1
+      ignoreLowerModes: 0
+      forceIgnorePriority: 1
+      hasCoolDown: 0
+      Input: 
+      ID: {fileID: 0}
+      modifier: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      Abilities: []
+      m_AbilityIndex:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: -99
+        Variable: {fileID: 0}
+      DefaultIndex:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      OnAbilityIndex:
+        m_PersistentCalls:
+          m_Calls: []
+      ResetToDefault: 0
+      allowRotation: 0
+      allowMovement: 0
+      OnEnterMode:
+        m_PersistentCalls:
+          m_Calls: []
+      OnExitMode:
+        m_PersistentCalls:
+          m_Calls: []
+      OnModeEnabled:
+        m_PersistentCalls:
+          m_Calls: []
+      OnModeDisabled:
+        m_PersistentCalls:
+          m_Calls: []
+      OnEnterReaction:
+        reactions: []
+      OnExitReaction:
+        reactions: []
+      OnEnabledReaction:
+        reactions: []
+      OnDisabledReaction:
+        reactions: []
+      EnterConditions:
+        conditions: []
+        active: 0
+      InterruptConditions:
+        conditions: []
+        active: 0
+      ExitConditions:
+        conditions: []
+        active: 0
+      m_Source: {fileID: 0}
+      ActivationTime: 0
+    CoolDown:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    states: []
+    States:
+      IDs: []
+      include: 1
+    DisableOnFinish:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    DisableOnInterrupt:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    EnableOn:
+      IDs: []
+      include: 1
+    finishTime: 0
+    Sequence:
+    - Activation:
+        minValue: 0
+        maxValue: 0
+      ActivationTime: 0.5
+      PreviewsAbility: 0
+      previewAbilityName: Combo Starter
+      Ability: -101
+      nextAbilityName: Riding Attack Right Forward Inv
+      Branch: 0
+      Finisher: 0
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.4
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: -101
+      previewAbilityName: Riding Attack Right Forward Inv
+      Ability: -102
+      nextAbilityName: Riding Attack Left Backward Inv
+      Branch: 0
+      Finisher: 1
+      Restarter: 1
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.4
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: 0
+      previewAbilityName: Riding Attack Right Forward Inv
+      Ability: 101
+      nextAbilityName: Riding Attack Left Backward Inv
+      Branch: 1
+      Finisher: 0
+      Restarter: 1
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.4
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: 101
+      previewAbilityName: Riding Attack Right Forward Inv
+      Ability: 102
+      nextAbilityName: Riding Attack Left Backward Inv
+      Branch: 1
+      Finisher: 1
+      Restarter: 1
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    OnComboFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    OnComboInterrupted:
+      m_PersistentCalls:
+        m_Calls: []
+  references:
+    version: 2
+    RefIds: []

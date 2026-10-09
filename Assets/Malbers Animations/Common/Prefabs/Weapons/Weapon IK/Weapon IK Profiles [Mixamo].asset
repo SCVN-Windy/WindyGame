@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b3c7d94e2f4a08b56cd1e7f0392c4d, type: 3}
+  m_Name: Weapon IK Profiles [Mixamo]
+  m_EditorClassIdentifier:
+  profiles:
+  - name: Bow
+    Weapon: {fileID: 11400000, guid: 011ef3104a8cb334ca00baaf88478ebd, type: 2}
+    Right: {fileID: 0}
+    Left: {fileID: 11400000, guid: f07edfdf9f335714d8ece74b27ba512f, type: 2}
+  - name: Rifle
+    Weapon: {fileID: 11400000, guid: e359152068b217a4faa2410144e91b19, type: 2}
+    Right: {fileID: 11400000, guid: ca9afe6a826551547a47c9df69513498, type: 2}
+    Left: {fileID: 0}
+  - name: Pistol
+    Weapon: {fileID: 11400000, guid: 43666c8e1a066754ea91031d4303549a, type: 2}
+    Right: {fileID: 11400000, guid: be9ae408e509c7247a028a9a8020541b, type: 2}
+    Left: {fileID: 0}

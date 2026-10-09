@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e58c3d110923144595e4bf76694a0fe, type: 3}
+  m_Name: Block Profile Melee
+  m_EditorClassIdentifier: 
+  value:
+    name: Block
+    surface: {fileID: 11400000, guid: b9a234bf44c728046bdef6636bc8c05d, type: 2}
+    multiplier:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    AlignToDamage:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+    ignoreDamagerReaction:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+    damageReaction:
+      reactions:
+      - rid: 6642750250407952484
+    criticalReaction:
+      reactions:
+      - rid: 7038165620217610350
+    damagerReaction:
+      reactions: []
+    elements: []
+    canReceiveDamage:
+      conditions: []
+      active: 0
+    Events: 1
+    OnProfileEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    OnProfileExit:
+      m_PersistentCalls:
+        m_Calls: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 6642750250407952484
+      type: {class: ModeReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        type: 8
+        ID: {fileID: 11400000, guid: 715e62083a9bb2e42bb80fef5712fd35, type: 2}
+        abilityStatus: 0
+        Ability:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 6
+          Variable: {fileID: 0}
+        HasCoolDown: 1
+        coolDown: 0
+        AbilityTime: 3
+        ModePower: 0
+    - rid: 7038165620217610350
+      type: {class: ModeReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        type: 8
+        ID: {fileID: 11400000, guid: 715e62083a9bb2e42bb80fef5712fd35, type: 2}
+        abilityStatus: 0
+        Ability:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 6
+          Variable: {fileID: 0}
+        HasCoolDown: 1
+        coolDown: 0
+        AbilityTime: 3
+        ModePower: 0

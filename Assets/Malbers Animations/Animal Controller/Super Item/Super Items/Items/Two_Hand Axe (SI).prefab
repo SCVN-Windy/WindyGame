@@ -1,0 +1,2090 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &763586932301391390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3046982769587860366}
+  - component: {fileID: 4513514355147041848}
+  m_Layer: 30
+  m_Name: Axe Sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3046982769587860366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763586932301391390}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6801337972648919309}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &4513514355147041848
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763586932301391390}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 0.8
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 15
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &1257523889410652472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6801337972648919309}
+  - component: {fileID: 7825509446703547827}
+  - component: {fileID: 2465914523323111506}
+  - component: {fileID: 848520422946281218}
+  - component: {fileID: 6754855490977003178}
+  - component: {fileID: 9212221108848046644}
+  - component: {fileID: 3479874839272183222}
+  - component: {fileID: 6945980247084998772}
+  - component: {fileID: 3864282735383486271}
+  m_Layer: 30
+  m_Name: Two_Hand Axe (SI)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6801337972648919309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257523889410652472}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3412625673548938421}
+  - {fileID: 3046982769587860366}
+  - {fileID: 7888486085755564663}
+  - {fileID: 7173116464339760681}
+  - {fileID: 4085604416262397358}
+  - {fileID: 8199950731324745585}
+  - {fileID: 8992676719665380435}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &7825509446703547827
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257523889410652472}
+  serializedVersion: 4
+  m_Mass: 10
+  m_Drag: 0.3
+  m_AngularDrag: 0.3
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 0, y: 0, z: 0}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &2465914523323111506
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257523889410652472}
+  m_Material: {fileID: 13400000, guid: c003f2d1a9ac8dc4dbed1f96fd1cdbf9, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 0.1, z: 1.9666799}
+  m_Center: {x: 0, y: 0, z: 0.38069314}
+--- !u!65 &848520422946281218
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257523889410652472}
+  m_Material: {fileID: 13400000, guid: b8d915d3c8fbbe1488178a3cb0d897bd, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.53625786, y: 0.1, z: 0.49876744}
+  m_Center: {x: -0.046587765, y: 0, z: 1.1615552}
+--- !u!114 &6754855490977003178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257523889410652472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseColliders: 1
+  gizmoType: 0
+  debugSize: 0.03
+  height: 2
+  DebugColor: {r: 0, g: 0.6545739, b: 1, a: 0.27058825}
+  DrawAxis: 0
+  AxisSize: 0.65
+  _colliders:
+  - {fileID: 2465914523323111506}
+  - {fileID: 848520422946281218}
+  HasColliders: 1
+  DrawLineTo: 0
+  ConnectTo: {fileID: 0}
+  Rect: {x: 1, y: 1, z: 1}
+  Center: {x: 0, y: 0, z: 0}
+  FirstSearch: 1
+  CapsuleMesh: {fileID: 0}
+--- !u!114 &9212221108848046644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257523889410652472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d3327f56e8bf54f87d9bb8ec1d5449, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPick:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  m_autoEquip:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  mirror:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  m_target: {fileID: 0}
+  holster: {fileID: 11400000, guid: 8be06e7fc27c57c4e82d4a5cafd76296, type: 2}
+  Stance: {fileID: 0}
+  strafe:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  UpdateTargetFromAimer: 0
+  TargetFromInteractor:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  InteractableID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: -1
+    Variable: {fileID: 0}
+  ClearTargetOnUnfocus:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  RuntimeIK: 1
+  ItemType: {fileID: 11400000, guid: f3b52e32126ff1b44a67d772f380c445, type: 2}
+  CanBeEquippedWith:
+    IDs: []
+    include: 0
+  EquipPoint: {fileID: 11400000, guid: e07cb5dac4dfc86448f03d27ed3722fe, type: 2}
+  SecondaryEquipPoint: {fileID: 0}
+  SecondaryHolster: {fileID: 0}
+  HolsterColor: {r: 1, g: 0.92, b: 0.16, a: 0.5}
+  EquipColor: {r: 0, g: 1, b: 0, a: 0.5}
+  m_hitLayer:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    Variable: {fileID: 0}
+  triggerInteraction: 1
+  UserOverrideLayer:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  equipDuration:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.3
+    Variable: {fileID: 0}
+  PickDuration:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.3
+    Variable: {fileID: 0}
+  EquipMode: {fileID: 11400000, guid: 25a9ab75d9646144eaa77342296c549c, type: 2}
+  UnequipMode: {fileID: 11400000, guid: 908d4f1fe671c064cbb3045eeb113742, type: 2}
+  PickMode:
+    ID: {fileID: 11400000, guid: c0d938e24e7fe1f4a8f00633ce81a5b1, type: 2}
+    Value: 1
+  DropMode:
+    ID: {fileID: 11400000, guid: c0d938e24e7fe1f4a8f00633ce81a5b1, type: 2}
+    Value: 2
+  m_UI:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: {fileID: 21300000, guid: d25e8a0c698bc6249a513721987d16fb, type: 3}
+    Variable: {fileID: 0}
+  description:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 
+    Variable: {fileID: 0}
+  rb: {fileID: 7825509446703547827}
+  DestroyRbOnPick:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  DisableCollidersOnEquip:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  DisableCollidersOnHolster:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  m_colliders:
+  - {fileID: 2465914523323111506}
+  - {fileID: 848520422946281218}
+  m_Triggers:
+  - {fileID: 6841983152693801400}
+  actionSets:
+  - name:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: Default
+      Variable: {fileID: 0}
+    active: 1
+    m_Default: 1
+    m_Ignore: 0
+    AutoActivation: 0
+    AutoActivationOn:
+      conditions: []
+      active: 0
+    AutoActivationOff:
+      conditions: []
+      active: 0
+    actions:
+    - name:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: Attack
+        Variable: {fileID: 0}
+      active:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      rate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      updateRate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      interrupSelf:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      restartOnConditions:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      primaryHandOnly:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      fastEquip:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      validOnFastWeapons:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      FreeHands: 0
+      duration:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      priority: 0
+      activation: 0
+      ActionID: {fileID: 11400000, guid: 42ed51dbcd7b4294b8adc544b3731b1e, type: 2}
+      ConditionsOnOwner:
+        conditions: []
+        active: 0
+      ConditionsOnTarget:
+        conditions: []
+        active: 0
+      processors:
+      - rid: 3483016824959009030
+      - rid: 3483016824959009032
+      - rid: 7038165507018326214
+      - rid: 7038165309639098634
+      masterIndex: 0
+      Trigger: {fileID: 6841983152693801400}
+      OnActionPressed:
+        reactions: []
+      OnActionReleased:
+        reactions: []
+      OnActionStart:
+        reactions: []
+      OnActionExit:
+        reactions: []
+      OnActionFailedOnOwner:
+        reactions: []
+      OnActionFailedOnTarget:
+        reactions: []
+      debug: 1
+    OnEnterSetReaction:
+      reactions: []
+    OnExitSetReaction:
+      reactions: []
+    OnUnequipReaction:
+      reactions: []
+    OnEquipReaction:
+      reactions: []
+    OnInterruptReaction:
+      reactions: []
+    InterruptStates:
+      IDs: []
+      include: 1
+    InterruptModes:
+      IDs: []
+      include: 1
+    InterruptStances:
+      IDs: []
+      include: 1
+    SetConditions:
+      conditions: []
+      active: 0
+    SelectedAction: 0
+    EditorTab1: 0
+    IKProfile: {fileID: 11400000, guid: ac61e0e020dc9aa4181bc582e0ef8994, type: 2}
+    IKTargets:
+    - ID: {fileID: 11400000, guid: 90bbde231dadd8c4c84151b1717f21f9, type: 2}
+      Value:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: {fileID: 7173116464339760681}
+        Variable: {fileID: 0}
+  - name:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: Riding
+      Variable: {fileID: 0}
+    active: 1
+    m_Default: 1
+    m_Ignore: 0
+    AutoActivation: 512
+    AutoActivationOn:
+      conditions:
+      - rid: 7038165711888318597
+      - rid: 7038165711888318598
+      active: 1
+    AutoActivationOff:
+      conditions:
+      - rid: 7038165711888318599
+      active: 1
+    actions:
+    - name:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: Attack
+        Variable: {fileID: 0}
+      active:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      rate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      updateRate:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      interrupSelf:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      restartOnConditions:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      primaryHandOnly:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      fastEquip:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      validOnFastWeapons:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 1
+        Variable: {fileID: 0}
+      FreeHands: -1
+      duration:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      priority: 0
+      activation: 0
+      ActionID: {fileID: 11400000, guid: 42ed51dbcd7b4294b8adc544b3731b1e, type: 2}
+      ConditionsOnOwner:
+        conditions: []
+        active: 0
+      ConditionsOnTarget:
+        conditions: []
+        active: 0
+      processors:
+      - rid: 7038165711888318600
+      - rid: 7038165711888318601
+      - rid: 7038165711888318602
+      - rid: 7038165711888318604
+      masterIndex: 0
+      Trigger: {fileID: 6841983152693801400}
+      OnActionPressed:
+        reactions: []
+      OnActionReleased:
+        reactions: []
+      OnActionStart:
+        reactions: []
+      OnActionExit:
+        reactions: []
+      OnActionFailedOnOwner:
+        reactions: []
+      OnActionFailedOnTarget:
+        reactions: []
+      debug: 1
+    OnEnterSetReaction:
+      reactions:
+      - rid: 7038165711888318605
+    OnExitSetReaction:
+      reactions:
+      - rid: 7038165711888318606
+    OnUnequipReaction:
+      reactions: []
+    OnEquipReaction:
+      reactions: []
+    OnInterruptReaction:
+      reactions: []
+    InterruptStates:
+      IDs: []
+      include: 1
+    InterruptModes:
+      IDs: []
+      include: 1
+    InterruptStances:
+      IDs: []
+      include: 1
+    SetConditions:
+      conditions: []
+      active: 0
+    SelectedAction: 0
+    EditorTab1: 0
+    IKProfile: {fileID: 11400000, guid: ac61e0e020dc9aa4181bc582e0ef8994, type: 2}
+    IKTargets:
+    - ID: {fileID: 11400000, guid: 90bbde231dadd8c4c84151b1717f21f9, type: 2}
+      Value:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: {fileID: 7173116464339760681}
+        Variable: {fileID: 0}
+  SelectedActionSetIndex: 1
+  EquipReaction:
+    reactions:
+    - rid: 3483016824959009033
+  UnequipReaction:
+    reactions:
+    - rid: 3483016824959009034
+  FocusTags:
+    tags:
+    - {fileID: 11400000, guid: f45a3d7e9fbf2074496de5b9b0ab09b0, type: 2}
+  FocusedByReaction:
+    reactions: []
+  UnFocusedByReaction:
+    reactions: []
+  HolsteredReaction:
+    reactions: []
+  UnHolsteredReaction:
+    reactions: []
+  DisplayMesh: {fileID: 7393606091822035317, guid: c6036438987dbf844b4db838ce2c0bb8,
+    type: 3}
+  DisplayTransform: {fileID: 7888486085755564663}
+  DisplayScale: {x: 1, y: 1, z: 1}
+  OnEquip:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3479874839272183222}
+        m_TargetAssemblyTypeName: MalbersAnimations.Utilities.MWeaponTrail, MalbersAnimations
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnUnequip:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3479874839272183222}
+        m_TargetAssemblyTypeName: MalbersAnimations.Utilities.MWeaponTrail, MalbersAnimations
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnFocused:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4953223743974743362}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnUnfocused:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4953223743974743362}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnHolstered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUnHolstered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAddedToManager:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRemoveFromManager:
+    m_PersistentCalls:
+      m_Calls: []
+  debug: 1
+  DebugColor: {r: 1, g: 0, b: 0, a: 1}
+  Editor_Tabs1: 1
+  Editor_Tabs2: 3
+  Editor_ActionTabs: 4
+  references:
+    version: 2
+    RefIds:
+    - rid: 3483016824959009030
+      type: {class: ItemProcessorCombo, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0
+        comboType: 1
+        comboSet: {fileID: 11400000, guid: 40c42611fa0f9ab449278d58e450a6b5, type: 2}
+        Mode: {fileID: 11400000, guid: f3b52e32126ff1b44a67d772f380c445, type: 2}
+        Branch:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+    - rid: 3483016824959009032
+      type: {class: ItemProcessorDamagerStat, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: -1
+          Variable: {fileID: 0}
+        damage:
+          ID: {fileID: 11400000, guid: d6b3e636d59a6c547a2cad40b69f4432, type: 2}
+          modify: 3
+          from: 0
+          MinValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 45
+            Variable: {fileID: 0}
+          MaxValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 50
+            Variable: {fileID: 0}
+          enable:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 1
+            Variable: {fileID: 0}
+          Base: {fileID: 0}
+          part: 0
+          SourceStats: {fileID: 0}
+          sources: []
+    - rid: 3483016824959009033
+      type: {class: StanceReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        action: 0
+        ID: {fileID: 11400000, guid: 92690791ccabd28408aa7f6e9839e11c, type: 2}
+    - rid: 3483016824959009034
+      type: {class: StanceReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        action: 4
+        ID: {fileID: 11400000, guid: 5338df2a5c63c6b4a8049349b3eb0171, type: 2}
+    - rid: 7038165309639098634
+      type: {class: ItemProcessorDamagerPhysics, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: -1
+          Variable: {fileID: 0}
+        minForce:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1000
+          Variable: {fileID: 0}
+        maxForce:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1000
+          Variable: {fileID: 0}
+        forceMode: 0
+        attackDirection: 1
+        ignoreKinematic: 1
+    - rid: 7038165507018326214
+      type: {class: ItemProcessorSurfaceEffect, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        HitEffect: {fileID: 11400000, guid: 52be97e3602adfa449f7dc5cda82984b, type: 2}
+        duration: 0.5
+        OnHit:
+          reactions:
+          - rid: 7038165507018326215
+    - rid: 7038165507018326215
+      type: {class: MemberValuesSetReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 1
+        localTarget: {fileID: 3864282735383486271}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        Member:
+          targetType:
+            assemblyQualifiedName: Unity.Cinemachine.CinemachineImpulseSource, Unity.Cinemachine,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          memberName: GenerateImpulse
+          memberKind: 3
+          arguments: []
+    - rid: 7038165711888318597
+      type: {class: C2_Rider, ns: MalbersAnimations.Conditions, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 0
+        OrAnd: 1
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        state: 1
+    - rid: 7038165711888318598
+      type: {class: C2_Rider, ns: MalbersAnimations.Conditions, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 0
+        OrAnd: 1
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        state: 0
+    - rid: 7038165711888318599
+      type: {class: C2_Rider, ns: MalbersAnimations.Conditions, asm: MalbersAnimations}
+      data:
+        active: 1
+        desc: 
+        invert: 1
+        OrAnd: 0
+        LocalTarget: 0
+        debug: 0
+        Target: {fileID: 0}
+        state: 0
+    - rid: 7038165711888318600
+      type: {class: ItemProcessorCombo, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 1
+        Active: 1
+        executeDelay: 0
+        comboType: 1
+        comboSet: {fileID: 11400000, guid: 40c42611fa0f9ab449278d58e450a6b5, type: 2}
+        Mode: {fileID: 11400000, guid: f3b52e32126ff1b44a67d772f380c445, type: 2}
+        Branch:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+    - rid: 7038165711888318601
+      type: {class: ItemProcessorDamagerStat, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: -1
+          Variable: {fileID: 0}
+        damage:
+          ID: {fileID: 11400000, guid: d6b3e636d59a6c547a2cad40b69f4432, type: 2}
+          modify: 3
+          from: 0
+          MinValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 45
+            Variable: {fileID: 0}
+          MaxValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 50
+            Variable: {fileID: 0}
+          enable:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 1
+            Variable: {fileID: 0}
+          Base: {fileID: 0}
+          part: 0
+          SourceStats: {fileID: 0}
+          sources: []
+    - rid: 7038165711888318602
+      type: {class: ItemProcessorSurfaceEffect, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        HitEffect: {fileID: 11400000, guid: 52be97e3602adfa449f7dc5cda82984b, type: 2}
+        duration: 0.5
+        OnHit:
+          reactions:
+          - rid: 7038165711888318603
+    - rid: 7038165711888318603
+      type: {class: MemberValuesSetReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 1
+        localTarget: {fileID: 3864282735383486271}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        Member:
+          targetType:
+            assemblyQualifiedName: Unity.Cinemachine.CinemachineImpulseSource, Unity.Cinemachine,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          memberName: GenerateImpulse
+          memberKind: 3
+          arguments: []
+    - rid: 7038165711888318604
+      type: {class: ItemProcessorDamagerPhysics, ns: MalbersAnimations.Items, asm: MalbersAnimations}
+      data:
+        execute: 8
+        Active: 1
+        executeDelay: 0
+        profile:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: -1
+          Variable: {fileID: 0}
+        minForce:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1000
+          Variable: {fileID: 0}
+        maxForce:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1000
+          Variable: {fileID: 0}
+        forceMode: 0
+        attackDirection: 1
+        ignoreKinematic: 1
+    - rid: 7038165711888318605
+      type: {class: AnimatorReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        parameters:
+        - param: Right Item Type
+          type: 3
+          Value:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 101
+            Variable: {fileID: 0}
+    - rid: 7038165711888318606
+      type: {class: AnimatorReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        parameters:
+        - param: Right Item Type
+          type: 3
+          Value:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 0
+            Variable: {fileID: 0}
+--- !u!114 &3479874839272183222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257523889410652472}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8931647a38efe134ba2ede3f2c000f93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tip: {fileID: 8199950731324745585}
+  Base: {fileID: 8992676719665380435}
+  Profiles:
+  - {fileID: 11400000, guid: 36a58b163a9fae84fa125e21fc94c6b3, type: 2}
+  legacyProfile: {fileID: 0}
+  Index: 1
+  OnTrailStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTrailEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  debug: 0
+  DebugColor: {r: 0.3, g: 0.8, b: 1, a: 0.75}
+--- !u!114 &6945980247084998772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257523889410652472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e781cdad4f49ae4e9156727711ebf8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Index:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 102
+    Variable: {fileID: 0}
+  m_EventSound:
+  - name: Swing
+    volume: 1
+    pitch: 1
+    active: 1
+    interval: 0
+    source: {fileID: 0}
+    Clips:
+    - {fileID: 6418180475301049370, guid: f056bd8f6f26ec14bb2539249b729a79, type: 2}
+  _audioSource: {fileID: 0}
+  debug: 0
+--- !u!114 &3864282735383486271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257523889410652472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpulseDefinition:
+    ImpulseChannel: 1
+    ImpulseShape: 2
+    CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ImpulseDuration: 0.2
+    ImpulseType: 0
+    DissipationRate: 0.25
+    RawSignal: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    RepeatMode: 0
+    Randomize: 1
+    TimeEnvelope:
+      AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      AttackTime: 0
+      SustainTime: 0.2
+      DecayTime: 0.7
+      ScaleWithImpact: 1
+      HoldForever: 0
+    ImpactRadius: 100
+    DirectionMode: 0
+    DissipationMode: 2
+    DissipationDistance: 100
+    PropagationSpeed: 343
+  DefaultVelocity: {x: 0, y: 0.1, z: 0}
+--- !u!1 &1293703543755563127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7888486085755564663}
+  - component: {fileID: 9048526982708109764}
+  - component: {fileID: 2432052083480804862}
+  m_Layer: 30
+  m_Name: 2HandAxe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7888486085755564663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293703543755563127}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6801337972648919309}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!33 &9048526982708109764
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293703543755563127}
+  m_Mesh: {fileID: 7393606091822035317, guid: c6036438987dbf844b4db838ce2c0bb8, type: 3}
+--- !u!23 &2432052083480804862
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293703543755563127}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 84146ccda7f89b24b8349e8d06e85451, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1476109065216947861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7173116464339760681}
+  - component: {fileID: 1223014341068623940}
+  m_Layer: 30
+  m_Name: IK Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7173116464339760681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476109065216947861}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.009725272, y: -0.61387086, z: -0.0068274355, w: 0.7893171}
+  m_LocalPosition: {x: 0.105, y: 0.035, z: -0.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6801337972648919309}
+  m_LocalEulerAnglesHint: {x: 0.399, y: -75.751, z: -1.302}
+--- !u!114 &1223014341068623940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476109065216947861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseColliders: 0
+  gizmoType: 0
+  debugSize: 0.09
+  height: 2
+  DebugColor: {r: 0, g: 1, b: 0.30524302, a: 0.7349119}
+  DrawAxis: 0
+  AxisSize: 0.65
+  _colliders: []
+  HasColliders: 0
+  DrawLineTo: 0
+  ConnectTo: {fileID: 0}
+  Rect: {x: 1, y: 1, z: 1}
+  Center: {x: 0, y: 0, z: 0}
+  FirstSearch: 1
+  CapsuleMesh: {fileID: 0}
+--- !u!1 &5158303364102805544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8992676719665380435}
+  m_Layer: 0
+  m_Name: Trail_Base
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8992676719665380435
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5158303364102805544}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.8764029}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6801337972648919309}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6234308243253181140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8199950731324745585}
+  m_Layer: 0
+  m_Name: Trail_Tip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8199950731324745585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6234308243253181140}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.293005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6801337972648919309}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7829269895352872677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3412625673548938421}
+  - component: {fileID: 5492165081359685029}
+  - component: {fileID: 6841983152693801400}
+  - component: {fileID: 3485386865525267668}
+  m_Layer: 30
+  m_Name: Attack Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3412625673548938421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7829269895352872677}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.298, y: 0, z: 1.121}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6801337972648919309}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &5492165081359685029
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7829269895352872677}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.29
+  m_Height: 1
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6841983152693801400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7829269895352872677}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b20103f05ec694e9515e126d8eb956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitLayer:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    Variable: {fileID: 0}
+  triggerInteraction: 1
+  tags:
+    tags: []
+  OnTrigger_Enter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTrigger_Exit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTrigger_Stay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGameObjectEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGameObjectExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGameObjectStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEmpty:
+    m_PersistentCalls:
+      m_Calls: []
+  ID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 102
+    Variable: {fileID: 0}
+  TriggerEnterReaction:
+    reactions: []
+  TriggerExitReaction:
+    reactions: []
+  TriggerStayReaction:
+    reactions: []
+  GameObjectEnterReaction:
+    reactions: []
+  GameObjectExitReaction:
+    reactions: []
+  GameObjectStayReaction:
+    reactions: []
+  m_debug: 0
+  useOnTriggerStay:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  sweepInterval: 0.25
+  OneTimeUse:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  ignoreStatic:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  Conditions:
+    conditions: []
+    active: 0
+  ownCollider: {fileID: 5492165081359685029}
+  Editor_Tabs1: 2
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &3485386865525267668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7829269895352872677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4de088e089c164bb239be84964ea4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseColliders: 1
+  gizmoType: 0
+  debugSize: 0.03
+  height: 2
+  DebugColor: {r: 0.6679245, g: 0.21325366, b: 0, a: 1}
+  DrawAxis: 0
+  AxisSize: 0.65
+  _colliders:
+  - {fileID: 0}
+  - {fileID: 5492165081359685029}
+  HasColliders: 1
+  DrawLineTo: 0
+  ConnectTo: {fileID: 0}
+  Rect: {x: 1, y: 1, z: 1}
+  Center: {x: 0, y: 0, z: 0}
+  FirstSearch: 1
+  CapsuleMesh: {fileID: 0}
+--- !u!1001 &2946302483315322906
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6801337972648919309}
+    m_Modifications:
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808745598944374104, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_Name
+      value: OnFocused
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808745598944374104, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181817740155613070, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+        type: 3}
+      propertyPath: onEnable.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: Great Axe
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2, type: 3}
+--- !u!4 &4085604416262397358 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1175903420998626740, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2946302483315322906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4953223743974743362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7808745598944374104, guid: 1c7a0f3efad6ffd4898f40074ea5bcc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2946302483315322906}
+  m_PrefabAsset: {fileID: 0}

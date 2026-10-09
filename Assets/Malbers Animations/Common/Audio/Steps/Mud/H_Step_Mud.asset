@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-8251452100423403634
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: H_Step_Mud06_{-8251452100423403634}
+  m_AudioClip: {fileID: 8300000, guid: 25cbf05a49dae3840944dfa705e8e29c, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-3164210421765558215
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: H_Step_Mud01_{-3164210421765558215}
+  m_AudioClip: {fileID: 8300000, guid: 69b1cbff63872b44881072d00e25ba77, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-220919748606144328
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: H_Step_Mud05_{-220919748606144328}
+  m_AudioClip: {fileID: 8300000, guid: 015cdcc7e17881c4a92ae654837d4f82, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &702833355650920010
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: H_Step_Mud04_{702833355650920010}
+  m_AudioClip: {fileID: 8300000, guid: 770c5957b50d6d44a9d188009b0e3c24, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5654532854519643930
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: H_Step_Mud02_{5654532854519643930}
+  m_AudioClip: {fileID: 8300000, guid: b0a7dcf826567664588617b8b5bd5565, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: H_Step_Mud
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: -2.0338917, y: 2.7118683}
+  m_PitchRandomizationRange: {x: -20.33908, y: 50.847534}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: -3164210421765558215}
+  - {fileID: 5654532854519643930}
+  - {fileID: 7383511348451541494}
+  - {fileID: 702833355650920010}
+  - {fileID: -220919748606144328}
+  - {fileID: -8251452100423403634}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 2
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 1
+  m_PitchRandomizationEnabled: 1
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &7383511348451541494
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: H_Step_Mud03_{7383511348451541494}
+  m_AudioClip: {fileID: 8300000, guid: 37ae5a42dca83a64f9c5be102a6cd259, type: 3}
+  m_Volume: 0
+  m_Enabled: 1

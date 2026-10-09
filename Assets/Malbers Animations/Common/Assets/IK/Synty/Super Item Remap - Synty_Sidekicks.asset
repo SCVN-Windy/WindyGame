@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36fa3768683387469948012e3ae2d8a, type: 3}
+  m_Name: Super Item Remap - Synty_Sidekicks
+  m_EditorClassIdentifier: 
+  Description: 
+  remap:
+  - ID: {fileID: 11400000, guid: 40580d4432cfeee4b865015e41581db8, type: 2}
+    Value: {fileID: 11400000, guid: bd82f256d5fe3cc448362b2597454981, type: 2}
+  - ID: {fileID: 11400000, guid: ee6e592fd633ca84b8d72e77a8b80190, type: 2}
+    Value: {fileID: 11400000, guid: b6b12673f57b54b43a4c8238fc8c0ccf, type: 2}
+  - ID: {fileID: 11400000, guid: ca7006030c1aaf143a5782929706d255, type: 2}
+    Value: {fileID: 11400000, guid: 270b0d572c10faa4ba720c39d57536a5, type: 2}
+  - ID: {fileID: 11400000, guid: ac61e0e020dc9aa4181bc582e0ef8994, type: 2}
+    Value: {fileID: 11400000, guid: 5511f055253184549867028657025f4f, type: 2}
+  - ID: {fileID: 11400000, guid: b2ac0fe2efa63984096a731aa1d86d7e, type: 2}
+    Value: {fileID: 11400000, guid: 3800f90dc51606b43bf15b72912ca0d2, type: 2}

@@ -1,0 +1,516 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a9804e9ad9c75e44bceb770dcc1e2d4, type: 3}
+  m_Name: Combo_Melee
+  m_EditorClassIdentifier: 
+  Mode: {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+  combos:
+  - active: 1
+    Mode: {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+    Name: Melee
+    CachedMode:
+      SelectedAbilityIndexEditor: 0
+      ActiveAbilityConditions: []
+      active: 1
+      TemporalActivation: 1
+      ignoreLowerModes: 0
+      forceIgnorePriority: 1
+      hasCoolDown: 0
+      Input: 
+      ID: {fileID: 0}
+      modifier: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      Abilities: []
+      m_AbilityIndex:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: -99
+        Variable: {fileID: 0}
+      DefaultIndex:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      OnAbilityIndex:
+        m_PersistentCalls:
+          m_Calls: []
+      ResetToDefault: 0
+      allowRotation: 0
+      allowMovement: 0
+      OnEnterMode:
+        m_PersistentCalls:
+          m_Calls: []
+      OnExitMode:
+        m_PersistentCalls:
+          m_Calls: []
+      OnModeEnabled:
+        m_PersistentCalls:
+          m_Calls: []
+      OnModeDisabled:
+        m_PersistentCalls:
+          m_Calls: []
+      OnEnterReaction:
+        reactions: []
+      OnExitReaction:
+        reactions: []
+      OnEnabledReaction:
+        reactions: []
+      OnDisabledReaction:
+        reactions: []
+      EnterConditions:
+        conditions: []
+        active: 0
+      InterruptConditions:
+        conditions: []
+        active: 0
+      ExitConditions:
+        conditions: []
+        active: 0
+      m_Source: {fileID: 0}
+      ActivationTime: 0
+    CoolDown:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    states: []
+    States:
+      IDs:
+      - {fileID: 11400000, guid: 7370df9c769c2764381ad7c76eb3d949, type: 2}
+      - {fileID: 11400000, guid: 3787b6d94d5454740bf36d57436185b0, type: 2}
+      include: 1
+    DisableOnFinish:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    DisableOnInterrupt:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    EnableOn:
+      IDs: []
+      include: 1
+    finishTime: 0
+    Sequence:
+    - Activation:
+        minValue: 0
+        maxValue: 0
+      ActivationTime: 0.5
+      PreviewsAbility: 0
+      previewAbilityName: Combo Starter
+      Ability: 1
+      nextAbilityName: Left Swing
+      Branch: 0
+      Finisher: 0
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.4
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: 1
+      previewAbilityName: Right Swing
+      Ability: 2
+      nextAbilityName: Right Swing
+      Branch: 0
+      Finisher: 0
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.5
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: 2
+      previewAbilityName: Melee Finisher 1
+      Ability: 5
+      nextAbilityName: Melee Finisher 1
+      Branch: 0
+      Finisher: 1
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.5
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: 2
+      previewAbilityName: Stab
+      Ability: 6
+      nextAbilityName: Stab
+      Branch: 1
+      Finisher: 1
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.5
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: 0
+      previewAbilityName: Combo Starter
+      Ability: 3
+      nextAbilityName: Up Swing
+      Branch: 1
+      Finisher: 0
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.6
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: 3
+      previewAbilityName: Right Swing
+      Ability: 2
+      nextAbilityName: Right Swing
+      Branch: 1
+      Finisher: 0
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.4
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: 2
+      previewAbilityName: 360 Swing
+      Ability: 4
+      nextAbilityName: 360 Swing
+      Branch: 1
+      Finisher: 1
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.4
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: 3
+      previewAbilityName: Melee Finisher 1
+      Ability: 5
+      nextAbilityName: Melee Finisher 1
+      Branch: 1
+      Finisher: 1
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.4
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: 3
+      previewAbilityName: 360 Swing
+      Ability: 4
+      nextAbilityName: 360 Swing
+      Branch: 0
+      Finisher: 0
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.4
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: 2
+      previewAbilityName: 360 Swing
+      Ability: 4
+      nextAbilityName: 360 Swing
+      Branch: 0
+      Finisher: 0
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.4
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: 4
+      previewAbilityName: Melee Finisher 1
+      Ability: 5
+      nextAbilityName: Melee Finisher 1
+      Branch: 0
+      Finisher: 1
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    OnComboFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    OnComboInterrupted:
+      m_PersistentCalls:
+        m_Calls: []
+  - active: 1
+    Mode: {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+    Name: Melee Aereal
+    CachedMode:
+      SelectedAbilityIndexEditor: 0
+      ActiveAbilityConditions: []
+      active: 1
+      TemporalActivation: 1
+      ignoreLowerModes: 0
+      forceIgnorePriority: 1
+      hasCoolDown: 0
+      Input: 
+      ID: {fileID: 0}
+      modifier: {fileID: 0}
+      CoolDown:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      Abilities: []
+      m_AbilityIndex:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: -99
+        Variable: {fileID: 0}
+      DefaultIndex:
+        UseConstant: 1
+        UseMember: 0
+        Member:
+          target: {fileID: 0}
+          memberName: 
+          memberKind: 0
+          args: []
+          paramSignature: 
+          invert: 0
+        ConstantValue: 0
+        Variable: {fileID: 0}
+      OnAbilityIndex:
+        m_PersistentCalls:
+          m_Calls: []
+      ResetToDefault: 0
+      allowRotation: 0
+      allowMovement: 0
+      OnEnterMode:
+        m_PersistentCalls:
+          m_Calls: []
+      OnExitMode:
+        m_PersistentCalls:
+          m_Calls: []
+      OnModeEnabled:
+        m_PersistentCalls:
+          m_Calls: []
+      OnModeDisabled:
+        m_PersistentCalls:
+          m_Calls: []
+      OnEnterReaction:
+        reactions: []
+      OnExitReaction:
+        reactions: []
+      OnEnabledReaction:
+        reactions: []
+      OnDisabledReaction:
+        reactions: []
+      EnterConditions:
+        conditions: []
+        active: 0
+      InterruptConditions:
+        conditions: []
+        active: 0
+      ExitConditions:
+        conditions: []
+        active: 0
+      m_Source: {fileID: 0}
+      ActivationTime: 0
+    CoolDown:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 0
+      Variable: {fileID: 0}
+    states: []
+    States:
+      IDs:
+      - {fileID: 11400000, guid: 8078fbdb01991b44b9c1351f444b5efe, type: 2}
+      - {fileID: 11400000, guid: 9ae07cd2f8f4c054687fecf634f8e5b3, type: 2}
+      - {fileID: 11400000, guid: c44e7e8d6840aa243b6c33ec85052763, type: 2}
+      - {fileID: 11400000, guid: 7e364e53b77644c47aa3abdaa2e2c08c, type: 2}
+      - {fileID: 11400000, guid: 4dba83308a0851f4897d08125b3b9420, type: 2}
+      include: 1
+    DisableOnFinish:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+    DisableOnInterrupt:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+    EnableOn:
+      IDs:
+      - {fileID: 11400000, guid: 7370df9c769c2764381ad7c76eb3d949, type: 2}
+      - {fileID: 11400000, guid: 3787b6d94d5454740bf36d57436185b0, type: 2}
+      include: 1
+    finishTime: 0
+    Sequence:
+    - Activation:
+        minValue: 0
+        maxValue: 0
+      ActivationTime: 0.5
+      PreviewsAbility: 0
+      previewAbilityName: Combo Starter
+      Ability: 7
+      nextAbilityName: Aereal 1
+      Branch: 0
+      Finisher: 0
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.6
+        maxValue: 1
+      ActivationTime: 0.5
+      PreviewsAbility: 7
+      previewAbilityName: Aereal 2
+      Ability: 8
+      nextAbilityName: Aereal 2
+      Branch: 0
+      Finisher: 0
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    - Activation:
+        minValue: 0.42
+        maxValue: 0.88
+      ActivationTime: 0.5
+      PreviewsAbility: 8
+      previewAbilityName: Aereal 3
+      Ability: 9
+      nextAbilityName: Aereal 3
+      Branch: 0
+      Finisher: 1
+      Restarter: 0
+      FinisherTime: 0.5
+      OnSequencePlay:
+        m_PersistentCalls:
+          m_Calls: []
+    OnComboFinished:
+      m_PersistentCalls:
+        m_Calls: []
+    OnComboInterrupted:
+      m_PersistentCalls:
+        m_Calls: []
+  references:
+    version: 2
+    RefIds: []

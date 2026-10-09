@@ -1,0 +1,500 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &612905852502852731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2547823808600036364}
+  - component: {fileID: 1581013863828685392}
+  - component: {fileID: 2853561667545558222}
+  - component: {fileID: 6598522804844765739}
+  - component: {fileID: 1713275652857829013}
+  m_Layer: 2
+  m_Name: Stamina Data
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2547823808600036364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612905852502852731}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.019, y: 0.02, z: -0.121}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1581013863828685392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612905852502852731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c40057955ac3324f9b900fad19f1651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Delayed:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  RepeatTime:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  Repeat: 0
+  onEnable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 7cf722dd04e074d4eb5c291280cdd5aa, type: 2}
+        m_TargetAssemblyTypeName: MalbersAnimations.Events.MEvent, MalbersAnimations
+        m_MethodName: SetSender
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2547823808600036364}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 7cf722dd04e074d4eb5c291280cdd5aa, type: 2}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: Invoke
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2547823808600036364}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Description: Notify the UI, that the position of the stamina Icon, is this gameobject
+  ShowDescription: 1
+--- !u!114 &2853561667545558222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612905852502852731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7878c94402156f54bac49f74151e0507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowEvents: 1
+  ID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  Auto: 1
+  InvokeOnEnable: 0
+  Description: 'Stamina Logics this is connected to the MAnimal.Sprint Event
+
+    -
+    Degenerate the Stamina Stat when Sprint is activated
+
+    - Shows the Stamina
+    UI'
+  ShowDescription: 1
+  debug: 0
+  value:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  invert: 0
+  OnValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e5d916c64bda38744b0188f0294c69ae, type: 2}
+        m_TargetAssemblyTypeName: MalbersAnimations.Events.MEvent, MalbersAnimations
+        m_MethodName: SetSender
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2547823808600036364}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e5d916c64bda38744b0188f0294c69ae, type: 2}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: Invoke
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTrue:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6598522804844765739}
+        m_TargetAssemblyTypeName: MalbersAnimations.Reactions.MReactions2, MalbersAnimations
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnFalse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1713275652857829013}
+        m_TargetAssemblyTypeName: MalbersAnimations.Reactions.MReactions2, MalbersAnimations
+        m_MethodName: React
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6598522804844765739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612905852502852731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b4baf4d9a5afd41943351eb412fd50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FindTarget: 1
+  Target: {fileID: 0}
+  ReactOnEnable: 0
+  ReactOnDisable: 0
+  reactions:
+    reactions:
+    - rid: 7038165665506918565
+    - rid: 7038165507018326017
+  references:
+    version: 2
+    RefIds:
+    - rid: 7038165507018326017
+      type: {class: StatReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        modifiers:
+        - ID: {fileID: 11400000, guid: 8f96533110b305a4792c37a844108d26, type: 2}
+          modify: 19
+          from: 0
+          MinValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 10
+            Variable: {fileID: 0}
+          MaxValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 10
+            Variable: {fileID: 0}
+          enable:
+            UseConstant: 0
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 0
+            Variable: {fileID: 0}
+          Base: {fileID: 0}
+          part: 0
+          SourceStats: {fileID: 0}
+          sources: []
+    - rid: 7038165665506918565
+      type: {class: MEventReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        m_Event: {fileID: 11400000, guid: 7cf722dd04e074d4eb5c291280cdd5aa, type: 2}
+        SetSender: 1
+        Param: 1
+        m_Bool:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 1
+          Variable: {fileID: 0}
+        m_Int:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+        m_Float:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 0
+          Variable: {fileID: 0}
+        m_String:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: 
+          Variable: {fileID: 0}
+        m_Vector2:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: {x: 0, y: 0}
+          Variable: {fileID: 0}
+        m_Vector3:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: {x: 0, y: 0, z: 0}
+          Variable: {fileID: 0}
+        m_GameObject:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: {fileID: 0}
+          Variable: {fileID: 0}
+        m_Transform:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: {fileID: 0}
+          Variable: {fileID: 0}
+        m_Sprite:
+          UseConstant: 1
+          UseMember: 0
+          Member:
+            target: {fileID: 0}
+            memberName: 
+            memberKind: 0
+            args: []
+            paramSignature: 
+            invert: 0
+          ConstantValue: {fileID: 0}
+          Variable: {fileID: 0}
+        m_Component: {fileID: 0}
+        m_ID: {fileID: 0}
+        m_Member:
+          targetType:
+            assemblyQualifiedName: 
+          memberName: 
+          memberKind: 0
+          valueKind: 0
+          valueTypeName: 
+          args: []
+          paramSignature: 
+--- !u!114 &1713275652857829013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612905852502852731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b4baf4d9a5afd41943351eb412fd50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FindTarget: 1
+  Target: {fileID: 0}
+  ReactOnEnable: 0
+  ReactOnDisable: 0
+  reactions:
+    reactions:
+    - rid: 7038165507018326018
+  references:
+    version: 2
+    RefIds:
+    - rid: 7038165507018326018
+      type: {class: StatReaction, ns: MalbersAnimations.Reactions, asm: MalbersAnimations}
+      data:
+        desc: 
+        Active: 1
+        useLocal: 0
+        localTarget: {fileID: 0}
+        delay: 0
+        useCondition: 0
+        condition:
+          conditions: []
+          active: 0
+        modifiers:
+        - ID: {fileID: 11400000, guid: 8f96533110b305a4792c37a844108d26, type: 2}
+          modify: 7
+          from: 0
+          MinValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 5
+            Variable: {fileID: 0}
+          MaxValue:
+            UseConstant: 1
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 5
+            Variable: {fileID: 0}
+          enable:
+            UseConstant: 0
+            UseMember: 0
+            Member:
+              target: {fileID: 0}
+              memberName: 
+              memberKind: 0
+              args: []
+              paramSignature: 
+              invert: 0
+            ConstantValue: 0
+            Variable: {fileID: 0}
+          Base: {fileID: 0}
+          part: 0
+          SourceStats: {fileID: 0}
+          sources: []

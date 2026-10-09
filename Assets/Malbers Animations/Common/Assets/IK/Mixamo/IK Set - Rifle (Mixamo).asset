@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355bd68b91f0fbe46932df6cb5bc95ef, type: 3}
+  m_Name: IK Set - Rifle (Mixamo)
+  m_EditorClassIdentifier: 
+  set:
+    name:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 
+      Variable: {fileID: 0}
+    active: 1
+    EnableTime: 0.5
+    DisableTime: 0.25
+    weight: 1
+    Targets: []
+    ClearTargetsOnDisable: 0
+    aimer: {fileID: 0}
+    IKProcesors:
+    - rid: 454648389053186821
+    - rid: 454648524217516340
+    - rid: 454648524217516341
+    - rid: 4986561859825172810
+    weightProcessors:
+    - rid: 454648389053186892
+    SelectedIKProcessor: 1
+    LerpWeight: 0
+    OnWeightChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    OnSetEnable:
+      m_PersistentCalls:
+        m_Calls: []
+    OnSetDisable:
+      m_PersistentCalls:
+        m_Calls: []
+    EnterLerp:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ExitLerp:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  EditorTabs: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 454648389053186821
+      type: {class: IKGenericLookAt, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: IKGenericLookAt
+        Active: 1
+        Weight: 0.25
+        TargetIndex: 0
+        AnimParameter: 
+        AnimParameters:
+        - IKAim
+        AnimParameterHashes: e538b029
+        drawConditions: 0
+        CheckIf:
+          conditions: []
+          active: 0
+        Tag: {fileID: 11400000, guid: 11618f413e1e3224b8aed21070a5d8a9, type: 2}
+        showIndex: 0
+        Offset: {x: 20, y: 30, z: 0}
+        upVector: 0
+        LocalUp: {x: 0, y: 1, z: 0}
+        WorldUp: {fileID: 0}
+        rotationBlend: 1
+        RawAim: 1
+        Gizmos: 1
+    - rid: 454648389053186892
+      type: {class: WeightAnimParamCurve, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        Active: 0
+        Invert: 0
+        Parameter: AimHorizontal
+        Remap: 1
+        Range: {x: -180, y: 180}
+        Curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.25
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.5
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.5787345
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        AnimParamHash: -1107235614
+    - rid: 454648524217516340
+      type: {class: IKGenericLookAt, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: IKGenericLookAt
+        Active: 1
+        Weight: 0.66
+        TargetIndex: 0
+        AnimParameter: 
+        AnimParameters:
+        - IKAim
+        AnimParameterHashes: e538b029
+        drawConditions: 0
+        CheckIf:
+          conditions: []
+          active: 0
+        Tag: {fileID: 11400000, guid: 6a078c0dab3118a45a0395711cdbe3e8, type: 2}
+        showIndex: 0
+        Offset: {x: 10, y: 30, z: 0}
+        upVector: 0
+        LocalUp: {x: 0, y: 1, z: 0}
+        WorldUp: {fileID: 0}
+        rotationBlend: 1
+        RawAim: 1
+        Gizmos: 1
+    - rid: 454648524217516341
+      type: {class: IKGenericLookAt, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: IKGenericLookAt
+        Active: 1
+        Weight: 1
+        TargetIndex: 0
+        AnimParameter: 
+        AnimParameters:
+        - IKAim
+        AnimParameterHashes: e538b029
+        drawConditions: 0
+        CheckIf:
+          conditions: []
+          active: 0
+        Tag: {fileID: 11400000, guid: 176510247b3e9cc4eb77edff0d403c10, type: 2}
+        showIndex: 0
+        Offset: {x: -5, y: 30, z: 0}
+        upVector: 0
+        LocalUp: {x: 0, y: 1, z: 0}
+        WorldUp: {fileID: 0}
+        rotationBlend: 1
+        RawAim: 1
+        Gizmos: 1
+    - rid: 4986561859825172810
+      type: {class: HumanIKGoal, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: Right Hand in Knot
+        Active: 1
+        Weight: 1
+        TargetIndex: 0
+        AnimParameter: 
+        AnimParameters:
+        - IKFreeHand
+        - HandInKnot
+        AnimParameterHashes: d78718e66909632a
+        drawConditions: 0
+        CheckIf:
+          conditions: []
+          active: 1
+        Tag: {fileID: 11400000, guid: 90bbde231dadd8c4c84151b1717f21f9, type: 2}
+        showIndex: 0
+        LayerIndex: 0
+        goal: 2
+        position: 1
+        OffsetP: {x: 0, y: 0, z: 0}
+        rotation: 1
+        OffsetR: {x: 0, y: 0, z: 0}
+        hint: 1
+        HintBone: 11
+        OffsetH: {x: -0.76, y: 1, z: -0.14}
+        Distance:
+          minValue: 0
+          maxValue: 0
+        gizmos: 1

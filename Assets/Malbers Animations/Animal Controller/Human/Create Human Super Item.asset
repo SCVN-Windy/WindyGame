@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eaa0378a3c538947b2d2dd307e0e536, type: 3}
+  m_Name: Create Human Super Item
+  m_EditorClassIdentifier: 
+  Description: 
+  debug: 0
+  value: {fileID: 0}
+  list:
+  - {fileID: 2813560340253549202, guid: d7b59d4a7801ae14cbeeabb504bec0ca, type: 3}
+  - {fileID: 2828921729909314587, guid: 1a2249afe1826794a9738b7d6a9fa608, type: 3}
+  - {fileID: 414681855993929862, guid: 523ca4b515cb06e419d6b2e4d165f2c9, type: 3}
+  - {fileID: 5876242859347418126, guid: 5ddf02ea4ac2cd040b909b21afa3e95b, type: 3}
+  - {fileID: 7450710635630275900, guid: ef8cdfce407ab294da636e272bc69be9, type: 3}
+  - {fileID: 2475222500877307711, guid: a37ec23f82315a04da43d3a053dcca53, type: 3}
+  - {fileID: 526399071416854849, guid: 57bc1b7e5c9c74a439930dbe6047a8f1, type: 3}
+  - {fileID: 6103290775282826444, guid: 91c516f454c2bf54c8821e9d229271ea, type: 3}
+  - {fileID: 3432154900773822408, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}

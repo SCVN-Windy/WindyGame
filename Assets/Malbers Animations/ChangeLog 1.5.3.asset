@@ -1,0 +1,507 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00fcb0528820550499d051030855ca6d, type: 3}
+  m_Name: ChangeLog 1.5.3
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 6fed46b7047bdf94eb0425b756394e5b, type: 3}
+  title: Animal Controller Changelog
+  sections:
+  - heading: 'Version 1.5.3 (AC) - 4.5.3 (HAP)'
+    text: 'Full online changelog with every version:'
+    linkText: 'Changelog'
+    url: https://malbersanimations.gitbook.io/animal-controller/annex/changelog
+    reference: {fileID: 0}
+  - heading: 'Super Item System (First Release)'
+    text: '- Added: Super Item System. Complete modular equipment framework. SuperItem (on the item) + SuperItemManager (on the character), with Equip Points, Holsters, Action Sets, Actions and Processors.
+
+      - Added: Super Item - Equip Points. Named attach points on the character skeleton with per-item Position/Rotation/Scale offsets, editable with Scene View handles.
+
+      - Added: Super Item - Holsters. Multi-slot storage (back, hip...) with optional input binding, item eviction and Unholster/Equip shortcuts.
+
+      - Added: Super Item - Item Action Sets. Named groups of Actions with auto-activation rules (On State, Stance, Mode, Interactor, Target Changed, Equip, Unequip, On Action, External).
+
+      - Added: Super Item - Item Actions. Input-driven actions with Duration, Rate, Cooldown, Conditions on Owner/Target/Set, and Master/Slave action chaining.
+
+      - Added: Super Item - Item Processors. Modular behaviours plugged into an Action. Included: Projectile - Fire, Projectile - Reload, Play Mode, Aim, Charge, Reaction, Combo, IK, Block Action, Damager, Damageable, Interactor, Surface Effect, Align To Target, Animal Strafe.
+
+      - Added: Super Item - Dual Wielding. Equip Point IDs now declare a Side (Left/Right/None). Items can be equipped on secondary points, holsters store several items in separate slots, and conditions can tell two identical items apart.
+
+      - Added: Super Item - Item Offsets asset (Malbers Animations/Super Item/Item Offsets). Stores per-character Equip Point offsets keyed by Item ID + Equip Point ID, so the same item prefab fits every character rig without duplicating it. Includes a "Capture" button that stores the offsets of every currently equipped item.
+
+      - Added: Super Item - Set Interruptions. Action Sets can list States, Modes and Stances (Include v / Exclude x) that force-end their playing Actions. Includes an On Interrupted Reaction and ActionSet_Interrupt().
+
+      - Added: Super Item - Processor Delay. Every Processor has its own Execute Delay, automatically cancelled when the Action is interrupted, the Set swapped, or the item unequipped/holstered/disabled.
+
+      - Added: Super Item - Pouch Manager. Object-pooled projectile ammo, with per-Projectile ID reserves.
+
+      - Added: Super Item - Super Item Processor By Animation (StateMachineBehaviour). Fires an Item Action from an Animator State at a Normalized Time, with Set/Action name dropdowns in the inspector.
+
+      - Added: Super Item - Conditions: Has Super Item Equipped, Has Super Item Holstered, Owns Super Item, Holster Occupied, Item Count, Has Free Slot, Is Aiming, Item In Use [Any Action], Active Action Set, Is Dual Wielding, Has Target, Has User, Is On Side.
+
+      - Added: Super Item - Item validator. Every Processor reports missing references and wrong configurations directly in the Item inspector.
+
+      - Added: Super Item - Processors can now self-configure when created (OnCreated). E.g. the Reload processor auto-creates the Chamber Stat, copies the Projectile ID from the Fire processor and adds the "Chamber is not full" condition to its Action.
+
+      - Changed: Super Item - The Chamber and the Charge values are now Stats on the item, instead of fields on the Super Item. Any Stat UI/event can read them.
+
+      - Changed: Super Item - Items are automatically unequipped (ending their active actions) when the character enters a State that does not allow them. E.g. Shields on Swim/Fly.
+
+      - Changed: Super Item - The Reload time is now the Processor''s own Delay, so an interrupted reload never refills the Chamber.
+
+      - Fixed: Super Item - Actions could get permanently stuck (IsPlaying latched true) when the item was holstered/dropped inside the same frame the action started.
+
+      - Fixed: Super Item - OnActionExit fired twice when a Master action holding a Slave was exited.
+
+      - Fixed: Super Item - A stale Master Action index (after deleting Actions from a Set) threw an IndexOutOfRange, and an Action set as its own Master caused an infinite recursion.
+
+      - Fixed: Super Item - Swapping an Action Set left the Item''s Main/Slave slots pointing at the old Set''s Actions, handing the next Action the wrong Set.
+
+      - Fixed: Super Item - Equip Point / Holster gizmos were drawn in the wrong place when the offset had rotation or scale, or when the Display Mesh was a grandchild of the item root.
+
+      - Fixed: Super Item - Holster On Item Holster Exit never fired for the item pushed out when all the slots were full.
+
+      - Fixed: Super Item - Adding a Super Item to a GameObject with no mesh threw a NullReference on Reset/OnValidate.
+
+      - Fixed: Super Item - Duplicated Projectile IDs in the Pouch Manager Ammo list threw an ArgumentException on Awake. Now they are detected in the inspector and warned about.
+
+      - Added: Super Item - Item Processor - Projectile: raises a Predict event every frame the Action is active, carrying the currently calculated fire Velocity, so a Display Trajectory component can preview the shot without the item needing an IThrower.
+
+      - Added: Super Item - Item Processor - Projectile: Spread Angle can now be scaled by a Stat (Spread Stat), and the spread multiplier is a per-axis Spread Direction (replaces Spread Multiplier).
+
+      - Added: Super Item - Item Processor - Charge: On Charge Released event, fired when the charging Action ends.
+
+      - Added: Super Item - Item Processor: ActionUpdatedInternal override, called every frame the Action is active regardless of the processor''s Execute flags (used by the Projectile processor to keep its Predict event live).
+
+      - Added: Super Item - Fast Weapons (Assassin''s Creed style instant draw). Pressing the input of an Action marked [Fast Equip] while its item is HOLSTERED draws the item and plays that Action in one press. The Manager keeps the listeners for holstered items, so no equip step is needed. Actions can set [Valid On Fast Weapons] off to YIELD their input to a holstered candidate, which is how one physical button (e.g. Left Click bound to Action1, Light Attack and Heavy Attack at once) is arbitrated. Off by default.
+
+      - Added: Super Item - Holster Capacity. A hard limit on how many Items a Holster stores, independent from its Transform Slot count. Items pushed out when the Holster is full are dropped.
+
+      - Added: Super Item - Holster Reactions: On Holster and On Unholster (target: the item moved), plus the state reactions On Holster Item Changed (what the Holster now shows, including an item promoted after another one left) and On Holster Empty (target: the Super Item Manager). The state reactions only fire on a real change.
+
+
+      - Added: Super Item - Condition Super Item/[Manager] Action Is Playing. True while a given Item is playing a given Action; both fields are optional, so it also answers "any item" and "any Action".
+
+      - Changed: Super Item - Item Processor - Projectile: [Ammo Cost] is the ammo spent per SHOT, no matter how many projectiles [Fire Amount] spawns. It used to be charged once per projectile, so a shotgun burst emptied the magazine.
+
+      - Fixed: Super Item - Holstering an item could recurse straight back into Item_Holster through the unequip it triggers.
+
+      - Changed: Super Item - Item Processor - Damager and Projectile: the [Stats From] (Local / From Character) switch was removed. The Stat Modifier''s own [Source Stats] slot decides where the Source expression reads from: leave it EMPTY and the Stats of the character wielding the item are used (released on unequip); assign a Stats (E.g. the item''s own) and it is kept as is. New Damager processors no longer auto-add a Stats component to the item.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'IK System'
+    text: '- Added: IK Set Library (Malbers Animations/IK/IK Set Library). Stores a whole collection of IK Sets as an asset, so the same IK setup is authored once and applied to any character. Keep one library per rig (Human, Synty, Mixamo, Wolf...) and swap it on the IK Manager.
+
+      - Added: IK Manager - Library, Library Mode (Override / Additive) and Load Library On Awake. Runtime API: Library_Load(), Library_Override(), Library_Add().
+
+      - Added: IK Manager - Save every Set (or a single Set) into an IK Set Library asset from the inspector.
+
+      - Changed: The IK Set inspector UI (Processors / Weight Processors / Events tabs) is now shared by the IK Manager, the IK Profile asset and the IK Set Library, so all three look and behave the same.
+
+      - Added: IK Processor - Humanoid/Foot Ground Placement. Full foot placement solve for humanoid rigs: foot-shaped box cast plus sole sphere cast, ankle alignment to the surface normal, pelvis drop with a dead band, analytic knee hints, landing overshoot, and automatic measurement of the foot and leg sizes from the rig on Start so it works on any humanoid without tuning.
+
+      - Added: IK Processor - Generic/Keep Bone Upright (From To). Keeps a bone aligned to an Up reference (Root, Gravity, World, a Target or an IK Tag) with the minimal arc correction, with Pitch/Roll offsets and optional child-rotation locking.
+
+      - Changed: IK Processor and Weight Processor Conditions are evaluated once per tick and per phase instead of once per Animator IK-Pass layer. On the Human v6 rig (4 IK-Pass layers plus the LateUpdate pass) that is 5 evaluations reduced to 2, which matters for Conditions that raycast or search.
+
+      - Fixed: IK - Generic/Rotation applied its result as a DELTA instead of as the final world rotation, so the bone ended up at roughly double its own rotation, the Offset was applied on top of that, and the Weight did not behave as a blend.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'Weapons'
+    text: '- Added: Weapon IK Profiles asset (Malbers Animations/Weapons/Weapon IK Profiles). Overrides the Aim IK Profiles of every weapon a character equips. Create one per character rig and share it between all characters using that skeleton.
+
+      - Changed: The old Custom IK Weapons Right/Left lists on the Weapon Manager were replaced by the Weapon IK Profiles asset.
+
+      - Fixed: The Aim IK override was writing into the Weapon asset, so weapons shared between characters (and weapon prefabs) got permanently modified. The override is now resolved per character and the Weapon is never touched.
+
+      - Added: Condition - Weapon Manager/Has Weapon Equipped [Tag]. Checks the equipped weapon by Malbers Tag instead of by Weapon ID.
+
+      - Changed: MDisplayTrajectory no longer requires an IThrower component. It now has its own Origin, Gravity, Layer, Trigger Interaction and After Distance fields (auto-filled from a Thrower when one exists on Awake) and a public DisplayTrajectory(Vector3 velocity) method, so any component can drive the trajectory preview.
+
+      - Changed: IThrower - the trajectory fields (Velocity, Aim Origin, Predict) were factored into a new ITrajectory interface that IThrower now extends.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'Animal Controller'
+    text: '- Added: Rail Grind State (Ground/Rail Grind). The character grinds along a Spline rail using the Path Constraint, with Downhill/Uphill slope acceleration, friction, automatic lean from the spline curvature, momentum on exit and mid-air re-entry after a jump.
+
+      - Added: Combo Set asset (Malbers Animations/Combo Set). Shareable Combo definitions stored as a ScriptableObject. Their combos are cloned into the Combo Manager at runtime, so the same asset can be used by many animals. The asset inspector is identical to the Combo Manager''s.
+
+      - Added: Use SphereCast toggle on the Animal (General tab). Uses a SphereCast (with the RayCast Radius) instead of a thin Raycast for the ground alignment. More robust on ledge lips, grates and small gaps.
+
+      - Added: New Int / IntReference Find Ability context menu in the Character. Pick a Mode from the Animal''s own Modes list and it writes the Ability Index for you (also writes into IntVar assets).
+
+      - Added: Override Capsule on Mode Abilities (Modes tab > Ability > General). Same option as States and Stances, but the values come from a Capsule Collider Preset asset (Malbers Animations/Preset/Capsule Collider) so several abilities can share it. While the ability is playing the Main Capsule takes the preset values, and it is restored when the ability exits (the active State''s and Stance''s overrides are re-applied). The capsule is drawn as a green-yellow gizmo when the ability is selected (States are blue, Stances orange).
+
+      - Changed: Gravity now integrates real elapsed time instead of frame count, so it is frame-rate independent when the Animator runs in Normal update mode.
+
+      - Changed: States and Stances are now cached in dictionaries keyed by their int ID (like Modes), removing per-call allocations from every state/stance lookup.
+
+      - Changed: Animator parameters are only written when their value actually changed.
+
+      - Changed: Debug logs in the Animal, the States and the AI Control are stripped from player builds (including their string interpolation).
+
+      - Fixed: In Normal update mode a Dynamic Rigidbody kept its residual velocity and fought the transform-driven movement.
+
+      - Fixed: The Sleep -> wake cycle rescanned the whole hierarchy every time.
+
+      - Fixed: Duplicated Mode IDs on an Animal threw an ArgumentException on Awake. Now the first entry is kept and a warning is shown.
+
+      - Fixed: Disabling a State left it marked as active in the internal state cache.
+
+      - Fixed: Replacing a State at runtime leaked a ScriptableObject and did not update the fast-lookup cache.
+
+      - Fixed: Inertia and Ground Speed produced NaN when DeltaTime was 0 (Time Scale 0).
+
+      - Fixed: The Zone State/Mode exit branch was checking the wrong value, so the exit never fired and null states threw a NullReference.
+
+      - Fixed: The In-Timeline restore condition was inverted.
+
+      - Fixed: The Sweep capsule used an unrotated/unscaled center and a world-axis direction, so it did not match the actual collider.
+
+      - Fixed: Stale self-movement caused a 1-frame impulse after a teleport or a reset.
+
+      - Fixed: Ladder - the left/right foot IK goal check was testing the hand goal (copy-paste), throwing a NullReference.
+
+      - Fixed: Swim - the water collider array was reallocated on every state reset.
+
+      - Fixed: Climb - the two SphereCasts ran before the cheap activation flags were checked.
+
+      - Fixed: Fall - the "escape" push now detects a wall in front and pushes backwards instead, so the character no longer gets permanently wedged against a ledge or a box.
+
+      - Fixed: Basic Jump - the gravity ramp used frame count instead of seconds.
+
+      - Fixed: Hidden Animator Transitions were not erased (Unity).
+
+      - Fixed: Combo Manager was giving a null exception at the end of a combo, and when a combo was deactivated while its Mode was still playing.
+
+      - Added: Jump and Basic Jump - Coyote Time. Grace period, in seconds, to still perform a ground jump after walking off a ledge. The jump resolves as a real ground jump (correct Jump Profile and Animator status), not as a double jump. Zero by default, which keeps the old behaviour.
+
+      - Added: Combo Manager - SetActiveCombo(ComboSet). Selects the combo variation owned by a given Combo Set asset, by asset identity instead of by Mode ID, so two Sets sharing a Mode ID no longer mix their variations.
+
+      - Fixed: Rigidbody Interpolation is now managed per rig. It is forced OFF for transform-driven movement (Animator in Normal mode, or a Kinematic Rigidbody) and turned ON for Fixed-mode Dynamic rigs, which move through velocity and stepped at the physics rate under a Late Update camera. Authored prefabs shipped with None on every one of them.
+
+      - Fixed: Combo Manager - selecting the combo already playing restarted it, a mirrored sequence (negative Ability) never matched its Mode, and ending a combo while its Mode was still playing dropped the pending OnModeEnd.
+
+      - Fixed: Death - the Internal Colliders list threw a NullReference on empty rows, which are expected now that the list is authored by hand.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'AI'
+    text: '- Added: Brain - Per-agent typed runtime state for Tasks and Decisions. Tasks and Decisions are shared ScriptableObjects, so any value they stored was shared by every AI using them. Each brain now keeps its own state slot.
+
+      - Fixed: Brain -> Decisions -> Wait All Tasks was not working.
+
+      - Fixed: Wait Decision started its timer on activation instead of on the first evaluation, so Wait For All Tasks was ignored.
+
+      - Fixed: Check Var / Check String Listener accumulated stale listeners when the AI State was re-entered.
+
+      - Fixed: Check Stat, Chance Task, Play Mode Task, Play Audio Task, Reaction Task, Reaction2 Task and the Circle Around movement all shared their runtime values between every AI using the same asset.
+
+      - Fixed: AI Control - Agent Next Corner threw an IndexOutOfRange on an empty or pending path.
+
+      - Fixed: AI Control - the NavMeshAgent was never found when it was not assigned (the GetComponent result was discarded).
+
+      - Fixed: AI Control - teleporting did not move the NavMeshAgent. It now uses Warp().
+
+      - Fixed: AI Control - the destination search radius grew factorially (1x, 2x, 6x, 24x) instead of linearly, and the found valid destination was never returned.
+
+      - Fixed: AI Control - the arrival Look At rotation wobbled. It now uses angular hysteresis and a flattened pivot.
+
+      - Fixed: AI Control - Force Stop Mode On Target stopped the same mode twice.
+
+      - Fixed: AI Control - the Fly Off-Mesh coroutines shadowed the class-level target field, so the null check never worked.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'Path Constraint'
+    text: '- Added: Path Link (Straight) and Path Link (Unity Spline) as separate components implementing IPath.
+
+      - Added: MPath Constraint - Search Interval. Path detection is now character-driven (each character polls nearby paths), instead of trigger-driven.
+
+      - Changed: MPaths no longer require a Collider and a Trigger Proxy (same performance). The Trigger Bounds section and the On Enter/Exit Bounds events are gone.
+
+      - Changed: Spline paths use Unity''s built-in nearest-point solver (coarse pass + iterative refinement) instead of the old sampling loop.
+
+      - Changed: Straight paths - the Roll now spins around the path''s local forward axis, and the gizmo matches the runtime roll.
+
+      - Fixed: MPath Constraint not exiting when there was no movement.
+
+      - Fixed: Blocked path ends zeroed all movement instead of only the movement heading into the blocked end.
+
+      - Fixed: "Inside path sphere" was a single shared flag, so being near one path affected every other path.
+
+      - Fixed: Path Constraint debug rays were drawn even with debug disabled.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'Wagons (HAP)'
+    text: '- Added: Wagon Controller - Setup Check inspector panel. Validates the whole rig (suspension against the weight each wheel carries, damping against critical, wheel/mesh arrays, joint setup, layers, solver iterations) with one-click fixes.
+
+      - Added: Pulling Horses - Setup Check inspector panel.
+
+      - Added: Wagon Controller - Horse Mass Scale. The Animal is velocity-driven, so the hitch has to treat it as heavier or the Animal runs on the spot at low speeds.
+
+      - Added: Wagon Controller - Brake Torque and Brake Speed. The brake is now a parking brake: the Wagon coasts to a stop and only brakes once stopped.
+
+      - Added: Wagon Controller - Interpolate, Solver Iterations and Solver Velocity Iterations for the jointed chain.
+
+      - Added: Wagon Controller - Ignore Pulling Animals. Joint [Enable Collision] does not cover the Animal and the Wagon Body, which are never jointed directly.
+
+      - Added: Pulling Horses - Use Wagon Turn Limit. Max Turn Angle was calculated but never enforced.
+
+      - Fixed: Wagon Controller found Pulling Horses with GetComponent instead of GetComponentInParent, which silently disabled the steering, the brakes and the turn limit on the double horse rig.
+
+      - Fixed: Wheel meshes lost the orientation they were authored with, rendering every wheel on the wrong axis.
+
+      - Fixed: Wheel brake torque was 0.9 Nm, so the Wagon never actually stopped and rolled into the Animal.
+
+      - Fixed: Steer side was inverted and flipped sign on slopes. Now uses a signed angle around world up.
+
+      - Fixed: Center of Mass was reassigned every FixedUpdate, and in the wrong space.
+
+      - Fixed: Wagon gizmos used UnityEditor.Handles inside OnDrawGizmos, throwing a NullReference on every Scene View repaint under URP and HDRP.
+
+      - Fixed: Pulling Horses - the second Animal teleported whenever it left the ground.
+
+      - Fixed: Pulling Horses - the second Animal jittered while moving. It is now placed from the rendered pose in LateUpdate.
+
+      - Fixed: Pulling Horses - input was mirrored to the second Animal one frame late, so the pair animated out of sync.
+
+      - Fixed: Pulling Horses threw a NullReference every frame when the Main Animal was empty.
+
+      - Fixed: The Animals and the Wagon Body collided with each other on tight turns.
+
+      - Fixed: Wagon prefabs - front suspension springs could not carry the Wagon. Dampers, wheel mass and collider layers corrected.
+
+      - Fixed: Double Wagon Horses - the hitch joint had no Connected Body saved.
+
+      - Removed: PullWagons.cs. Unused, and it read the legacy Input Manager.'
+    linkText:
+    url:
+    reference: {fileID: 0}
+  - heading: 'Events & Variables'
+    text: '- Added: MEvent - Sender. SetSender() records which object raised the event (sticky until the next SetSender/ClearSender). Exposed as LastSender / SenderTransform and shown in the debug logs.
+
+      - Added: MEvent Listener - Owner Filter (Ignore / Must Match / Must Not Match) with Owner, Match Hierarchy and a per-entry Ignore Owner Filter opt-out. Lets a single event asset drive per-player UI in local multiplayer.
+
+      - Added: MEvent Listener - Sender response type. Fires the sender (as a Transform) when the entry responds.
+
+      - Added: Unity Event [Parent Child Change] component. On Parent Changed / On Children Changed.
+
+      - Added: Get Runtime GameObjects component. Reads a Runtime GameObjects collection (First / Last / Random / Index / Name) and raises Events and Reactions, plus On Item Added / On Item Removed.
+
+      - Added: Int Comparer component (like the Float/Bool comparers), with pinning and advanced integer events.
+
+      - Added: Local Variables [BlackBoard] components (MLocalVars, MLocalVars 2). Per-GameObject variables looked up by name or int ID, defined at edit-time or added at runtime, with subscriptions and Unity Events.
+
+      - Fixed: An empty [None] Object argument on a UnityEvent authored in the Inspector threw BEFORE any listener ran, aborting whatever raised it (an Equip or Holster sequence could be left half done). Leaving an argument empty on purpose now works, and a genuinely malformed persistent call is contained and logged with the Target.Method that broke, instead of escaping into the caller.
+
+      - Fixed: MEvent - invoking with an empty Var asset (GameObjectVar, SpriteVar, Vector2Var, Vector3Var) threw a NullReference instead of invoking a null/zero value. The debug log now also names the value that was sent.
+
+      - Added: Var References (Float/Int/Bool/String/Vector2/Vector3/Color/Transform/GameObject/Sprite Reference) - new Use Reference mode. Pick a Target Object and one of its Fields/Properties/Methods and the Reference reads that member''s value live at runtime (read-only; a write is ignored with a one-time Editor warning). Only value types with a wired conversion offer the mode in the inspector.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'Input System (MInput Link)'
+    text: '- Changed: MInput Link optimization. EnableInput / DisableInput / SetInput / ConnectInput / GetInput no longer do a linear List.Find/FindAll (with a closure and a Trim() per button) on every call. Each Action Map now builds a name -> buttons dictionary once and reuses it. States and Modes hit these constantly, so this removes a per-call allocation from the hot path.
+
+      - Changed: Passing a single input name (the common case for States and Modes) skips the comma Split() entirely, and the separator array is cached so splitting a list no longer allocates.
+
+      - Changed: On Input Enabled / On Input Disabled are edge events now. They only fire when the value actually changed, instead of every time a State or Mode re-applies the same value.
+
+      - Fixed: On Input Changed fired twice per press on the Press interaction. Started and Performed both produce true, and the event was invoked outside the change check.
+
+      - Fixed: Enable Input / Disable Input with a comma separated list ("Jump, Attack") never matched anything after the first entry - only the whole string was trimmed, so the following names kept their leading space.
+
+      - Fixed: Connect Input only connected the first button with a given name in each map. It now connects every button with that name.
+
+      - Fixed: Every Enable/Disable cycle leaked a delegate onto the shared Player Input. onDeviceLost and onDeviceRegained were being subscribed (+=) inside the disconnect method instead of unsubscribed, multiplying the callbacks.
+
+      - Fixed: Down interaction - a Cancel with no preceding Performed still fired On Input Up, because of an operator precedence bug in the Input Up Failed window check.
+
+      - Fixed: Adding an MInput Link by hand (instead of through Reset) threw on Enable, because the default Action Map index resolved to -1.
+
+      - Fixed: A missing or empty Map Buttons list threw on Enable. It now disables the component with a clear message telling you to assign an Input Actions asset and press [Find Buttons].
+
+      - Fixed: The Player Input using an Action Map that is not on the Map Buttons list (mismatched Input Actions asset) threw a NullReference. It now warns instead.
+
+      - Fixed: Resolve For Player threw an ArgumentException when no InputUsers were paired yet (Math.Clamp(x, 0, -1)).
+
+      - Fixed: Disabling the link threw when a Move action reference could not be resolved for the player.
+
+      - Fixed: Selecting the MInput Link in Play Mode while it was disabled or not yet connected threw in the inspector.
+
+      - Fixed: Inspector values reverting on the MInput Link. The active Action Map runtime cache was being serialized.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'Tags & IDs'
+    text: '- Added: Get Tag Object [Tags] component. Finds a GameObject by Malbers Tag (First / Last / Index / Name) and raises a Reaction and a GameObject Event, with an optional delay.
+
+      - Added: Condition - General/Malbers Tag with Has Tag In Children, plus Has Any Tag, Has Any Tag In Parent and Has All Tags.
+
+      - Added: Tag / ID pickers can now create a new asset directly from the [+] popup (searchable, grouped, with keyboard navigation).
+
+      - Added: IDs inspector - Set Name (copies the asset file name into the Display Name) and Find ID (finds the next free ID value) buttons on every ID asset.
+
+      - Changed: ID pickers sort by ID value ascending, and strip the category prefix from the labels (e.g. "Weapon/Bow" -> "Bow").'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'Reactions & Conditions'
+    text: '- Added: Per-Reaction Condition. Every Reaction now has an optional Condition toggle in its header, so a single reaction can be gated without wrapping it in a Conditional reaction.
+
+      - Added: Reaction - Tools/Align Look At. Aligns a character to look at a Transform or at an object with a Malbers Tag, with distance, time, offset and curve.
+
+      - Added: Reaction - Tools/Align to Aim Direction. Aligns the character to the Aim component''s raw aim direction.
+
+      - Added: Reaction - Unity/Dont Destroy On Load and Unity/Unpersist Object (moves the object back into the active scene).
+
+      - Added: Reaction - [Member Set]. Sets any property, field or method on any component, by type and member name, with a two-level picker.
+
+      - Added: Reaction - [Member Get]. Reads a property, field or zero-arg method from any component and raises it through the matching typed event (On Float, On Int, On String...). The read counterpart of [Member Set].
+
+      - Added: Condition - Unity/Transform Values. Compares Position / Rotation / Scale against another Transform or against a Vector3.
+
+      - Added: Condition - Riding/Rider is Riding (Is Riding, Is Mounting, Is Dismounting, Animal In Mount Trigger).
+
+      - Added: Per-Condition Active toggle. Every Condition has an On/Off checkbox in its header, so one condition can be muted while testing instead of being deleted. Disabled Conditions are skipped on evaluation and their row is greyed out.
+
+      - Added: Reaction - [MEvent]. Invokes an MEvent asset with a Var Reference parameter, optionally passing the reactor as the event Sender.
+
+      - Added: Reaction - Rider reactions mirroring every Rider UnityEvent (On Find Mount, On Lost Mount, On Start/End Mounting, On Start/End Dismounting), all targeting the Current Mount.
+
+      - Added: Condition - Aim Angle: Angle Offset. Rotates the whole allowed range, so the cone no longer has to be centred on the character''s forward. Shown on the condition row when it is not zero.
+
+      - Changed: z_Multiple Reactions is marked as Obsolete. Use Reactions2.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'Interactions'
+    text: '- Added: Pick Up - Take Away. A character can take an item that is already held by another character. If the previous owner refuses to drop it (cooldown / drop conditions), the pick is cancelled cleanly.
+
+      - Added: Pickable - multiple focusers. Two or more characters can focus the same item at once without wiping each other''s focus.
+
+      - Fixed: Pick Up - dropping after a take-away threw a NullReference, and a failed pick left the item reference and the picking flag stuck.
+
+      - Fixed: Pickable - the Pickable''s own Can Be Picked If condition is now honoured at focus time.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'Effects'
+    text: '- Added: MStepSurface. The Step Manager now handles ScriptableObject Step variations. Surfaces are identified by a Surface ID (Surface Tag component), by Terrain Layer diffuse textures, or by a mesh material main texture, and each one can override the footstep Sound, the Tracks and the Dust particles (None / Disable / Override).
+
+      - Added: Weapon Trail. Procedural mesh ribbon trail for melee swings, driven by Tip/Base transforms on the weapon and a Weapon Trail Profile asset. One row is captured per frame and smoothed at render time with Catmull-Rom subdivision, so fast swings stay round. Fixed-capacity buffers, zero allocation after the first build, and a single branch of cost while idle.
+
+      - Added: Weapon Trail - Multiple Profiles per component. A trail holds a list of Profiles and the live one is chosen by a Profile Index, so a regular attack and a charged attack can share one component with a different look each.
+
+      - Added: Weapon Trail - Material control through a MaterialPropertyBlock. Tint, HDR Emission and Alpha Clip Threshold are written to shader properties whose names are exposed on the Profile (_BaseColor, _EmissionColor, _AlphaClipThreshold, _Cutoff...), so no material instance is created and unnamed properties are left exactly as authored.
+
+      - Added: Weapon Trail - Blending override on the Profile (Additive, Alpha Blend, Premultiplied Alpha, Multiply or Custom Src/Dst factors). Blend state cannot come from a MaterialPropertyBlock, so this creates ONE shared material copy per Profile. None keeps using the material asset directly.
+
+      - Added: Weapon Trail - Fade In / Fade Out, with Fade Affects Color Alpha to keep the fade out of shaders that use alpha for clipping, and Fade Drives Alpha Clip to dissolve the ribbon away instead of dimming it.
+
+      - Added: Weapon Trail - UV mapping runs along the ribbon (U) and across its width (V), with Stretch UV so the texture always spans the live rows, and Flip U for textures authored the other way round.
+
+      - Added: Weapon Trail - Width curve over the age of the ribbon, and a Min Distance so frames where the Animator did not advance cannot create duplicate rows.
+
+      - Added: Weapon Trail Behaviour. Animator State Behaviour that plays the trails for a normalized range of the animation, with a Trail Index (which weapon) and a Profile Index (which look).
+
+      - Added: Weapon Trail Reaction. Play, Stop, Clear, Set Profile, Set Profile Index, Set Color and Set Emission from any Reaction list.
+
+      - Added: Weapon Trail - editor tools. One-click creation of the Tip/Base transforms, Scene View handles and numeric local positions for them, a Scene View preview outside Play Mode, and a debug readout of live rows and captures per second.
+
+      - Added: Weapon Trail - the generated meshes are grouped under a single "Weapon Trails" GameObject instead of sitting loose at the Scene root. The mesh object becomes visible and inspectable while Debug is on.
+
+      - Changed: Effect Manager registers itself on the Animator above it. Effect Behaviour now reads that registry through a cached lookup instead of sweeping the hierarchy with GetComponentsInChildren on every State Enter, and re-registers on OnTransformParentChanged, so weapons equipped, holstered or swapped between hands are picked up automatically.
+
+      - Changed: Effect Behaviour - [Dynamic Managers] was removed. Re-checking for new Effect Managers is now automatic through the registry, so the toggle no longer did anything.
+
+      - Fixed: Effect Behaviour could throw a NullReferenceException when an Effect Manager appeared during an animation state. The Ignore In Transition hashes were only gathered when a manager already existed on State Enter.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'Triggers'
+    text: '- Changed: Trigger Registry logging is opt-in. It used to spam the Console on every scene load in shipped builds.
+
+      - Changed: Trigger Proxy reuses a cached collider buffer instead of allocating a list on every collider enter.
+
+      - Fixed: Zone Exit Collider was not exiting because the enter conditions were evaluated. Exit no longer re-evaluates Active / Layer / Tags / Conditions.
+
+      - Fixed: Trigger Proxy - Collider-enter events fired again for colliders that were already inside.
+
+      - Fixed: Trigger Proxy - disabling the proxy while the GameObject was inactive threw a "Coroutine couldn''t be started" error.
+
+      - Fixed: Trigger Proxy - colliders disabled or destroyed while inside the trigger are now purged so Stay/Exit stay accurate.
+
+      - Fixed: Trigger Target components auto-added by a Trigger Proxy now remove themselves when nothing references them.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'Damage'
+    text: '- Added: Projectile Movement strategies. How a projectile travels is now a pluggable behaviour serialized on the Projectile instead of a fixed code path. Included: Flying (the original ballistic trajectory - bullets, arrows, thrown axes), Rolling (kinematic sweep that hugs the ground, e.g. a staff that shoots a travelling spike) and Homing (steers toward a target at a limited turn rate).
+
+      - Added: Projectile Rotation behaviours, shared by every Movement: Follow Trajectory (covers the old Follow Trajectory and Rolling''s Align To Ground) and Random (spins around one random axis picked at launch).
+
+      - Added: Projectile Impact behaviours: Stop In Place (the old None), Stick On Surface (bone-accurate parenting, like an arrow in a target) and Ricochet (bounces toward nearby Tagged targets a set number of times before the final impact).
+
+      - Added: Projectile migrator. Projectiles authored before the rework are converted to the matching Movement / Rotation / Impact behaviours automatically.
+
+      - Added: MTools.PowerFromAngle overload taking a custom vertical gravity, so a launcher can aim with the gravity the projectile itself will use.
+
+      - Fixed: The Damageable child/profile Multiplier (e.g. headshots) was applied after the events, so UI damage indicators showed the unmultiplied value.
+
+      - Added: Damageable - per-profile gizmo toggle, so the Scene view is not cluttered with every profile''s detection rays.
+
+      - Changed: Damager / Projectile / Shootable - Hit Effects are now always played and pooled through the Surface Effects asset (entry [0] is the Default). The standalone Hit Effect object/prefab field, Hit Sound and Destroy Hit Effect were removed from the Damager, the Damager Profile and MShootable. The pool release delay is now Hit Effect Duration (0 = never auto-released, the effect must disable itself).
+
+      - Fixed: Surface Effects - a played effect now releases itself back to its pool after its duration regardless of what spawned it, so a projectile destroyed/pooled/disabled on impact no longer leaves its Hit Effect orphaned. A Pool Holder destroyed with its scene no longer breaks the next Play/Release.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'Stats'
+    text: '- Added: Stat Modifier - Source Expression. A modifier''s value can now be built from other Stats (e.g. the wielder''s [Attack] Stat) combined with static ranges through Add / Subtract / Multiply / Divide / Add % / Subtract % / Clamp Min / Clamp Max terms, evaluated top to bottom. Used everywhere a Stat Modifier appears (Modify Stat, Stat Reaction, Damageable, Explosion, Set Stat Task, Super Item...). Replaces the old single Base Stat field, which auto-migrates into the expression on first inspection.
+
+      - Added: Stats - Stat_GetMax, Stat_GetMin, Stat_GetNormalized and Stat_GetMultiplier accessors, alongside the existing Stat_GetValue.
+
+      - Changed: Stats - The obsolete DegenerateOff/DegenerateOn methods were removed. Use Stat_Degenerate_Off / Stat_Degenerate_On.
+
+      - Added: Stats - Parent Link. A Stat can follow the same Stat on the closest Stats component ABOVE it in the hierarchy. E.g. a sword with a local [Attack 20] equipped or holstered by a character with [Attack 30] reads 50, and goes back to 20 when it is dropped. Value, Max Value and Multiplier each pick None / Additive / Override / Multiply in the Stat Options foldout. The link is live (the child follows the parent Stat while linked), it is resolved on enable and on every parent change, and only the parent contribution is tracked, so modifications made while linked survive the unlink. Runtime API: Stats.SetParentStats(), Stats.RefreshParentLink(), Stats.ParentStats, Stat.ParentStat and Stat.IsLinkedToParent.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  - heading: 'Editor & Tools'
+    text: '- Added: Missing Managed References Cleaner (Tools/Malbers Animations/Tools/Missing Managed References/). Finds and clears the [SerializeReference] "Unsupported type" entries that produce a warning on every scene/prefab save. Scan Open Scene(s), Scan Selection, or Scan Project (Prefabs + Assets).
+
+      - Added: Copy/Paste Animator State Behaviours. Copy one or every Behaviour from an Animator State and paste them onto others (Add, New-Only, or Override modes), from the Animator window, the Inspector [] menu, or Tools/Malbers Animations/Animator for a multi-selection.
+
+      - Added: Mode Behaviour inspector now lists every Animator transition that enters the state, shows their conditions, lets you delete them, and warns when a transition encodes a different Mode ID than the behaviour''s.
+
+      - Changed: The Animal Controller inspector was split into partial classes (General, States, Stances, Modes, Advanced, Debug) and the version constant is now shared with the Update Checker.
+
+      - Fixed: [Hide] attribute - the property path replacement replaced every matching segment instead of only the last one.
+
+      - Fixed: [HideInInspector] on a serialized field hid the whole subtree. Use [Hide(nameof(field))] when the nested children must stay editable.
+
+      - Fixed: Condition and Reaction drawers allocated a new GUIStyle and re-searched their icons on every repaint.
+
+      - Fixed: Inspector values reverting on Stats. The Pinned Stat runtime cache was being serialized.
+
+      - Fixed: Duplicating a [SerializeReference] element nested inside another array appended the copy to the OUTER list instead of its own, and duplicating a field that merely lived inside an element (rather than being one) appended garbage. Non-[SerializeReference] arrays now warn instead of throwing.
+
+      - Fixed: FindObjectsSortMode obsolete warning in Unity 6000.4+.'
+    linkText: 
+    url: 
+    reference: {fileID: 0}
+  packages: []

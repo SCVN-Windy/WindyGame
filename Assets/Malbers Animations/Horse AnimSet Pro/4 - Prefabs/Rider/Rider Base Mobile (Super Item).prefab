@@ -1,0 +1,1335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4560495088581024293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6016639280081749634}
+  - component: {fileID: 6366903033159350671}
+  m_Layer: 0
+  m_Name: Super Item Events (Mobile)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6016639280081749634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560495088581024293}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7480251150523303512}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6366903033159350671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560495088581024293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41eb9c17bc0693d448a412425a2d17b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Events:
+  - Event: {fileID: 11400000, guid: de2d0ec684288bf4991c5760679163b3, type: 2}
+    active: 1
+    debug: 0
+    ignoreOwnerFilter: 0
+    useInt: 0
+    useFloat: 0
+    useVoid: 0
+    useString: 0
+    useBool: 1
+    useGO: 0
+    useTransform: 0
+    useVector3: 0
+    useVector2: 0
+    useComponent: 0
+    useSprite: 0
+    useSender: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseNull:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSender:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseFloat:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseInt:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBool:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolFalse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Action_Release
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 311b0ec919659234bbfd1ff98433bd0c, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.ItemActionID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseBoolTrue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Action_Press
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 311b0ec919659234bbfd1ff98433bd0c, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.ItemActionID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseString:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGO:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGOasT:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseTransform:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseComponent:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSprite:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector3:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector2:
+      m_PersistentCalls:
+        m_Calls: []
+    IntEventList: []
+    FloatEventList: []
+    AdvancedInteger: 0
+    AdvancedFloat: 0
+    AdvancedBool: 1
+    InvertBool: 0
+    multiplier:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+  - Event: {fileID: 11400000, guid: f871acb72d0966245abfa3647afb1512, type: 2}
+    active: 1
+    debug: 0
+    ignoreOwnerFilter: 0
+    useInt: 0
+    useFloat: 0
+    useVoid: 0
+    useString: 0
+    useBool: 1
+    useGO: 0
+    useTransform: 0
+    useVector3: 0
+    useVector2: 0
+    useComponent: 0
+    useSprite: 0
+    useSender: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseNull:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSender:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseFloat:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseInt:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBool:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolFalse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Action_Release
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 42ed51dbcd7b4294b8adc544b3731b1e, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.ItemActionID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Action_Release
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 51c5e06e1e6d85740a0f219cb95f68a3, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.ItemActionID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseBoolTrue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Action_Press
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 42ed51dbcd7b4294b8adc544b3731b1e, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.ItemActionID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Action_Press
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 51c5e06e1e6d85740a0f219cb95f68a3, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.ItemActionID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseString:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGO:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGOasT:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseTransform:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseComponent:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSprite:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector3:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector2:
+      m_PersistentCalls:
+        m_Calls: []
+    IntEventList: []
+    FloatEventList: []
+    AdvancedInteger: 0
+    AdvancedFloat: 0
+    AdvancedBool: 1
+    InvertBool: 0
+    multiplier:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+  - Event: {fileID: 11400000, guid: f4ae1ede4f65b884dbbd4a40d2690e07, type: 2}
+    active: 1
+    debug: 0
+    ignoreOwnerFilter: 0
+    useInt: 0
+    useFloat: 0
+    useVoid: 1
+    useString: 0
+    useBool: 0
+    useGO: 0
+    useTransform: 0
+    useVector3: 0
+    useVector2: 0
+    useComponent: 0
+    useSprite: 0
+    useSender: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Action_Tap
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 908a83cad17d25f4fb36ae64a274ba9f, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.ItemActionID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseNull:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSender:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseFloat:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseInt:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBool:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolFalse:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolTrue:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseString:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGO:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGOasT:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseTransform:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseComponent:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSprite:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector3:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector2:
+      m_PersistentCalls:
+        m_Calls: []
+    IntEventList: []
+    FloatEventList: []
+    AdvancedInteger: 0
+    AdvancedFloat: 0
+    AdvancedBool: 0
+    InvertBool: 0
+    multiplier:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+  - Event: {fileID: 11400000, guid: d90802e16232cb9458e3607cf827b02c, type: 2}
+    active: 1
+    debug: 0
+    ignoreOwnerFilter: 0
+    useInt: 0
+    useFloat: 0
+    useVoid: 1
+    useString: 0
+    useBool: 0
+    useGO: 0
+    useTransform: 0
+    useVector3: 0
+    useVector2: 0
+    useComponent: 0
+    useSprite: 0
+    useSender: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Item_Equip_From_Holster
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 8be06e7fc27c57c4e82d4a5cafd76296, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.HolsterID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseNull:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSender:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseFloat:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseInt:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBool:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolFalse:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolTrue:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseString:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGO:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGOasT:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseTransform:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseComponent:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSprite:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector3:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector2:
+      m_PersistentCalls:
+        m_Calls: []
+    IntEventList: []
+    FloatEventList: []
+    AdvancedInteger: 0
+    AdvancedFloat: 0
+    AdvancedBool: 0
+    InvertBool: 0
+    multiplier:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+  - Event: {fileID: 11400000, guid: 42e8e011e038e3840bad20396017d8ef, type: 2}
+    active: 1
+    debug: 0
+    ignoreOwnerFilter: 0
+    useInt: 0
+    useFloat: 0
+    useVoid: 1
+    useString: 0
+    useBool: 0
+    useGO: 0
+    useTransform: 0
+    useVector3: 0
+    useVector2: 0
+    useComponent: 0
+    useSprite: 0
+    useSender: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Item_Equip_From_Holster
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: d255c533616b51e45a47b4cd57f1ac7a, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.HolsterID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseNull:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSender:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseFloat:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseInt:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBool:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolFalse:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolTrue:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseString:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGO:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGOasT:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseTransform:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseComponent:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSprite:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector3:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector2:
+      m_PersistentCalls:
+        m_Calls: []
+    IntEventList: []
+    FloatEventList: []
+    AdvancedInteger: 0
+    AdvancedFloat: 0
+    AdvancedBool: 0
+    InvertBool: 0
+    multiplier:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+  - Event: {fileID: 11400000, guid: 214b51183d6e6c2499b63a2fac1123a3, type: 2}
+    active: 1
+    debug: 0
+    ignoreOwnerFilter: 0
+    useInt: 0
+    useFloat: 0
+    useVoid: 1
+    useString: 0
+    useBool: 0
+    useGO: 0
+    useTransform: 0
+    useVector3: 0
+    useVector2: 0
+    useComponent: 0
+    useSprite: 0
+    useSender: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Item_Equip_From_Holster
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 31941dcdef3462d4c959c444d5b4ad1b, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.HolsterID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseNull:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSender:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseFloat:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseInt:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBool:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolFalse:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolTrue:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseString:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGO:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGOasT:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseTransform:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseComponent:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSprite:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector3:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector2:
+      m_PersistentCalls:
+        m_Calls: []
+    IntEventList: []
+    FloatEventList: []
+    AdvancedInteger: 0
+    AdvancedFloat: 0
+    AdvancedBool: 0
+    InvertBool: 0
+    multiplier:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+  - Event: {fileID: 11400000, guid: 7262d1ba614598443812662b632f5e02, type: 2}
+    active: 1
+    debug: 0
+    ignoreOwnerFilter: 0
+    useInt: 0
+    useFloat: 0
+    useVoid: 1
+    useString: 0
+    useBool: 0
+    useGO: 0
+    useTransform: 0
+    useVector3: 0
+    useVector2: 0
+    useComponent: 0
+    useSprite: 0
+    useSender: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Item_HolsterAll
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseNull:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSender:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseFloat:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseInt:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBool:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolFalse:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolTrue:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseString:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGO:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGOasT:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseTransform:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseComponent:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSprite:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector3:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector2:
+      m_PersistentCalls:
+        m_Calls: []
+    IntEventList: []
+    FloatEventList: []
+    AdvancedInteger: 0
+    AdvancedFloat: 0
+    AdvancedBool: 0
+    InvertBool: 0
+    multiplier:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+  - Event: {fileID: 11400000, guid: 9395cf544f26c3140adc96e392869c2e, type: 2}
+    active: 1
+    debug: 0
+    ignoreOwnerFilter: 0
+    useInt: 0
+    useFloat: 0
+    useVoid: 1
+    useString: 0
+    useBool: 1
+    useGO: 0
+    useTransform: 0
+    useVector3: 0
+    useVector2: 0
+    useComponent: 0
+    useSprite: 0
+    useSender: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Item_Draw_From_Holster
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 8be06e7fc27c57c4e82d4a5cafd76296, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.HolsterID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseNull:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSender:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseFloat:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseInt:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBool:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolFalse:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolTrue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Item_Draw_From_Holster
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 8be06e7fc27c57c4e82d4a5cafd76296, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.HolsterID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseString:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGO:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGOasT:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseTransform:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseComponent:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSprite:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector3:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector2:
+      m_PersistentCalls:
+        m_Calls: []
+    IntEventList: []
+    FloatEventList: []
+    AdvancedInteger: 0
+    AdvancedFloat: 0
+    AdvancedBool: 1
+    InvertBool: 0
+    multiplier:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+  - Event: {fileID: 11400000, guid: 41b24907a82d687488f4e8af1b603ee4, type: 2}
+    active: 1
+    debug: 0
+    ignoreOwnerFilter: 0
+    useInt: 0
+    useFloat: 0
+    useVoid: 1
+    useString: 0
+    useBool: 1
+    useGO: 0
+    useTransform: 0
+    useVector3: 0
+    useVector2: 0
+    useComponent: 0
+    useSprite: 0
+    useSender: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Item_Draw_From_Holster
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: d255c533616b51e45a47b4cd57f1ac7a, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.HolsterID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseNull:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSender:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseFloat:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseInt:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBool:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolFalse:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolTrue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Item_Draw_From_Holster
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: d255c533616b51e45a47b4cd57f1ac7a, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.HolsterID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseString:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGO:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGOasT:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseTransform:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseComponent:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSprite:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector3:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector2:
+      m_PersistentCalls:
+        m_Calls: []
+    IntEventList: []
+    FloatEventList: []
+    AdvancedInteger: 0
+    AdvancedFloat: 0
+    AdvancedBool: 1
+    InvertBool: 0
+    multiplier:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+  - Event: {fileID: 11400000, guid: 93d173f0fc336cf4bad444be50d54c5b, type: 2}
+    active: 1
+    debug: 0
+    ignoreOwnerFilter: 0
+    useInt: 0
+    useFloat: 0
+    useVoid: 1
+    useString: 0
+    useBool: 1
+    useGO: 0
+    useTransform: 0
+    useVector3: 0
+    useVector2: 0
+    useComponent: 0
+    useSprite: 0
+    useSender: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Item_Draw_From_Holster
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 31941dcdef3462d4c959c444d5b4ad1b, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.HolsterID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseNull:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSender:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseFloat:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseInt:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBool:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolFalse:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseBoolTrue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8919787471026489050}
+          m_TargetAssemblyTypeName: MalbersAnimations.Items.SuperItemManager, MalbersAnimations
+          m_MethodName: Item_Draw_From_Holster
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 31941dcdef3462d4c959c444d5b4ad1b, type: 2}
+            m_ObjectArgumentAssemblyTypeName: MalbersAnimations.HolsterID, MalbersAnimations
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ResponseString:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGO:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseGOasT:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseTransform:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseComponent:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseSprite:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector3:
+      m_PersistentCalls:
+        m_Calls: []
+    ResponseVector2:
+      m_PersistentCalls:
+        m_Calls: []
+    IntEventList: []
+    FloatEventList: []
+    AdvancedInteger: 0
+    AdvancedFloat: 0
+    AdvancedBool: 1
+    InvertBool: 0
+    multiplier:
+      UseConstant: 1
+      UseMember: 0
+      Member:
+        target: {fileID: 0}
+        memberName: 
+        memberKind: 0
+        args: []
+        paramSignature: 
+        invert: 0
+      ConstantValue: 1
+      Variable: {fileID: 0}
+  ShowEvents: 1
+  SelectedEvent: 0
+  FilterMode: 0
+  OwnerFilter:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 0}
+  MatchHierarchy: 1
+--- !u!1001 &4829748120528404088
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3391264610926893267, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391264610926893267, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391264610926893267, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391264610926893267, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391264610926893267, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391264610926893267, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391264610926893267, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391264610926893267, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391264610926893267, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391264610926893267, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432154900773822408, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: m_Name
+      value: Rider Base Mobile (Super Item)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].Event
+      value: 
+      objectReference: {fileID: 11400000, guid: 6dbc0950cd6e8c3498b179c73446e2a9, type: 2}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Event
+      value: 
+      objectReference: {fileID: 11400000, guid: c574465f79e0192419d79966e0e3ed9c, type: 2}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].active
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].active
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].useVoid
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].useVoid
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].multiplier.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].multiplier.UseConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].multiplier.ConstantValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].multiplier.ConstantValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].Response.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].Response.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6983399495659254234}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].Response.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6983399495659254234}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6983399495659254234}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6983399495659254234}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6983399495659254234}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].Response.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].Response.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MountAnimal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].Response.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: MountAnimal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DismountAnimal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: MountAnimal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: DismountAnimal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].Response.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MalbersAnimations.HAP.MRider, MalbersAnimations
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].Response.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MalbersAnimations.HAP.MRider, MalbersAnimations
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MalbersAnimations.HAP.MRider, MalbersAnimations
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MalbersAnimations.HAP.MRider, MalbersAnimations
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: MalbersAnimations.HAP.MRider, MalbersAnimations
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[10].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322434071914478654, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      propertyPath: Events.Array.data[11].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3472902789960220540, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2650797849638516768, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6016639280081749634}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+--- !u!114 &6983399495659254234 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2588640169626029986, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+  m_PrefabInstance: {fileID: 4829748120528404088}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80ced0ef3d825bf46baedd6a5bf7447a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &7480251150523303512 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2650797849638516768, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+  m_PrefabInstance: {fileID: 4829748120528404088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8919787471026489050 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4093707334851180706, guid: 2584d8a131a4e094da6be337050e34bc, type: 3}
+  m_PrefabInstance: {fileID: 4829748120528404088}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdcb7e0f6535d94aa5822b6324d843f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

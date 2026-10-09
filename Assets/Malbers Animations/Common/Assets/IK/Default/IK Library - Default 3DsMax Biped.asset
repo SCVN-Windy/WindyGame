@@ -1,0 +1,831 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 770f9c79b3c60ed4b8cbb96aa8bb801a, type: 3}
+  m_Name: IK Library - Default 3DsMax Biped
+  m_EditorClassIdentifier: 
+  Description: 'Saved from [Steve]'
+  sets:
+  - name:
+      UseConstant: 1
+      ConstantValue: Look At
+      Variable: {fileID: 0}
+    active: 1
+    EnableTime: 0
+    DisableTime: 0.25
+    weight: 1
+    Targets: []
+    ClearTargetsOnDisable: 0
+    aimer: {fileID: 0}
+    IKProcesors:
+    - rid: 4986561813304574212
+    - rid: 4986561813304574213
+    weightProcessors:
+    - rid: 4986561813304574214
+    - rid: 4986561813304574215
+    SelectedIKProcessor: 1
+    LerpWeight: 0
+    OnWeightChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    OnSetEnable:
+      m_PersistentCalls:
+        m_Calls: []
+    OnSetDisable:
+      m_PersistentCalls:
+        m_Calls: []
+    EnterLerp:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ExitLerp:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  - name:
+      UseConstant: 1
+      ConstantValue: Look At Camera
+      Variable: {fileID: 0}
+    active: 0
+    EnableTime: 0
+    DisableTime: 0.25
+    weight: 1
+    Targets: []
+    ClearTargetsOnDisable: 0
+    aimer: {fileID: 0}
+    IKProcesors:
+    - rid: 4986561813304574216
+    - rid: 4986561813304574217
+    weightProcessors:
+    - rid: 4986561813304574218
+    - rid: 4986561813304574219
+    SelectedIKProcessor: 0
+    LerpWeight: 0
+    OnWeightChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    OnSetEnable:
+      m_PersistentCalls:
+        m_Calls: []
+    OnSetDisable:
+      m_PersistentCalls:
+        m_Calls: []
+    EnterLerp:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ExitLerp:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  - name:
+      UseConstant: 1
+      ConstantValue: Carry Box
+      Variable: {fileID: 0}
+    active: 0
+    EnableTime: 0.3
+    DisableTime: 0.3
+    weight: 0
+    Targets: []
+    ClearTargetsOnDisable: 0
+    aimer: {fileID: 0}
+    IKProcesors:
+    - rid: 4986561813304574220
+    - rid: 4986561813304574221
+    - rid: 4986561813304574222
+    - rid: 4986561813304574223
+    weightProcessors: []
+    SelectedIKProcessor: 2
+    LerpWeight: 0
+    OnWeightChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    OnSetEnable:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: MalbersAnimations.MWeaponManager, MalbersAnimations
+          m_MethodName: set_Active
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnSetDisable:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: MalbersAnimations.MWeaponManager, MalbersAnimations
+          m_MethodName: set_Active
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    EnterLerp:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ExitLerp:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  - name:
+      UseConstant: 1
+      ConstantValue: Glider Hands
+      Variable: {fileID: 0}
+    active: 1
+    EnableTime: 0.15
+    DisableTime: 0.15
+    weight: 1
+    Targets: []
+    ClearTargetsOnDisable: 0
+    aimer: {fileID: 0}
+    IKProcesors:
+    - rid: 4986561813304574224
+    - rid: 4986561813304574225
+    weightProcessors:
+    - rid: 4986561813304574226
+    SelectedIKProcessor: 0
+    LerpWeight: 5
+    OnWeightChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    OnSetEnable:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: MalbersAnimations.MWeaponManager, MalbersAnimations
+          m_MethodName: set_Active
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnSetDisable:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: MalbersAnimations.MWeaponManager, MalbersAnimations
+          m_MethodName: set_Active
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    EnterLerp:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ExitLerp:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  - name:
+      UseConstant: 1
+      ConstantValue: Ladder
+      Variable: {fileID: 0}
+    active: 1
+    EnableTime: 0.25
+    DisableTime: 0.25
+    weight: 1
+    Targets: []
+    ClearTargetsOnDisable: 0
+    aimer: {fileID: 0}
+    IKProcesors:
+    - rid: 4986561813304574227
+    - rid: 4986561813304574228
+    - rid: 4986561813304574229
+    - rid: 4986561813304574230
+    weightProcessors:
+    - rid: 4986561813304574231
+    SelectedIKProcessor: 3
+    LerpWeight: 5
+    OnWeightChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    OnSetEnable:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: MalbersAnimations.MWeaponManager, MalbersAnimations
+          m_MethodName: set_Active
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnSetDisable:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: MalbersAnimations.MWeaponManager, MalbersAnimations
+          m_MethodName: set_Active
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    EnterLerp:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ExitLerp:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  EditorTabs: 0
+  SelectedSet: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 4986561813304574212
+      type: {class: IKGenericLookAt, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: Neck Look At
+        Active: 1
+        Weight: 0.5
+        TargetIndex: 0
+        AnimParameter: 
+        AnimParameterHash: 0
+        Tag: {fileID: 11400000, guid: 15f60c8d771c3ff4c88e73eeee84a8eb, type: 2}
+        showIndex: 0
+        Offset: {x: 0, y: -90, z: -90}
+        upVector: 1
+        LocalUp: {x: 0, y: 1, z: 0}
+        WorldUp: {fileID: 0}
+        rotationBlend: 1
+        RawAim: 0
+        Gizmos: 1
+    - rid: 4986561813304574213
+      type: {class: IKGenericLookAt, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: Head Look At
+        Active: 1
+        Weight: 1
+        TargetIndex: 1
+        AnimParameter: 
+        AnimParameterHash: 0
+        Tag: {fileID: 11400000, guid: b3384b1e93f7c1c4d9fd2a848bec0f78, type: 2}
+        showIndex: 0
+        Offset: {x: 0, y: -90, z: -90}
+        upVector: 1
+        LocalUp: {x: 0, y: 1, z: 0}
+        WorldUp: {fileID: 0}
+        rotationBlend: 1
+        RawAim: 0
+        Gizmos: 1
+    - rid: 4986561813304574214
+      type: {class: WeightLookAt, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        Active: 1
+        Invert: 0
+        LookAtLimit:
+          minValue: 50
+          maxValue: 110
+        AngleOffset: 0
+        normalizedBy: 1
+        upVector: 1
+        LocalUp: {x: 0, y: 1, z: 0}
+        WorldUp: {fileID: 0}
+        showGizmos: 1
+        GizmoRadius: 1
+        GizmoColor: {r: 0, g: 1, b: 0, a: 1}
+    - rid: 4986561813304574215
+      type: {class: WeightAnimParam, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        Active: 1
+        Invert: 0
+        Parameter: LookAt
+        normalizedBy: 1
+        AnimParamHash: 1274512349
+    - rid: 4986561813304574216
+      type: {class: IKGenericLookAt, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: Neck
+        Active: 1
+        Weight: 0.5
+        TargetIndex: 0
+        AnimParameter: 
+        AnimParameterHash: 0
+        Tag: {fileID: 11400000, guid: 15f60c8d771c3ff4c88e73eeee84a8eb, type: 2}
+        showIndex: 0
+        Offset: {x: 0, y: 90, z: -90}
+        upVector: 1
+        LocalUp: {x: 0, y: 1, z: 0}
+        WorldUp: {fileID: 0}
+        rotationBlend: 1
+        RawAim: 0
+        Gizmos: 1
+    - rid: 4986561813304574217
+      type: {class: IKGenericLookAt, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: Head
+        Active: 1
+        Weight: 1
+        TargetIndex: 1
+        AnimParameter: 
+        AnimParameterHash: 0
+        Tag: {fileID: 11400000, guid: b3384b1e93f7c1c4d9fd2a848bec0f78, type: 2}
+        showIndex: 0
+        Offset: {x: 0, y: 90, z: -90}
+        upVector: 1
+        LocalUp: {x: 0, y: 1, z: 0}
+        WorldUp: {fileID: 0}
+        rotationBlend: 1
+        RawAim: 0
+        Gizmos: 1
+    - rid: 4986561813304574218
+      type: {class: WeightLookAt, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        Active: 1
+        Invert: 0
+        LookAtLimit:
+          minValue: 60
+          maxValue: 90
+        AngleOffset: 180
+        normalizedBy: 1
+        upVector: 1
+        LocalUp: {x: 0, y: 1, z: 0}
+        WorldUp: {fileID: 0}
+        showGizmos: 1
+        GizmoRadius: 1
+        GizmoColor: {r: 0, g: 0.2372475, b: 0.6301887, a: 1}
+    - rid: 4986561813304574219
+      type: {class: WeightAnimParam, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        Active: 1
+        Invert: 0
+        Parameter: LookAt
+        normalizedBy: 1
+        AnimParamHash: 1274512349
+    - rid: 4986561813304574220
+      type: {class: HumanIKGoalOffset, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: ' Right Hand'
+        Active: 1
+        Weight: 1
+        TargetIndex: -1
+        AnimParameter: 
+        AnimParameterHash: 0
+        Tag: {fileID: 0}
+        showIndex: 0
+        LayerIndex: 4
+        goal: 3
+        RelativeToRoot: 0
+        RelativeTo: 8
+        GoalOffset: {x: 0.13601428, y: 0.21283172, z: -0.38177514}
+        GoalRotation: {x: 311.74792, y: 81.83303, z: 232.60031}
+        FixHint: 1
+        HintOffset: {x: 0.09039801, y: -0.50683385, z: -0.47134885}
+        position: 1
+        rotation: 1
+        gizmos: 1
+    - rid: 4986561813304574221
+      type: {class: HumanIKGoalOffset, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: ' Left Hand'
+        Active: 1
+        Weight: 1
+        TargetIndex: -1
+        AnimParameter: 
+        AnimParameterHash: 0
+        Tag: {fileID: 0}
+        showIndex: 0
+        LayerIndex: 4
+        goal: 2
+        RelativeToRoot: 0
+        RelativeTo: 8
+        GoalOffset: {x: -0.44995376, y: 0.35563505, z: 0.41931653}
+        GoalRotation: {x: 300.3487, y: 259.9953, z: 265.35272}
+        FixHint: 1
+        HintOffset: {x: 0.07145107, y: -0.32270807, z: 0.5012531}
+        position: 1
+        rotation: 1
+        gizmos: 1
+    - rid: 4986561813304574222
+      type: {class: HumanIKBoneRotation, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: Spine1
+        Active: 1
+        Weight: 1
+        TargetIndex: 0
+        AnimParameter: 
+        AnimParameterHash: 0
+        Tag: {fileID: 0}
+        showIndex: 0
+        LayerIndex: 0
+        rotationType: 3
+        TargetTag: {fileID: 0}
+        humanBone: 7
+        Offset:
+          UseConstant: 1
+          ConstantValue: {x: 0, y: -90, z: -75}
+          Variable: {fileID: 0}
+        gizmos: 1
+    - rid: 4986561813304574223
+      type: {class: HumanIKBoneRotation, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: Chest
+        Active: 1
+        Weight: 1
+        TargetIndex: -1
+        AnimParameter: 
+        AnimParameterHash: 0
+        Tag: {fileID: 0}
+        showIndex: 0
+        LayerIndex: 0
+        rotationType: 1
+        TargetTag: {fileID: 0}
+        humanBone: 8
+        Offset:
+          UseConstant: 1
+          ConstantValue: {x: 0, y: 0, z: 9.55}
+          Variable: {fileID: 0}
+        gizmos: 1
+    - rid: 4986561813304574224
+      type: {class: HumanIKGoalOffset, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: Rigth Hand
+        Active: 1
+        Weight: 1
+        TargetIndex: -1
+        AnimParameter: 
+        AnimParameterHash: 0
+        Tag: {fileID: 0}
+        showIndex: 0
+        LayerIndex: 0
+        goal: 3
+        RelativeToRoot: 1
+        RelativeTo: 54
+        GoalOffset: {x: 0.445, y: 1.768, z: 0.145}
+        GoalRotation: {x: -90, y: 0, z: 0}
+        FixHint: 1
+        HintOffset: {x: 0, y: 0, z: 0}
+        position: 1
+        rotation: 1
+        gizmos: 1
+    - rid: 4986561813304574225
+      type: {class: HumanIKGoalOffset, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: Left Hand
+        Active: 1
+        Weight: 1
+        TargetIndex: -1
+        AnimParameter: 
+        AnimParameterHash: 0
+        Tag: {fileID: 0}
+        showIndex: 0
+        LayerIndex: 0
+        goal: 2
+        RelativeToRoot: 1
+        RelativeTo: 54
+        GoalOffset: {x: -0.445, y: 1.768, z: 0.145}
+        GoalRotation: {x: -90, y: 0, z: 0}
+        FixHint: 1
+        HintOffset: {x: 0, y: 0, z: 0}
+        position: 1
+        rotation: 1
+        gizmos: 1
+    - rid: 4986561813304574226
+      type: {class: WeightAnimalState, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        Active: 1
+        Invert: 0
+        States:
+          IDs:
+          - {fileID: 11400000, guid: e540d0fa5cbb6d148aaf89c2cf966b6a, type: 2}
+          include: 1
+        Profile:
+          UseConstant: 1
+          ConstantValue: 0
+          Variable: {fileID: 0}
+    - rid: 4986561813304574227
+      type: {class: HumanIKGoal, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: Left Hand
+        Active: 1
+        Weight: 1
+        TargetIndex: -1
+        AnimParameter: IKLeftHand
+        AnimParameterHash: 246805955
+        Tag: {fileID: 11400000, guid: 668c3fca452816d4787acd9b77e992d6, type: 2}
+        showIndex: 0
+        LayerIndex: 5
+        goal: 2
+        position: 1
+        OffsetP: {x: 0, y: -0.09, z: -0.13}
+        rotation: 1
+        OffsetR: {x: -55, y: 0, z: 0}
+        Distance:
+          minValue: 0
+          maxValue: 0
+        gizmos: 1
+    - rid: 4986561813304574228
+      type: {class: HumanIKGoal, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: Right Hand
+        Active: 1
+        Weight: 1
+        TargetIndex: 1
+        AnimParameter: IKRightHand
+        AnimParameterHash: 858272591
+        Tag: {fileID: 11400000, guid: 479ab2a49f8fb494180e59f57fca8dba, type: 2}
+        showIndex: 0
+        LayerIndex: 5
+        goal: 3
+        position: 1
+        OffsetP: {x: 0, y: -0.1, z: -0.12}
+        rotation: 1
+        OffsetR: {x: -55, y: 0, z: 0}
+        Distance:
+          minValue: 0
+          maxValue: 0
+        gizmos: 1
+    - rid: 4986561813304574229
+      type: {class: HumanIKGoal, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: Left Foot
+        Active: 1
+        Weight: 1
+        TargetIndex: 2
+        AnimParameter: IKLeftFoot
+        AnimParameterHash: -531067169
+        Tag: {fileID: 11400000, guid: dbc9ff588ee91dc4a830ab012f4e8bcd, type: 2}
+        showIndex: 0
+        LayerIndex: 5
+        goal: 0
+        position: 1
+        OffsetP: {x: 0.15, y: 0.07, z: -0.2}
+        rotation: 1
+        OffsetR: {x: -20, y: 0, z: 0}
+        Distance:
+          minValue: 0
+          maxValue: 0
+        gizmos: 1
+    - rid: 4986561813304574230
+      type: {class: HumanIKGoal, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        name: Right Foot
+        Active: 1
+        Weight: 1
+        TargetIndex: 3
+        AnimParameter: IKRightFoot
+        AnimParameterHash: 0
+        Tag: {fileID: 11400000, guid: 39360b536a70db24e8ef86d94afa558e, type: 2}
+        showIndex: 0
+        LayerIndex: 5
+        goal: 1
+        position: 1
+        OffsetP: {x: -0.15, y: 0.07, z: -0.2}
+        rotation: 1
+        OffsetR: {x: -20, y: 0, z: 0}
+        Distance:
+          minValue: 0
+          maxValue: 0
+        gizmos: 1
+    - rid: 4986561813304574231
+      type: {class: WeightAnimalState, ns: MalbersAnimations.IK, asm: MalbersAnimations}
+      data:
+        Active: 1
+        Invert: 0
+        States:
+          IDs:
+          - {fileID: 11400000, guid: 39ecd542b266f344095b83d87284a693, type: 2}
+          include: 1
+        Profile:
+          UseConstant: 1
+          ConstantValue: 0
+          Variable: {fileID: 0}

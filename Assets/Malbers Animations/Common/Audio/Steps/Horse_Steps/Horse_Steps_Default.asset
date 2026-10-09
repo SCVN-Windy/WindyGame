@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-9027861989241280842
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Horse_Step_01_{-9027861989241280842}
+  m_AudioClip: {fileID: 8300000, guid: e2a54f72b04f1e34e86462c654a92c58, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-6288947915358798269
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Horse_Step_07_{-6288947915358798269}
+  m_AudioClip: {fileID: 8300000, guid: 76113d0fd6f35d64686bba456334c28a, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-5979578523286457530
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Horse_Step_02_{-5979578523286457530}
+  m_AudioClip: {fileID: 8300000, guid: 634ef24805abfc142b23ce2a6c275b15, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1069460955989005692
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Horse_Step_06_{-1069460955989005692}
+  m_AudioClip: {fileID: 8300000, guid: 1f0e6acd9bc440e4cbcb5d8d250afa62, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &123856849940501258
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Horse_Step_03_{123856849940501258}
+  m_AudioClip: {fileID: 8300000, guid: 472bc735b1c5ac148a9452d597e78e1e, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &2362014373351579596
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Horse_Step_04_{2362014373351579596}
+  m_AudioClip: {fileID: 8300000, guid: 2b16b14728f23264da3fdb160543e1ae, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &2726414456900261607
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Horse_Step_08_{2726414456900261607}
+  m_AudioClip: {fileID: 8300000, guid: 12b79f435659be74ebcf9ae77182c8eb, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Horse_Steps_Default
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: -2.0338917, y: 2.7118683}
+  m_PitchRandomizationRange: {x: -20.33908, y: 50.847534}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: -9027861989241280842}
+  - {fileID: -5979578523286457530}
+  - {fileID: 123856849940501258}
+  - {fileID: 2362014373351579596}
+  - {fileID: 8552008666820564705}
+  - {fileID: -1069460955989005692}
+  - {fileID: -6288947915358798269}
+  - {fileID: 2726414456900261607}
+  m_AvoidRepeatingLast: 2
+  m_PlaybackMode: 2
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 1
+  m_PitchRandomizationEnabled: 1
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &8552008666820564705
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Horse_Step_05_{8552008666820564705}
+  m_AudioClip: {fileID: 8300000, guid: 44b053f409fd582418bab673d7ec91f3, type: 3}
+  m_Volume: 0
+  m_Enabled: 1

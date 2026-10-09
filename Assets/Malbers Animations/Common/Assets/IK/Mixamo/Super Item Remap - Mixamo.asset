@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36fa3768683387469948012e3ae2d8a, type: 3}
+  m_Name: Super Item Remap - Mixamo
+  m_EditorClassIdentifier: 
+  Description: 
+  remap:
+  - ID: {fileID: 11400000, guid: 40580d4432cfeee4b865015e41581db8, type: 2}
+    Value: {fileID: 11400000, guid: 8eb39752e605bbb47aff6e71f18a9b86, type: 2}
+  - ID: {fileID: 11400000, guid: ee6e592fd633ca84b8d72e77a8b80190, type: 2}
+    Value: {fileID: 11400000, guid: f53e743366465f74eb06e6632738053e, type: 2}
+  - ID: {fileID: 11400000, guid: ca7006030c1aaf143a5782929706d255, type: 2}
+    Value: {fileID: 11400000, guid: 1c1f7ecc98bdee14b87ad0445600bdd3, type: 2}
+  - ID: {fileID: 11400000, guid: ac61e0e020dc9aa4181bc582e0ef8994, type: 2}
+    Value: {fileID: 11400000, guid: 12887d7f3163fa041a6f01832a5be9e4, type: 2}

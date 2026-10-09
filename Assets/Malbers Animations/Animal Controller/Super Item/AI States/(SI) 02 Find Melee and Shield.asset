@@ -1,0 +1,633 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8851563778413368056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4681abb1579a87d4ca46923c098ddece, type: 3}
+  m_Name: D_Search Done AND No Melee
+  m_EditorClassIdentifier: 
+  active: 1
+  Description: All Decisions on the list  must be TRUE in order to sent a True Decision
+  DecisionID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  send: 0
+  interval:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.2
+    Variable: {fileID: 0}
+  WaitForAllTasks: 0
+  waitForTask: -1
+  list_index: 1
+  decisions:
+  - {fileID: 2353150718040188458}
+  - {fileID: 6804971849652603139}
+  invert: 0001
+  debug: 0
+--- !u!114 &-6271705094394032282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbea5ee62fa5c3e46b7ae58d615eba90, type: 3}
+  m_Name: T_Pick Melee and Shield
+  m_EditorClassIdentifier: 
+  active: 1
+  Description: 'Walk to a free Super Item (the current Target or a Transform Var)
+    and pick it: Equip it or store it in its Holster'
+  MessageID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  UpdateInterval:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.2
+    Variable: {fileID: 0}
+  WaitForPreviousTask: 0
+  items:
+    IDs:
+    - {fileID: 11400000, guid: f7750fb0de4b4984c992a104f83c8374, type: 2}
+    - {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+    include: 1
+  PickMultiple: 1
+  KeepSearching: 0
+  SearchRadius:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 10
+    Variable: {fileID: 0}
+  MoveToItem: 1
+  PickDistance:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 2
+    Variable: {fileID: 0}
+  PickAs: 1
+  Instant: 1
+  ReturnToTarget: 1
+  debugColor: {r: 0.6603774, g: 0.29577053, b: 0.15325734, a: 0.2901961}
+--- !u!114 &-5543975949358043705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4681abb1579a87d4ca46923c098ddece, type: 3}
+  m_Name: D_Search Done AND Has Melee
+  m_EditorClassIdentifier: 
+  active: 1
+  Description: All Decisions on the list  must be TRUE in order to sent a True Decision
+  DecisionID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  send: 0
+  interval:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.2
+    Variable: {fileID: 0}
+  WaitForAllTasks: 0
+  waitForTask: -1
+  list_index: 1
+  decisions:
+  - {fileID: 8498853186063124140}
+  - {fileID: 6092786555539333534}
+  invert: 0000
+  debug: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e33e187dc72d4a48aaede99913c6393, type: 3}
+  m_Name: (SI) 02 Find Melee and Shield
+  m_EditorClassIdentifier: 
+  ID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  tasks:
+  - {fileID: 1552873885498096360}
+  - {fileID: -6271705094394032282}
+  - {fileID: 5811323119878986027}
+  - {fileID: 5819247742372221945}
+  transitions:
+  - decision: {fileID: 1988856791601573427}
+    trueState: {fileID: 11400000, guid: cf42bc18b415a384197e5d330afbf11b, type: 2}
+    falseState: {fileID: 0}
+  - decision: {fileID: -5543975949358043705}
+    trueState: {fileID: 11400000, guid: cf42bc18b415a384197e5d330afbf11b, type: 2}
+    falseState: {fileID: 0}
+  - decision: {fileID: -8851563778413368056}
+    trueState: {fileID: 11400000, guid: 2b6a5ed51cbca92409f2c3aa728aad1f, type: 2}
+    falseState: {fileID: 0}
+  GizmoStateColor: {r: 1, g: 0.70738596, b: 0, a: 1}
+  CreateTaskAsset: 1
+  CreateDecisionAsset: 1
+  TasksIndex: 3
+  DecisionIndex: -1
+--- !u!114 &1552873885498096360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55f5af15654a1848a5d62c35156dfe9, type: 3}
+  m_Name: T_Speed to Run
+  m_EditorClassIdentifier: 
+  active: 1
+  Description: Change the Speed on the Animal
+  MessageID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  UpdateInterval:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.2
+    Variable: {fileID: 0}
+  WaitForPreviousTask: 0
+  affect: 0
+  SpeedSet: Ground
+  SpeedIndex:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 3
+    Variable: {fileID: 0}
+  Sprint: 0
+  ResetSprintOnExit: 0
+--- !u!114 &1988856791601573427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ae97091de0fb84cb4a9500810230ee, type: 3}
+  m_Name: D_Has Melee and Shield
+  m_EditorClassIdentifier: 
+  active: 1
+  Description: Check if the Super Item Manager (Self or Target) has Super Items equipped,
+    holstered or owned, or is unarmed
+  DecisionID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  send: 0
+  interval:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.2
+    Variable: {fileID: 0}
+  WaitForAllTasks: 0
+  waitForTask: -1
+  CheckOn: 0
+  Where: 0
+  items:
+    IDs:
+    - {fileID: 11400000, guid: f7750fb0de4b4984c992a104f83c8374, type: 2}
+    - {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+    include: 1
+  checkIf: 1
+--- !u!114 &2353150718040188458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a11a1d62e1c71043b5eca97482bc3d5, type: 3}
+  m_Name: D_Pick Task Done (2)
+  m_EditorClassIdentifier: 
+  active: 1
+  Description: Type Description Here
+  DecisionID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  send: 0
+  interval:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.2
+    Variable: {fileID: 0}
+  WaitForAllTasks: 0
+  waitForTask: -1
+  TaskIndex: 1
+--- !u!114 &5811323119878986027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2aad0ba16551545b4f0aa57d8a5023, type: 3}
+  m_Name: T_Strafe On
+  m_EditorClassIdentifier: 
+  active: 1
+  Description: Enable/Disable Strafing on the Animal Controller
+  MessageID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  UpdateInterval:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.2
+    Variable: {fileID: 0}
+  WaitForPreviousTask: 0
+  affect: 0
+  strafe:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 1
+    Variable: {fileID: 0}
+  TargetIsStrafeTarget: 1
+  SelfIsStrafeTarget: 1
+  NewStrafeTarget: {fileID: 0}
+  showTransform: 0
+  showSelf: 1
+  showTarget: 0
+--- !u!114 &5819247742372221945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc281e85e1710854c8185b80996cde20, type: 3}
+  m_Name: T_SetTargetTask
+  m_EditorClassIdentifier: 
+  active: 1
+  Description: Set a new Target to the AI Animal Control, it uses Run time sets Transforms
+    or GameObjects
+  MessageID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  UpdateInterval:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.2
+    Variable: {fileID: 0}
+  WaitForPreviousTask: 0
+  targetType: 6
+  TargetT: {fileID: 0}
+  TargetG: {fileID: 0}
+  TargetRG: {fileID: 0}
+  rtype: 1
+  TargetTag: {fileID: 11400000, guid: f45a3d7e9fbf2074496de5b9b0ab09b0, type: 2}
+  tagType: 0
+  RTIndex:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  RTName:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 
+    Variable: {fileID: 0}
+  MoveToTarget: 0
+--- !u!114 &6092786555539333534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ae97091de0fb84cb4a9500810230ee, type: 3}
+  m_Name: D_Has Melee Equipped
+  m_EditorClassIdentifier: 
+  active: 1
+  Description: Check if the Super Item Manager (Self or Target) has Super Items equipped,
+    holstered or owned, or is unarmed
+  DecisionID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  send: 0
+  interval:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.2
+    Variable: {fileID: 0}
+  WaitForAllTasks: 0
+  waitForTask: -1
+  CheckOn: 0
+  Where: 0
+  items:
+    IDs:
+    - {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+    include: 1
+  checkIf: 0
+--- !u!114 &6804971849652603139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ae97091de0fb84cb4a9500810230ee, type: 3}
+  m_Name: D_Has Melee Equipped (2)
+  m_EditorClassIdentifier: 
+  active: 1
+  Description: Check if the Super Item Manager (Self or Target) has Super Items equipped,
+    holstered or owned, or is unarmed
+  DecisionID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  send: 0
+  interval:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.2
+    Variable: {fileID: 0}
+  WaitForAllTasks: 0
+  waitForTask: -1
+  CheckOn: 0
+  Where: 0
+  items:
+    IDs:
+    - {fileID: 11400000, guid: 9cec644d7cde1824b86fda367a3bfe5b, type: 2}
+    include: 1
+  checkIf: 0
+--- !u!114 &8498853186063124140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a11a1d62e1c71043b5eca97482bc3d5, type: 3}
+  m_Name: D_Pick Task Done
+  m_EditorClassIdentifier: 
+  active: 1
+  Description: Type Description Here
+  DecisionID:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  send: 0
+  interval:
+    UseConstant: 1
+    UseMember: 0
+    Member:
+      target: {fileID: 0}
+      memberName: 
+      memberKind: 0
+      args: []
+      paramSignature: 
+      invert: 0
+    ConstantValue: 0.2
+    Variable: {fileID: 0}
+  WaitForAllTasks: 0
+  waitForTask: -1
+  TaskIndex: 1
