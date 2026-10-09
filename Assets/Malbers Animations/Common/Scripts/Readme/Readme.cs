@@ -1,5 +1,4 @@
-﻿// Last Change: 9/17/2026 5:33pm
-using System;
+﻿using System;
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,7 +17,7 @@ namespace MalbersAnimations
         public Section[] sections;
 
 
-        public List<string> packages = new() { "com.unity.cinemachine", "com.unity.mathematics" };
+        public List<string> packages = new List<string>() { "com.unity.cinemachine" , "com.unity.mathematics" };
 
         [Serializable]
         public class Section
@@ -34,7 +33,7 @@ namespace MalbersAnimations
     [CustomEditor(typeof(Readme))]
     public class ReadmeEditor : Editor
     {
-        static readonly float kSpace = 16f;
+        static float kSpace = 16f;
         private ListRequest list;
         private AddRequest add;
         Readme M;
@@ -82,7 +81,7 @@ namespace MalbersAnimations
                     GUILayout.Label(section.heading, HeadingStyle);
                 }
 
-
+             
 
                 if (!string.IsNullOrEmpty(section.text))
                 {
@@ -91,7 +90,9 @@ namespace MalbersAnimations
 
                 if (section.reference != null)
                 {
-                    _ = EditorGUILayout.ObjectField(section.reference, typeof(UnityEngine.Object), false);
+#pragma warning disable CS0618 // Type or member is obsolete
+                    _ = EditorGUILayout.ObjectField(section.reference, typeof(UnityEngine.Object));
+#pragma warning restore CS0618 // Type or member is obsolete
                 }
 
                 if (!string.IsNullOrEmpty(section.linkText))
@@ -107,7 +108,7 @@ namespace MalbersAnimations
         private void DrawPackageDependencies(Readme readme)
         {
             if (M.packages == null || M.packages.Count == 0) return;
-            using (new GUILayout.VerticalScope(EditorStyles.helpBox))
+            EditorGUILayout.BeginVertical(EditorStyles.helpBox);
             {
                 GUILayout.Label("Package Dependencies", EditorStyles.boldLabel);
 
@@ -154,6 +155,7 @@ namespace MalbersAnimations
                     }
                 }
             }
+            EditorGUILayout.EndVertical();
         }
 
         bool m_Initialized;

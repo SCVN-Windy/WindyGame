@@ -1251,8 +1251,8 @@
     "m_ObjectId": "039614f7c7974b598156ab7c4a488c48",
     "m_Title": "Emission",
     "m_Position": {
-        "x": -436.0,
-        "y": 1132.7998046875
+        "x": -435.0,
+        "y": 1134.0
     }
 }
 
@@ -2118,7 +2118,6 @@
     "m_ObjectId": "259aa98d481c40b28b098728c1ae7b66",
     "m_RayTracing": false,
     "m_MaterialType": 0,
-    "m_MaterialTypeMask": 2,
     "m_RefractionModel": 0,
     "m_SSSTransmission": true,
     "m_EnergyConservingSpecular": true,
@@ -2525,8 +2524,8 @@
     "m_ObjectId": "2e9e6b4c09b543b3b17b3ddb518b224c",
     "m_Title": "Soft Light",
     "m_Position": {
-        "x": 309.60009765625,
-        "y": -497.60003662109377
+        "x": 310.0,
+        "y": -497.0
     }
 }
 
@@ -2639,8 +2638,8 @@
     "m_ObjectId": "327fbe6d7f2740aaa42cc334386dc75c",
     "m_Title": "Roughness (Red)  Metallic (Green) AO (Blue)",
     "m_Position": {
-        "x": -449.5999755859375,
-        "y": 19.99993896484375
+        "x": -449.0,
+        "y": 21.0
     }
 }
 
@@ -3424,8 +3423,8 @@
         "y": 1.0
     },
     "m_DefaultValue": {
-        "x": 1.0,
-        "y": 1.0
+        "x": 0.0,
+        "y": 0.0
     },
     "m_Labels": []
 }
@@ -3804,8 +3803,8 @@
     "m_ObjectId": "620210844b91450d8e2c0c56ac0d1aff",
     "m_Title": "Tint",
     "m_Position": {
-        "x": 738.39990234375,
-        "y": -492.800048828125
+        "x": 739.0,
+        "y": -492.0
     }
 }
 
@@ -4044,8 +4043,8 @@
         "y": 1.0
     },
     "m_DefaultValue": {
-        "x": -1.0,
-        "y": 1.0
+        "x": 0.0,
+        "y": 0.0
     },
     "m_Labels": []
 }
@@ -4860,8 +4859,8 @@
         "y": 1.0
     },
     "m_DefaultValue": {
-        "x": -1.0,
-        "y": 1.0
+        "x": 0.0,
+        "y": 0.0
     },
     "m_Labels": []
 }
@@ -5327,8 +5326,8 @@
     "m_ObjectId": "98750e907fa043f2ac5ab10038365a8a",
     "m_Title": "Albedo",
     "m_Position": {
-        "x": -1069.5999755859375,
-        "y": -443.2000427246094
+        "x": -1069.0,
+        "y": -442.0
     }
 }
 
@@ -5338,8 +5337,8 @@
     "m_ObjectId": "98e8edcc50e748c489ea64bfd8207ff0",
     "m_Title": "  HUE SATURATION",
     "m_Position": {
-        "x": -289.5999755859375,
-        "y": -500.00006103515627
+        "x": -289.0,
+        "y": -499.0
     }
 }
 
@@ -5889,7 +5888,6 @@
     "m_BackThenFrontRendering": false,
     "m_TransparentDepthPrepass": false,
     "m_TransparentDepthPostpass": false,
-    "m_TransparentPerPixelSorting": false,
     "m_SupportLodCrossFade": false
 }
 
@@ -5910,9 +5908,6 @@
     "m_AlphaClip": false,
     "m_CastShadows": true,
     "m_ReceiveShadows": true,
-    "m_DisableTint": false,
-    "m_AdditionalMotionVectorMode": 0,
-    "m_AlembicMotionVectors": false,
     "m_SupportsLODCrossFade": false,
     "m_CustomEditorGUI": "",
     "m_SupportVFX": false
@@ -5963,22 +5958,22 @@
     "m_Name": "Roughness Metallic AO (RGB)",
     "m_ChildObjectList": [
         {
-            "m_Id": "03ef060db45747b5bdf6a4225f2a4883"
-        },
-        {
             "m_Id": "518dfaa9a31445079d1bc608b88f703c"
         },
         {
             "m_Id": "0c0ebbfe8ce54deba34aecc1f3d1e660"
         },
         {
-            "m_Id": "33d7d479708745309ff2faff34ff7b1f"
+            "m_Id": "03ef060db45747b5bdf6a4225f2a4883"
         },
         {
             "m_Id": "8ddc98b7e1084763908f38e7e0c2c864"
         },
         {
             "m_Id": "1aa6d8bfe0864c819c6dd49a89e891ec"
+        },
+        {
+            "m_Id": "33d7d479708745309ff2faff34ff7b1f"
         },
         {
             "m_Id": "c1f93ed67c3f44f095831414846620d1"
@@ -6210,7 +6205,6 @@
     "m_SGVersion": 2,
     "m_Type": "UnityEditor.Rendering.BuiltIn.ShaderGraph.BuiltInTarget",
     "m_ObjectId": "b8af1dd85c674796a546db6d3abaa565",
-    "m_Datas": [],
     "m_ActiveSubTarget": {
         "m_Id": "af2e26ff41e94a0aa7e61241f3429476"
     },
@@ -6445,7 +6439,7 @@
     },
     "m_DefaultValue": {
         "x": 0.0,
-        "y": 1.0
+        "y": 0.0
     },
     "m_Labels": []
 }
@@ -6699,7 +6693,7 @@
     ],
     "m_CustomEditorGUI": "",
     "m_SupportVFX": false,
-    "m_SupportLineRendering": false
+    "m_SupportComputeForVertexSetup": false
 }
 
 {
@@ -6845,7 +6839,7 @@
     },
     "m_DefaultValue": {
         "x": 0.0,
-        "y": 1.0
+        "y": 0.0
     },
     "m_Labels": []
 }
@@ -7207,7 +7201,7 @@
     "m_DefaultValue": {
         "x": 0.0,
         "y": 0.0,
-        "z": 1.0
+        "z": 0.0
     },
     "m_Labels": []
 }
@@ -7378,8 +7372,8 @@
     "m_ObjectId": "eae01ce2de8a4fdeaf5cf8df02ab6523",
     "m_Title": "Normal Map",
     "m_Position": {
-        "x": -449.5999755859375,
-        "y": 723.1998901367188
+        "x": -449.0,
+        "y": 724.0
     }
 }
 
@@ -7497,7 +7491,6 @@
     "m_TessellationShapeFactor": 0.75,
     "m_TessellationBackFaceCullEpsilon": -0.25,
     "m_TessellationMaxDisplacement": 0.009999999776482582,
-    "m_DebugSymbols": false,
     "m_Version": 2,
     "inspectorFoldoutMask": 0
 }

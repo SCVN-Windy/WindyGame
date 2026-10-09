@@ -44,8 +44,8 @@ Material:
   m_ValidKeywords:
   - _BUILTIN_ALPHATEST_ON
   - _BUILTIN_AlphaClip
+  m_InvalidKeywords:
   - _DISABLE_SSR_TRANSPARENT
-  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -134,17 +134,13 @@ Material:
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
     - _DstBlend: 0
-    - _DstBlend2: 0
-    - _EmissionPower: 1
+    - _EmissionPower: 4
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _ExcludeFromTUAndAA: 0
-    - _MaterialID: 1
-    - _MaterialTypeMask: 2
     - _Metallic: 0
     - _Normal_Power: 0
     - _OpaqueCullMode: 2
-    - _PerPixelSorting: 0
     - _QueueControl: 1
     - _QueueOffset: 0
     - _RayTracing: 0
@@ -169,7 +165,6 @@ Material:
     - _SupportDecals: 1
     - _Surface: 0
     - _SurfaceType: 0
-    - _TransmissionEnable: 1
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
     - _TransparentDepthPostpassEnable: 0
@@ -186,9 +181,9 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 0.990566, g: 0.13983724, b: 0.042052314, a: 1}
+    - _Color: {r: 1, g: 0.3166095, b: 0.2396226, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
-    - _EmissionColor: {r: 2.828427, g: 0.5496753, b: 0.5496753, a: 1}
+    - _EmissionColor: {r: 1.1420442, g: 0.19608682, b: 0.19608682, a: 1}
     - _Emission_Color: {r: 8.101154, g: 0.7903657, b: 0.7184038, a: 1}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _Rough_MinMax: {r: 0, g: 1, b: 0, a: 0}
@@ -209,4 +204,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 10
+  version: 9

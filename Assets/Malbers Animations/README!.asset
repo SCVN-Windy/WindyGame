@@ -50,6 +50,12 @@ MonoBehaviour:
     linkText: Official Integrations
     url: https://malbersanimations.gitbook.io/animal-controller/annex/integrations
     reference: {fileID: 0}
+  - heading: Got Feedback?
+    text: 'Let us know what you think or ask any questions you might have in the
+      FORUM. '
+    linkText: Forum Thread (Animals)
+    url: https://forum.unity.com/threads/440812/
+    reference: {fileID: 0}
   - heading: Discord
     text: We have Discord now! This is the best way to chat with me and help you
       out with any issues you may have
@@ -60,11 +66,6 @@ MonoBehaviour:
     text: Follow me to stay tuned for new Assets and Updates
     linkText: Facebook
     url: https://www.facebook.com/MalberSAnimations
-    reference: {fileID: 0}
-  - heading: 
-    text: 
-    linkText: Instagram
-    url: https://www.instagram.com/malbersanimations/
     reference: {fileID: 0}
   - heading: 
     text: 

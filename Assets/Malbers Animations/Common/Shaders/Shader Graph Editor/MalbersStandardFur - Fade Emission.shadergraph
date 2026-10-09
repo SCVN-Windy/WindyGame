@@ -2043,8 +2043,8 @@
     "m_ObjectId": "039614f7c7974b598156ab7c4a488c48",
     "m_Title": "Emission",
     "m_Position": {
-        "x": -1358.0,
-        "y": 746.0
+        "x": -1359.199951171875,
+        "y": 744.7999267578125
     }
 }
 
@@ -2556,8 +2556,8 @@
     "m_ObjectId": "13b00b87ac2e4e53a84e7fbecc31cd38",
     "m_Title": "Root Tip Color",
     "m_Position": {
-        "x": 1249.0,
-        "y": 1028.0
+        "x": 1248.7999267578125,
+        "y": 1027.199951171875
     }
 }
 
@@ -2855,8 +2855,8 @@
     "m_ObjectId": "1952b5a2c35c4921b554cfd89eefe1a7",
     "m_Title": "Combine Fade Mask with Emission Texture",
     "m_Position": {
-        "x": -697.0,
-        "y": 1303.0
+        "x": -697.5999755859375,
+        "y": 1301.60009765625
     }
 }
 
@@ -2875,8 +2875,8 @@
         "y": 1.0
     },
     "m_DefaultValue": {
-        "x": -1.0,
-        "y": 1.0
+        "x": 0.0,
+        "y": 0.0
     },
     "m_Labels": []
 }
@@ -3383,8 +3383,8 @@
     "m_ObjectId": "216263f34a324a78a2e5bb9e3879c5ba",
     "m_Title": "Fade Emission via Mask",
     "m_Position": {
-        "x": -3803.0,
-        "y": 1171.0
+        "x": -3803.999755859375,
+        "y": 1170.400390625
     }
 }
 
@@ -3394,8 +3394,8 @@
     "m_ObjectId": "21f4d753ce334934b26f3d6d36b25f3e",
     "m_Title": "Final Pass (Albedo)  HUE SATURATION",
     "m_Position": {
-        "x": 614.0,
-        "y": -67.0
+        "x": 613.6002197265625,
+        "y": -68.0
     }
 }
 
@@ -3615,7 +3615,6 @@
     "m_ObjectId": "259aa98d481c40b28b098728c1ae7b66",
     "m_RayTracing": false,
     "m_MaterialType": 0,
-    "m_MaterialTypeMask": 2,
     "m_RefractionModel": 0,
     "m_SSSTransmission": true,
     "m_EnergyConservingSpecular": true,
@@ -4100,8 +4099,8 @@
     "m_ObjectId": "2dffc26b598e480f9cade2712da5152b",
     "m_Title": "Toggle Fade Feature On and Off",
     "m_Position": {
-        "x": -1300.0,
-        "y": 1325.0
+        "x": -1300.7999267578125,
+        "y": 1324.0
     }
 }
 
@@ -4378,8 +4377,8 @@
     "m_ObjectId": "327fbe6d7f2740aaa42cc334386dc75c",
     "m_Title": "Roughness Metallic AO",
     "m_Position": {
-        "x": 193.0,
-        "y": -1257.0
+        "x": 192.0,
+        "y": -1257.5999755859375
     }
 }
 
@@ -5881,8 +5880,8 @@
     "m_ObjectId": "536002ea43a74bebb46d63252c4fd726",
     "m_Title": "Vertex Ambient Occlusion",
     "m_Position": {
-        "x": -880.0,
-        "y": -503.0
+        "x": -880.7999877929688,
+        "y": -503.99993896484377
     }
 }
 
@@ -6395,7 +6394,7 @@
     },
     "m_DefaultValue": {
         "x": 0.0,
-        "y": 1.0
+        "y": 0.0
     },
     "m_Labels": []
 }
@@ -6925,8 +6924,8 @@
     "m_ObjectId": "6e88446fc52b45d1ae65790a0af8fe41",
     "m_Title": "Fade Hardness",
     "m_Position": {
-        "x": -2186.0,
-        "y": 1321.0
+        "x": -2186.400146484375,
+        "y": 1320.0
     }
 }
 
@@ -7877,7 +7876,7 @@
     "m_DefaultValue": {
         "x": 0.0,
         "y": 0.0,
-        "z": 1.0
+        "z": 0.0
     },
     "m_Labels": []
 }
@@ -7897,8 +7896,8 @@
         "y": 1.0
     },
     "m_DefaultValue": {
-        "x": -1.0,
-        "y": 1.0
+        "x": 0.0,
+        "y": 0.0
     },
     "m_Labels": []
 }
@@ -8342,7 +8341,7 @@
     "m_DefaultValue": {
         "x": 0.0,
         "y": 0.0,
-        "z": 1.0
+        "z": 0.0
     },
     "m_Labels": []
 }
@@ -8566,8 +8565,8 @@
     "m_ObjectId": "98750e907fa043f2ac5ab10038365a8a",
     "m_Title": "Albedo",
     "m_Position": {
-        "x": -234.0,
-        "y": -106.0
+        "x": -234.4000244140625,
+        "y": -107.199951171875
     }
 }
 
@@ -9463,7 +9462,6 @@
     "m_BackThenFrontRendering": false,
     "m_TransparentDepthPrepass": false,
     "m_TransparentDepthPostpass": false,
-    "m_TransparentPerPixelSorting": false,
     "m_SupportLodCrossFade": false
 }
 
@@ -9506,9 +9504,6 @@
     "m_AlphaClip": true,
     "m_CastShadows": true,
     "m_ReceiveShadows": true,
-    "m_DisableTint": false,
-    "m_AdditionalMotionVectorMode": 0,
-    "m_AlembicMotionVectors": false,
     "m_SupportsLODCrossFade": false,
     "m_CustomEditorGUI": "",
     "m_SupportVFX": false
@@ -9964,7 +9959,6 @@
     "m_SGVersion": 2,
     "m_Type": "UnityEditor.Rendering.BuiltIn.ShaderGraph.BuiltInTarget",
     "m_ObjectId": "b8af1dd85c674796a546db6d3abaa565",
-    "m_Datas": [],
     "m_ActiveSubTarget": {
         "m_Id": "af2e26ff41e94a0aa7e61241f3429476"
     },
@@ -10844,10 +10838,10 @@
         "w": 1.0
     },
     "m_DefaultValue": {
-        "x": 1.0,
-        "y": 1.0,
-        "z": 1.0,
-        "w": 1.0
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
     },
     "m_Labels": []
 }
@@ -10923,7 +10917,7 @@
     ],
     "m_CustomEditorGUI": "",
     "m_SupportVFX": false,
-    "m_SupportLineRendering": false
+    "m_SupportComputeForVertexSetup": false
 }
 
 {
@@ -11688,7 +11682,7 @@
     "m_DefaultValue": {
         "x": 0.0,
         "y": 0.0,
-        "z": 1.0
+        "z": 0.0
     },
     "m_Labels": []
 }
@@ -11891,7 +11885,7 @@
     "m_DefaultValue": {
         "x": 0.0,
         "y": 0.0,
-        "z": 1.0
+        "z": 0.0
     },
     "m_Labels": []
 }
@@ -12015,8 +12009,8 @@
     "m_ObjectId": "eaa2d91ffd7747429d386db35006180f",
     "m_Title": "ID",
     "m_Position": {
-        "x": 319.0,
-        "y": 590.0
+        "x": 318.4000244140625,
+        "y": 588.7999267578125
     }
 }
 
@@ -12026,8 +12020,8 @@
     "m_ObjectId": "eae01ce2de8a4fdeaf5cf8df02ab6523",
     "m_Title": "Normal Map",
     "m_Position": {
-        "x": -1549.0,
-        "y": -11.0
+        "x": -1549.60009765625,
+        "y": -12.0
     }
 }
 
@@ -12130,8 +12124,8 @@
     "m_ObjectId": "ed75257e3946456db4d3ec1f3815d439",
     "m_Title": "Soft Light",
     "m_Position": {
-        "x": 1214.0,
-        "y": -63.0
+        "x": 1213.5999755859375,
+        "y": -64.0
     }
 }
 
@@ -12164,7 +12158,6 @@
     "m_TessellationShapeFactor": 0.75,
     "m_TessellationBackFaceCullEpsilon": -0.25,
     "m_TessellationMaxDisplacement": 0.009999999776482582,
-    "m_DebugSymbols": false,
     "m_Version": 2,
     "inspectorFoldoutMask": 1
 }
@@ -12871,7 +12864,7 @@
     },
     "m_DefaultValue": {
         "x": 0.0,
-        "y": 1.0
+        "y": 0.0
     },
     "m_Labels": []
 }
